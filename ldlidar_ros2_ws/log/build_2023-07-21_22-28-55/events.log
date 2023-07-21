@@ -1,0 +1,431 @@
+[0.000000] (-) TimerEvent: {}
+[0.000563] (ldlidar_stl_ros2) JobQueued: {'identifier': 'ldlidar_stl_ros2', 'dependencies': OrderedDict()}
+[0.002255] (ldlidar_stl_ros2) JobStarted: {'identifier': 'ldlidar_stl_ros2'}
+[0.092673] (ldlidar_stl_ros2) JobProgress: {'identifier': 'ldlidar_stl_ros2', 'progress': 'cmake'}
+[0.097648] (ldlidar_stl_ros2) JobProgress: {'identifier': 'ldlidar_stl_ros2', 'progress': 'build'}
+[0.100792] (ldlidar_stl_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hnt/ldlidar_ros2_ws/build/ldlidar_stl_ros2', '--', '-j4', '-l4'], 'cwd': '/home/hnt/ldlidar_ros2_ws/build/ldlidar_stl_ros2', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hnt'), ('LC_TIME', 'vi_VN'), ('SSH_AGENT_PID', '5599'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/hnt'), ('OLDPWD', '/home/hnt'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('MANAGERPID', '5318'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/hnt/ldlidar_ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'hnt'), ('JOURNAL_STREAM', '8:43545'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'hnt'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/hnt/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/hnt-desktop:@/tmp/.ICE-unix/5636,unix/hnt-desktop:/tmp/.ICE-unix/5636'), ('INVOCATION_ID', '024e2f4cafa64a228f81a8f9f4edca5d'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/733daea8_5291_47f5_a882_efe875d0c6c7'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'vi_VN'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.171'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'vi_VN'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hnt/ldlidar_ros2_ws/build/ldlidar_stl_ros2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2:/opt/ros/foxy')]), 'shell': False}
+[0.105010] (-) TimerEvent: {}
+[0.205742] (-) TimerEvent: {}
+[0.306559] (-) TimerEvent: {}
+[0.397804] (ldlidar_stl_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ldlidar_stl_ros2_node\x1b[0m\n'}
+[0.406861] (-) TimerEvent: {}
+[0.507440] (-) TimerEvent: {}
+[0.546176] (ldlidar_stl_ros2) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/ldlidar_stl_ros2_node.dir/src/demo.cpp.o\x1b[0m\n'}
+[0.607602] (-) TimerEvent: {}
+[0.709323] (-) TimerEvent: {}
+[0.810732] (-) TimerEvent: {}
+[0.912139] (-) TimerEvent: {}
+[1.012969] (-) TimerEvent: {}
+[1.113925] (-) TimerEvent: {}
+[1.214749] (-) TimerEvent: {}
+[1.315394] (-) TimerEvent: {}
+[1.416179] (-) TimerEvent: {}
+[1.516897] (-) TimerEvent: {}
+[1.617705] (-) TimerEvent: {}
+[1.718443] (-) TimerEvent: {}
+[1.819170] (-) TimerEvent: {}
+[1.919895] (-) TimerEvent: {}
+[2.020598] (-) TimerEvent: {}
+[2.121325] (-) TimerEvent: {}
+[2.222043] (-) TimerEvent: {}
+[2.322818] (-) TimerEvent: {}
+[2.423530] (-) TimerEvent: {}
+[2.524246] (-) TimerEvent: {}
+[2.624963] (-) TimerEvent: {}
+[2.725670] (-) TimerEvent: {}
+[2.826446] (-) TimerEvent: {}
+[2.927150] (-) TimerEvent: {}
+[3.027823] (-) TimerEvent: {}
+[3.128531] (-) TimerEvent: {}
+[3.229239] (-) TimerEvent: {}
+[3.329950] (-) TimerEvent: {}
+[3.430731] (-) TimerEvent: {}
+[3.531442] (-) TimerEvent: {}
+[3.632148] (-) TimerEvent: {}
+[3.732848] (-) TimerEvent: {}
+[3.833548] (-) TimerEvent: {}
+[3.934268] (-) TimerEvent: {}
+[4.035026] (-) TimerEvent: {}
+[4.135760] (-) TimerEvent: {}
+[4.236497] (-) TimerEvent: {}
+[4.337217] (-) TimerEvent: {}
+[4.437944] (-) TimerEvent: {}
+[4.538757] (-) TimerEvent: {}
+[4.639470] (-) TimerEvent: {}
+[4.740192] (-) TimerEvent: {}
+[4.840924] (-) TimerEvent: {}
+[4.941693] (-) TimerEvent: {}
+[5.042516] (-) TimerEvent: {}
+[5.143231] (-) TimerEvent: {}
+[5.243947] (-) TimerEvent: {}
+[5.344664] (-) TimerEvent: {}
+[5.445380] (-) TimerEvent: {}
+[5.546098] (-) TimerEvent: {}
+[5.646809] (-) TimerEvent: {}
+[5.747498] (-) TimerEvent: {}
+[5.848293] (-) TimerEvent: {}
+[5.949389] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.952168] (-) TimerEvent: {}
+[5.954531] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:124:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator<<\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<char>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kldlidar::Points2D\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<ldlidar::PointData>\x1b[m\x1b[K\xe2\x80\x99})\n'}
+[5.956908] (ldlidar_stl_ros2) StderrLine: {'line': b'         \x1b[01;31m\x1b[Kcout << "conga" <<laser_scan_points\x1b[m\x1b[K;\n'}
+[5.959121] (ldlidar_stl_ros2) StderrLine: {'line': b'         \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.959745] (ldlidar_stl_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/8/iostream:39\x1b[m\x1b[K,\n'}
+[5.960148] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:22\x1b[m\x1b[K,\n'}
+[5.960494] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[5.960837] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[5.961160] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[5.961480] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/include/ros2_api.h:24\x1b[m\x1b[K,\n'}
+[5.961816] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:22\x1b[m\x1b[K:\n'}
+[5.962170] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:108:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.962601] (ldlidar_stl_ros2) StderrLine: {'line': b'       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(__ostream_type& (*__pf)(__ostream_type&))\n'}
+[5.962950] (ldlidar_stl_ros2) StderrLine: {'line': b'       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.963271] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:108:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kldlidar::Points2D\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<ldlidar::PointData>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&)\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<char>& (*)(std::basic_ostream<char>&)\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[5.963665] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:117:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.964125] (ldlidar_stl_ros2) StderrLine: {'line': b'       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(__ios_type& (*__pf)(__ios_type&))\n'}
+[5.964553] (ldlidar_stl_ros2) StderrLine: {'line': b'       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.964945] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:117:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kldlidar::Points2D\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<ldlidar::PointData>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&)\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ios<char>& (*)(std::basic_ios<char>&)\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[5.965329] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:127:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.965729] (ldlidar_stl_ros2) StderrLine: {'line': b'       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(ios_base& (*__pf) (ios_base&))\n'}
+[5.966079] (ldlidar_stl_ros2) StderrLine: {'line': b'       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.966511] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:127:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kldlidar::Points2D\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<ldlidar::PointData>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kstd::ios_base& (*)(std::ios_base&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.966922] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:166:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.967569] (ldlidar_stl_ros2) StderrLine: {'line': b'       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(long __n)\n'}
+[5.968014] (ldlidar_stl_ros2) StderrLine: {'line': b'       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.968386] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:166:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kldlidar::Points2D\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<ldlidar::PointData>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.968749] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:170:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.969118] (ldlidar_stl_ros2) StderrLine: {'line': b'       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(unsigned long __n)\n'}
+[5.969474] (ldlidar_stl_ros2) StderrLine: {'line': b'       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.969821] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:170:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kldlidar::Points2D\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<ldlidar::PointData>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.970172] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:174:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.970653] (ldlidar_stl_ros2) StderrLine: {'line': b'       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(bool __n)\n'}
+[5.971041] (ldlidar_stl_ros2) StderrLine: {'line': b'       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.971362] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:174:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kldlidar::Points2D\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<ldlidar::PointData>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kbool\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.971746] (ldlidar_stl_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/8/ostream:696\x1b[m\x1b[K,\n'}
+[5.972093] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/8/iostream:39\x1b[m\x1b[K,\n'}
+[5.972437] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:22\x1b[m\x1b[K,\n'}
+[5.972797] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[5.973147] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[5.973488] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[5.973826] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/include/ros2_api.h:24\x1b[m\x1b[K,\n'}
+[5.974157] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:22\x1b[m\x1b[K:\n'}
+[5.974567] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/bits/ostream.tcc:91:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.974948] (ldlidar_stl_ros2) StderrLine: {'line': b'     \x1b[01;36m\x1b[Kbasic_ostream<_CharT, _Traits>\x1b[m\x1b[K::\n'}
+[5.975293] (ldlidar_stl_ros2) StderrLine: {'line': b'     \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.976164] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/bits/ostream.tcc:91:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kldlidar::Points2D\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<ldlidar::PointData>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kshort int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.976631] (ldlidar_stl_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/8/iostream:39\x1b[m\x1b[K,\n'}
+[5.977181] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:22\x1b[m\x1b[K,\n'}
+[5.977580] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[5.977940] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[5.978288] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[5.978697] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/include/ros2_api.h:24\x1b[m\x1b[K,\n'}
+[5.979069] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:22\x1b[m\x1b[K:\n'}
+[5.979418] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:181:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.979887] (ldlidar_stl_ros2) StderrLine: {'line': b'       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(unsigned short __n)\n'}
+[5.980382] (ldlidar_stl_ros2) StderrLine: {'line': b'       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.980848] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:181:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kldlidar::Points2D\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<ldlidar::PointData>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kshort unsigned int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.981346] (ldlidar_stl_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/8/ostream:696\x1b[m\x1b[K,\n'}
+[5.981852] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/8/iostream:39\x1b[m\x1b[K,\n'}
+[5.982347] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:22\x1b[m\x1b[K,\n'}
+[5.982857] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[5.983305] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[5.983977] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[5.984511] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/include/ros2_api.h:24\x1b[m\x1b[K,\n'}
+[5.984975] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:22\x1b[m\x1b[K:\n'}
+[5.985399] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/bits/ostream.tcc:105:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.985786] (ldlidar_stl_ros2) StderrLine: {'line': b'     \x1b[01;36m\x1b[Kbasic_ostream<_CharT, _Traits>\x1b[m\x1b[K::\n'}
+[5.986133] (ldlidar_stl_ros2) StderrLine: {'line': b'     \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.986543] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/bits/ostream.tcc:105:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kldlidar::Points2D\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<ldlidar::PointData>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.986968] (ldlidar_stl_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/8/iostream:39\x1b[m\x1b[K,\n'}
+[5.987315] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:22\x1b[m\x1b[K,\n'}
+[5.987682] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[5.988037] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[5.988387] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[5.988742] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/include/ros2_api.h:24\x1b[m\x1b[K,\n'}
+[5.989100] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:22\x1b[m\x1b[K:\n'}
+[5.989431] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:192:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.989814] (ldlidar_stl_ros2) StderrLine: {'line': b'       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(unsigned int __n)\n'}
+[5.990150] (ldlidar_stl_ros2) StderrLine: {'line': b'       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.990562] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:192:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kldlidar::Points2D\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<ldlidar::PointData>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kunsigned int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.990964] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:201:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.991321] (ldlidar_stl_ros2) StderrLine: {'line': b'       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(long long __n)\n'}
+[5.991673] (ldlidar_stl_ros2) StderrLine: {'line': b'       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.992297] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:201:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kldlidar::Points2D\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<ldlidar::PointData>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Klong long int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.992694] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:205:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.993150] (ldlidar_stl_ros2) StderrLine: {'line': b'       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(unsigned long long __n)\n'}
+[5.993512] (ldlidar_stl_ros2) StderrLine: {'line': b'       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.993865] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:205:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kldlidar::Points2D\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<ldlidar::PointData>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Klong long unsigned int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.994221] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:220:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.994700] (ldlidar_stl_ros2) StderrLine: {'line': b'       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(double __f)\n'}
+[5.995068] (ldlidar_stl_ros2) StderrLine: {'line': b'       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.995398] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:220:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kldlidar::Points2D\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<ldlidar::PointData>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.995800] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:224:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.996197] (ldlidar_stl_ros2) StderrLine: {'line': b'       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(float __f)\n'}
+[5.996564] (ldlidar_stl_ros2) StderrLine: {'line': b'       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.996930] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:224:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kldlidar::Points2D\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<ldlidar::PointData>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.997333] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:232:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.997740] (ldlidar_stl_ros2) StderrLine: {'line': b'       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(long double __f)\n'}
+[5.998110] (ldlidar_stl_ros2) StderrLine: {'line': b'       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.998525] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:232:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kldlidar::Points2D\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<ldlidar::PointData>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Klong double\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.998942] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:245:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.999336] (ldlidar_stl_ros2) StderrLine: {'line': b'       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(const void* __p)\n'}
+[5.999683] (ldlidar_stl_ros2) StderrLine: {'line': b'       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.000338] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:245:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kldlidar::Points2D\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<ldlidar::PointData>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst void*\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.000868] (ldlidar_stl_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/8/ostream:696\x1b[m\x1b[K,\n'}
+[6.001299] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/8/iostream:39\x1b[m\x1b[K,\n'}
+[6.001699] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:22\x1b[m\x1b[K,\n'}
+[6.002065] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[6.002471] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[6.002882] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[6.003238] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/include/ros2_api.h:24\x1b[m\x1b[K,\n'}
+[6.003608] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:22\x1b[m\x1b[K:\n'}
+[6.003957] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/bits/ostream.tcc:119:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.004335] (ldlidar_stl_ros2) StderrLine: {'line': b'     \x1b[01;36m\x1b[Kbasic_ostream<_CharT, _Traits>\x1b[m\x1b[K::\n'}
+[6.004684] (ldlidar_stl_ros2) StderrLine: {'line': b'     \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.005017] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/bits/ostream.tcc:119:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kldlidar::Points2D\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<ldlidar::PointData>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<char>::__streambuf_type*\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_streambuf<char>*\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[6.005374] (ldlidar_stl_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/8/string:52\x1b[m\x1b[K,\n'}
+[6.005703] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/8/stdexcept:39\x1b[m\x1b[K,\n'}
+[6.006029] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/8/array:39\x1b[m\x1b[K,\n'}
+[6.006346] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/8/tuple:39\x1b[m\x1b[K,\n'}
+[6.006757] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/8/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[6.007102] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/8/memory:80\x1b[m\x1b[K,\n'}
+[6.007440] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144\x1b[m\x1b[K,\n'}
+[6.007768] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/include/ros2_api.h:24\x1b[m\x1b[K,\n'}
+[6.008283] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:22\x1b[m\x1b[K:\n'}
+[6.008720] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/bits/basic_string.h:6323:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.009096] (ldlidar_stl_ros2) StderrLine: {'line': b'     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(basic_ostream<_CharT, _Traits>& __os,\n'}
+[6.009431] (ldlidar_stl_ros2) StderrLine: {'line': b'     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.009769] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/bits/basic_string.h:6323:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.010188] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:124:27:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kldlidar::Points2D\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<ldlidar::PointData>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Alloc>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.010663] (ldlidar_stl_ros2) StderrLine: {'line': b'         cout << "conga" <<\x1b[01;36m\x1b[Klaser_scan_points\x1b[m\x1b[K;\n'}
+[6.011028] (ldlidar_stl_ros2) StderrLine: {'line': b'                           \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.011370] (ldlidar_stl_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/8/memory:81\x1b[m\x1b[K,\n'}
+[6.011707] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144\x1b[m\x1b[K,\n'}
+[6.012042] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/include/ros2_api.h:24\x1b[m\x1b[K,\n'}
+[6.012397] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:22\x1b[m\x1b[K:\n'}
+[6.012738] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/bits/shared_ptr.h:66:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Ch, class _Tr, class _Tp, __gnu_cxx::_Lock_policy _Lp> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::__shared_ptr<_Tp, _Lp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.013121] (ldlidar_stl_ros2) StderrLine: {'line': b'     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(std::basic_ostream<_Ch, _Tr>& __os,\n'}
+[6.013470] (ldlidar_stl_ros2) StderrLine: {'line': b'     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.013809] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/bits/shared_ptr.h:66:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.014140] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:124:27:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kldlidar::Points2D\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<ldlidar::PointData>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::__shared_ptr<_Tp, _Lp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.014577] (ldlidar_stl_ros2) StderrLine: {'line': b'         cout << "conga" <<\x1b[01;36m\x1b[Klaser_scan_points\x1b[m\x1b[K;\n'}
+[6.014959] (ldlidar_stl_ros2) StderrLine: {'line': b'                           \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.015303] (ldlidar_stl_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/8/mutex:42\x1b[m\x1b[K,\n'}
+[6.015657] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/8/future:38\x1b[m\x1b[K,\n'}
+[6.016014] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[6.016595] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[6.016999] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/include/ros2_api.h:24\x1b[m\x1b[K,\n'}
+[6.017424] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:22\x1b[m\x1b[K:\n'}
+[6.017798] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/system_error:217:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::error_code&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.018221] (ldlidar_stl_ros2) StderrLine: {'line': b'     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)\n'}
+[6.018667] (ldlidar_stl_ros2) StderrLine: {'line': b'     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.019050] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/system_error:217:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.019413] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:124:27:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[Klaser_scan_points\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kldlidar::Points2D\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<ldlidar::PointData>\x1b[m\x1b[K\xe2\x80\x99}) to type \xe2\x80\x98\x1b[01m\x1b[Kconst std::error_code&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.019777] (ldlidar_stl_ros2) StderrLine: {'line': b'         cout << "conga" <<\x1b[01;36m\x1b[Klaser_scan_points\x1b[m\x1b[K;\n'}
+[6.020116] (ldlidar_stl_ros2) StderrLine: {'line': b'                           \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.020445] (ldlidar_stl_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/8/future:39\x1b[m\x1b[K,\n'}
+[6.020777] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[6.021108] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[6.021432] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/include/ros2_api.h:24\x1b[m\x1b[K,\n'}
+[6.021752] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:22\x1b[m\x1b[K:\n'}
+[6.022077] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/thread:323:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::thread::id)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.022453] (ldlidar_stl_ros2) StderrLine: {'line': b'     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(basic_ostream<_CharT, _Traits>& __out, thread::id __id)\n'}
+[6.022824] (ldlidar_stl_ros2) StderrLine: {'line': b'     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.023160] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/thread:323:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.023495] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:124:27:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[Klaser_scan_points\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kldlidar::Points2D\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<ldlidar::PointData>\x1b[m\x1b[K\xe2\x80\x99}) to type \xe2\x80\x98\x1b[01m\x1b[Kstd::thread::id\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.023838] (ldlidar_stl_ros2) StderrLine: {'line': b'         cout << "conga" <<\x1b[01;36m\x1b[Klaser_scan_points\x1b[m\x1b[K;\n'}
+[6.024168] (ldlidar_stl_ros2) StderrLine: {'line': b'                           \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.024716] (ldlidar_stl_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/8/iostream:39\x1b[m\x1b[K,\n'}
+[6.025099] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:22\x1b[m\x1b[K,\n'}
+[6.025469] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[6.025843] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[6.026183] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[6.026606] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/include/ros2_api.h:24\x1b[m\x1b[K,\n'}
+[6.026998] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:22\x1b[m\x1b[K:\n'}
+[6.027345] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:500:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.027710] (ldlidar_stl_ros2) StderrLine: {'line': b'     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)\n'}
+[6.028059] (ldlidar_stl_ros2) StderrLine: {'line': b'     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.028405] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:500:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.028735] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:124:27:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  deduced conflicting types for parameter \xe2\x80\x98\x1b[01m\x1b[K_CharT\x1b[m\x1b[K\xe2\x80\x99 (\xe2\x80\x98\x1b[01m\x1b[Kchar\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<ldlidar::PointData>\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[6.029090] (ldlidar_stl_ros2) StderrLine: {'line': b'         cout << "conga" <<\x1b[01;36m\x1b[Klaser_scan_points\x1b[m\x1b[K;\n'}
+[6.029445] (ldlidar_stl_ros2) StderrLine: {'line': b'                           \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.029784] (ldlidar_stl_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/8/iostream:39\x1b[m\x1b[K,\n'}
+[6.030115] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:22\x1b[m\x1b[K,\n'}
+[6.030509] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[6.030893] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[6.031233] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[6.031591] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/include/ros2_api.h:24\x1b[m\x1b[K,\n'}
+[6.031955] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:22\x1b[m\x1b[K:\n'}
+[6.032303] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:505:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.032878] (ldlidar_stl_ros2) StderrLine: {'line': b'     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(basic_ostream<_CharT, _Traits>& __out, char __c)\n'}
+[6.033305] (ldlidar_stl_ros2) StderrLine: {'line': b'     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.033681] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:505:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.034104] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:124:27:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[Klaser_scan_points\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kldlidar::Points2D\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<ldlidar::PointData>\x1b[m\x1b[K\xe2\x80\x99}) to type \xe2\x80\x98\x1b[01m\x1b[Kchar\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.034550] (ldlidar_stl_ros2) StderrLine: {'line': b'         cout << "conga" <<\x1b[01;36m\x1b[Klaser_scan_points\x1b[m\x1b[K;\n'}
+[6.034924] (ldlidar_stl_ros2) StderrLine: {'line': b'                           \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.035261] (ldlidar_stl_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/8/iostream:39\x1b[m\x1b[K,\n'}
+[6.035596] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:22\x1b[m\x1b[K,\n'}
+[6.035939] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[6.036266] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[6.036614] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[6.036970] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/include/ros2_api.h:24\x1b[m\x1b[K,\n'}
+[6.037325] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:22\x1b[m\x1b[K:\n'}
+[6.037681] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:511:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.038051] (ldlidar_stl_ros2) StderrLine: {'line': b'     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(basic_ostream<char, _Traits>& __out, char __c)\n'}
+[6.038458] (ldlidar_stl_ros2) StderrLine: {'line': b'     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.038841] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:511:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.039174] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:124:27:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[Klaser_scan_points\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kldlidar::Points2D\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<ldlidar::PointData>\x1b[m\x1b[K\xe2\x80\x99}) to type \xe2\x80\x98\x1b[01m\x1b[Kchar\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.039545] (ldlidar_stl_ros2) StderrLine: {'line': b'         cout << "conga" <<\x1b[01;36m\x1b[Klaser_scan_points\x1b[m\x1b[K;\n'}
+[6.039947] (ldlidar_stl_ros2) StderrLine: {'line': b'                           \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.040314] (ldlidar_stl_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/8/iostream:39\x1b[m\x1b[K,\n'}
+[6.040661] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:22\x1b[m\x1b[K,\n'}
+[6.041269] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[6.041644] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[6.042049] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[6.042471] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/include/ros2_api.h:24\x1b[m\x1b[K,\n'}
+[6.042886] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:22\x1b[m\x1b[K:\n'}
+[6.043243] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:517:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.043597] (ldlidar_stl_ros2) StderrLine: {'line': b'     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(basic_ostream<char, _Traits>& __out, signed char __c)\n'}
+[6.043940] (ldlidar_stl_ros2) StderrLine: {'line': b'     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.044295] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:517:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.044638] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:124:27:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[Klaser_scan_points\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kldlidar::Points2D\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<ldlidar::PointData>\x1b[m\x1b[K\xe2\x80\x99}) to type \xe2\x80\x98\x1b[01m\x1b[Ksigned char\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.044982] (ldlidar_stl_ros2) StderrLine: {'line': b'         cout << "conga" <<\x1b[01;36m\x1b[Klaser_scan_points\x1b[m\x1b[K;\n'}
+[6.045334] (ldlidar_stl_ros2) StderrLine: {'line': b'                           \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.045656] (ldlidar_stl_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/8/iostream:39\x1b[m\x1b[K,\n'}
+[6.045970] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:22\x1b[m\x1b[K,\n'}
+[6.046309] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[6.046757] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[6.047110] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[6.047448] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/include/ros2_api.h:24\x1b[m\x1b[K,\n'}
+[6.047784] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:22\x1b[m\x1b[K:\n'}
+[6.048116] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:522:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.048458] (ldlidar_stl_ros2) StderrLine: {'line': b'     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(basic_ostream<char, _Traits>& __out, unsigned char __c)\n'}
+[6.048825] (ldlidar_stl_ros2) StderrLine: {'line': b'     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.049501] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:522:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.049898] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:124:27:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[Klaser_scan_points\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kldlidar::Points2D\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<ldlidar::PointData>\x1b[m\x1b[K\xe2\x80\x99}) to type \xe2\x80\x98\x1b[01m\x1b[Kunsigned char\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.050344] (ldlidar_stl_ros2) StderrLine: {'line': b'         cout << "conga" <<\x1b[01;36m\x1b[Klaser_scan_points\x1b[m\x1b[K;\n'}
+[6.050789] (ldlidar_stl_ros2) StderrLine: {'line': b'                           \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.051143] (ldlidar_stl_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/8/iostream:39\x1b[m\x1b[K,\n'}
+[6.051490] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:22\x1b[m\x1b[K,\n'}
+[6.051861] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[6.052183] (-) TimerEvent: {}
+[6.052553] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[6.052986] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[6.053343] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/include/ros2_api.h:24\x1b[m\x1b[K,\n'}
+[6.053678] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:22\x1b[m\x1b[K:\n'}
+[6.054009] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:542:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.054384] (ldlidar_stl_ros2) StderrLine: {'line': b'     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)\n'}
+[6.054814] (ldlidar_stl_ros2) StderrLine: {'line': b'     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.055181] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:542:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.055547] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:124:27:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst _CharT*\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<ldlidar::PointData>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.055914] (ldlidar_stl_ros2) StderrLine: {'line': b'         cout << "conga" <<\x1b[01;36m\x1b[Klaser_scan_points\x1b[m\x1b[K;\n'}
+[6.056261] (ldlidar_stl_ros2) StderrLine: {'line': b'                           \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.056604] (ldlidar_stl_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/8/ostream:696\x1b[m\x1b[K,\n'}
+[6.056960] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/8/iostream:39\x1b[m\x1b[K,\n'}
+[6.057569] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:22\x1b[m\x1b[K,\n'}
+[6.057939] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[6.058289] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[6.058737] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[6.059125] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/include/ros2_api.h:24\x1b[m\x1b[K,\n'}
+[6.059465] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:22\x1b[m\x1b[K:\n'}
+[6.059795] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/bits/ostream.tcc:321:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.060134] (ldlidar_stl_ros2) StderrLine: {'line': b'     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)\n'}
+[6.060474] (ldlidar_stl_ros2) StderrLine: {'line': b'     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.060823] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/bits/ostream.tcc:321:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.061185] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:124:27:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[Klaser_scan_points\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kldlidar::Points2D\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<ldlidar::PointData>\x1b[m\x1b[K\xe2\x80\x99}) to type \xe2\x80\x98\x1b[01m\x1b[Kconst char*\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.061553] (ldlidar_stl_ros2) StderrLine: {'line': b'         cout << "conga" <<\x1b[01;36m\x1b[Klaser_scan_points\x1b[m\x1b[K;\n'}
+[6.061910] (ldlidar_stl_ros2) StderrLine: {'line': b'                           \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.062256] (ldlidar_stl_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/8/iostream:39\x1b[m\x1b[K,\n'}
+[6.062692] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:22\x1b[m\x1b[K,\n'}
+[6.063111] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[6.063528] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[6.063924] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[6.064282] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/include/ros2_api.h:24\x1b[m\x1b[K,\n'}
+[6.064621] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:22\x1b[m\x1b[K:\n'}
+[6.064951] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:559:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.065539] (ldlidar_stl_ros2) StderrLine: {'line': b'     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(basic_ostream<char, _Traits>& __out, const char* __s)\n'}
+[6.065925] (ldlidar_stl_ros2) StderrLine: {'line': b'     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.066272] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:559:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.066760] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:124:27:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[Klaser_scan_points\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kldlidar::Points2D\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<ldlidar::PointData>\x1b[m\x1b[K\xe2\x80\x99}) to type \xe2\x80\x98\x1b[01m\x1b[Kconst char*\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.067171] (ldlidar_stl_ros2) StderrLine: {'line': b'         cout << "conga" <<\x1b[01;36m\x1b[Klaser_scan_points\x1b[m\x1b[K;\n'}
+[6.067554] (ldlidar_stl_ros2) StderrLine: {'line': b'                           \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.067895] (ldlidar_stl_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/8/iostream:39\x1b[m\x1b[K,\n'}
+[6.068225] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:22\x1b[m\x1b[K,\n'}
+[6.068550] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[6.068871] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[6.069190] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[6.069517] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/include/ros2_api.h:24\x1b[m\x1b[K,\n'}
+[6.069867] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:22\x1b[m\x1b[K:\n'}
+[6.070221] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:572:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.070643] (ldlidar_stl_ros2) StderrLine: {'line': b'     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(basic_ostream<char, _Traits>& __out, const signed char* __s)\n'}
+[6.071007] (ldlidar_stl_ros2) StderrLine: {'line': b'     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.071348] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:572:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.071697] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:124:27:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[Klaser_scan_points\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kldlidar::Points2D\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<ldlidar::PointData>\x1b[m\x1b[K\xe2\x80\x99}) to type \xe2\x80\x98\x1b[01m\x1b[Kconst signed char*\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.072068] (ldlidar_stl_ros2) StderrLine: {'line': b'         cout << "conga" <<\x1b[01;36m\x1b[Klaser_scan_points\x1b[m\x1b[K;\n'}
+[6.072405] (ldlidar_stl_ros2) StderrLine: {'line': b'                           \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.072743] (ldlidar_stl_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/8/iostream:39\x1b[m\x1b[K,\n'}
+[6.073067] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:22\x1b[m\x1b[K,\n'}
+[6.073594] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[6.074002] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[6.074346] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[6.074779] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/include/ros2_api.h:24\x1b[m\x1b[K,\n'}
+[6.075202] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:22\x1b[m\x1b[K:\n'}
+[6.075577] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:577:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.075935] (ldlidar_stl_ros2) StderrLine: {'line': b'     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)\n'}
+[6.076285] (ldlidar_stl_ros2) StderrLine: {'line': b'     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.076624] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:577:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.076955] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:124:27:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[Klaser_scan_points\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kldlidar::Points2D\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<ldlidar::PointData>\x1b[m\x1b[K\xe2\x80\x99}) to type \xe2\x80\x98\x1b[01m\x1b[Kconst unsigned char*\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.077305] (ldlidar_stl_ros2) StderrLine: {'line': b'         cout << "conga" <<\x1b[01;36m\x1b[Klaser_scan_points\x1b[m\x1b[K;\n'}
+[6.077642] (ldlidar_stl_ros2) StderrLine: {'line': b'                           \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.077998] (ldlidar_stl_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/8/iostream:39\x1b[m\x1b[K,\n'}
+[6.078348] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:22\x1b[m\x1b[K,\n'}
+[6.078794] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[6.079251] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[6.079732] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[6.080215] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/include/ros2_api.h:24\x1b[m\x1b[K,\n'}
+[6.080684] (ldlidar_stl_ros2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:22\x1b[m\x1b[K:\n'}
+[6.081226] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:685:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Ostream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_ostream<_Ostream>, std::__is_insertable<typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type, const _Tp&, void> >::value, typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type>::type std::operator<<(_Ostream&&, const _Tp&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.081989] (ldlidar_stl_ros2) StderrLine: {'line': b'     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<<(_Ostream&& __os, const _Tp& __x)\n'}
+[6.082561] (ldlidar_stl_ros2) StderrLine: {'line': b'     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.083066] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:685:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.083559] (ldlidar_stl_ros2) StderrLine: {'line': b'/usr/include/c++/8/ostream: In substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Ostream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_ostream<_Ostream>, std::__is_insertable<typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type, const _Tp&, void> >::value, typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type>::type std::operator<<(_Ostream&&, const _Tp&) [with _Ostream = std::basic_ostream<char>&; _Tp = std::vector<ldlidar::PointData>]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.084125] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:124:27:\x1b[m\x1b[K   required from here\n'}
+[6.084579] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/8/ostream:685:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, std::basic_ostream<char>&>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.152380] (-) TimerEvent: {}
+[6.253019] (-) TimerEvent: {}
+[6.353664] (-) TimerEvent: {}
+[6.454311] (-) TimerEvent: {}
+[6.555021] (-) TimerEvent: {}
+[6.655671] (-) TimerEvent: {}
+[6.756341] (-) TimerEvent: {}
+[6.857087] (-) TimerEvent: {}
+[6.957845] (-) TimerEvent: {}
+[7.058514] (-) TimerEvent: {}
+[7.159202] (-) TimerEvent: {}
+[7.259901] (-) TimerEvent: {}
+[7.360640] (-) TimerEvent: {}
+[7.461487] (-) TimerEvent: {}
+[7.562300] (-) TimerEvent: {}
+[7.663055] (-) TimerEvent: {}
+[7.763758] (-) TimerEvent: {}
+[7.864470] (-) TimerEvent: {}
+[7.965171] (-) TimerEvent: {}
+[8.065871] (-) TimerEvent: {}
+[8.166566] (-) TimerEvent: {}
+[8.267265] (-) TimerEvent: {}
+[8.367993] (-) TimerEvent: {}
+[8.468645] (-) TimerEvent: {}
+[8.569347] (-) TimerEvent: {}
+[8.670060] (-) TimerEvent: {}
+[8.770868] (-) TimerEvent: {}
+[8.871567] (-) TimerEvent: {}
+[8.972280] (-) TimerEvent: {}
+[9.073031] (-) TimerEvent: {}
+[9.125718] (ldlidar_stl_ros2) StderrLine: {'line': b'make[2]: *** [CMakeFiles/ldlidar_stl_ros2_node.dir/build.make:63: CMakeFiles/ldlidar_stl_ros2_node.dir/src/demo.cpp.o] Error 1\n'}
+[9.126806] (ldlidar_stl_ros2) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/ldlidar_stl_ros2_node.dir/all] Error 2\n'}
+[9.127474] (ldlidar_stl_ros2) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[9.133895] (ldlidar_stl_ros2) CommandEnded: {'returncode': 2}
+[9.173351] (-) TimerEvent: {}
+[9.274177] (-) TimerEvent: {}
+[9.376398] (-) TimerEvent: {}
+[9.453715] (ldlidar_stl_ros2) JobEnded: {'identifier': 'ldlidar_stl_ros2', 'rc': 2}
+[9.474019] (-) EventReactorShutdown: {}

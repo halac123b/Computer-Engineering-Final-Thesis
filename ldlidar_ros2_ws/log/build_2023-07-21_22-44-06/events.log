@@ -1,0 +1,192 @@
+[0.000000] (-) TimerEvent: {}
+[0.000463] (ldlidar_stl_ros2) JobQueued: {'identifier': 'ldlidar_stl_ros2', 'dependencies': OrderedDict()}
+[0.003674] (ldlidar_stl_ros2) JobStarted: {'identifier': 'ldlidar_stl_ros2'}
+[0.096697] (ldlidar_stl_ros2) JobProgress: {'identifier': 'ldlidar_stl_ros2', 'progress': 'cmake'}
+[0.098954] (-) TimerEvent: {}
+[0.100880] (ldlidar_stl_ros2) JobProgress: {'identifier': 'ldlidar_stl_ros2', 'progress': 'build'}
+[0.104072] (ldlidar_stl_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hnt/ldlidar_ros2_ws/build/ldlidar_stl_ros2', '--', '-j4', '-l4'], 'cwd': '/home/hnt/ldlidar_ros2_ws/build/ldlidar_stl_ros2', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hnt'), ('LC_TIME', 'vi_VN'), ('SSH_AGENT_PID', '5599'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/hnt'), ('OLDPWD', '/home/hnt'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('MANAGERPID', '5318'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/hnt/ldlidar_ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'hnt'), ('JOURNAL_STREAM', '8:43545'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'hnt'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/hnt/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/hnt-desktop:@/tmp/.ICE-unix/5636,unix/hnt-desktop:/tmp/.ICE-unix/5636'), ('INVOCATION_ID', '024e2f4cafa64a228f81a8f9f4edca5d'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/733daea8_5291_47f5_a882_efe875d0c6c7'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'vi_VN'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.171'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'vi_VN'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hnt/ldlidar_ros2_ws/build/ldlidar_stl_ros2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2:/opt/ros/foxy')]), 'shell': False}
+[0.199313] (-) TimerEvent: {}
+[0.300656] (-) TimerEvent: {}
+[0.401944] (-) TimerEvent: {}
+[0.502642] (-) TimerEvent: {}
+[0.603454] (-) TimerEvent: {}
+[0.623923] (ldlidar_stl_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ldlidar_stl_ros2_node\x1b[0m\n'}
+[0.703616] (-) TimerEvent: {}
+[0.769814] (ldlidar_stl_ros2) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/ldlidar_stl_ros2_node.dir/src/demo.cpp.o\x1b[0m\n'}
+[0.803938] (-) TimerEvent: {}
+[0.904625] (-) TimerEvent: {}
+[1.005675] (-) TimerEvent: {}
+[1.106963] (-) TimerEvent: {}
+[1.208112] (-) TimerEvent: {}
+[1.309788] (-) TimerEvent: {}
+[1.411361] (-) TimerEvent: {}
+[1.514033] (-) TimerEvent: {}
+[1.616588] (-) TimerEvent: {}
+[1.717409] (-) TimerEvent: {}
+[1.818285] (-) TimerEvent: {}
+[1.919039] (-) TimerEvent: {}
+[2.019773] (-) TimerEvent: {}
+[2.120496] (-) TimerEvent: {}
+[2.221306] (-) TimerEvent: {}
+[2.322035] (-) TimerEvent: {}
+[2.422800] (-) TimerEvent: {}
+[2.523601] (-) TimerEvent: {}
+[2.624349] (-) TimerEvent: {}
+[2.725168] (-) TimerEvent: {}
+[2.825855] (-) TimerEvent: {}
+[2.926525] (-) TimerEvent: {}
+[3.027272] (-) TimerEvent: {}
+[3.127968] (-) TimerEvent: {}
+[3.228613] (-) TimerEvent: {}
+[3.329319] (-) TimerEvent: {}
+[3.429956] (-) TimerEvent: {}
+[3.530657] (-) TimerEvent: {}
+[3.631376] (-) TimerEvent: {}
+[3.732005] (-) TimerEvent: {}
+[3.832710] (-) TimerEvent: {}
+[3.933412] (-) TimerEvent: {}
+[4.034128] (-) TimerEvent: {}
+[4.134841] (-) TimerEvent: {}
+[4.235542] (-) TimerEvent: {}
+[4.336224] (-) TimerEvent: {}
+[4.436876] (-) TimerEvent: {}
+[4.537521] (-) TimerEvent: {}
+[4.638280] (-) TimerEvent: {}
+[4.739273] (-) TimerEvent: {}
+[4.839993] (-) TimerEvent: {}
+[4.940703] (-) TimerEvent: {}
+[5.041355] (-) TimerEvent: {}
+[5.142066] (-) TimerEvent: {}
+[5.242786] (-) TimerEvent: {}
+[5.343562] (-) TimerEvent: {}
+[5.444333] (-) TimerEvent: {}
+[5.545052] (-) TimerEvent: {}
+[5.645778] (-) TimerEvent: {}
+[5.746458] (-) TimerEvent: {}
+[5.847238] (-) TimerEvent: {}
+[5.947928] (-) TimerEvent: {}
+[6.048606] (-) TimerEvent: {}
+[6.149366] (-) TimerEvent: {}
+[6.250027] (-) TimerEvent: {}
+[6.350858] (-) TimerEvent: {}
+[6.451835] (-) TimerEvent: {}
+[6.552593] (-) TimerEvent: {}
+[6.653309] (-) TimerEvent: {}
+[6.754001] (-) TimerEvent: {}
+[6.854686] (-) TimerEvent: {}
+[6.955465] (-) TimerEvent: {}
+[7.056146] (-) TimerEvent: {}
+[7.156872] (-) TimerEvent: {}
+[7.257519] (-) TimerEvent: {}
+[7.358225] (-) TimerEvent: {}
+[7.458997] (-) TimerEvent: {}
+[7.559884] (-) TimerEvent: {}
+[7.660605] (-) TimerEvent: {}
+[7.761313] (-) TimerEvent: {}
+[7.862109] (-) TimerEvent: {}
+[7.963020] (-) TimerEvent: {}
+[8.063866] (-) TimerEvent: {}
+[8.164596] (-) TimerEvent: {}
+[8.265331] (-) TimerEvent: {}
+[8.366041] (-) TimerEvent: {}
+[8.466738] (-) TimerEvent: {}
+[8.567509] (-) TimerEvent: {}
+[8.668201] (-) TimerEvent: {}
+[8.768898] (-) TimerEvent: {}
+[8.869584] (-) TimerEvent: {}
+[8.970278] (-) TimerEvent: {}
+[9.071015] (-) TimerEvent: {}
+[9.171809] (-) TimerEvent: {}
+[9.272485] (-) TimerEvent: {}
+[9.373193] (-) TimerEvent: {}
+[9.473918] (-) TimerEvent: {}
+[9.574616] (-) TimerEvent: {}
+[9.675375] (-) TimerEvent: {}
+[9.776126] (-) TimerEvent: {}
+[9.876853] (-) TimerEvent: {}
+[9.977583] (-) TimerEvent: {}
+[10.078262] (-) TimerEvent: {}
+[10.178928] (-) TimerEvent: {}
+[10.279651] (-) TimerEvent: {}
+[10.380298] (-) TimerEvent: {}
+[10.480992] (-) TimerEvent: {}
+[10.581633] (-) TimerEvent: {}
+[10.682337] (-) TimerEvent: {}
+[10.783083] (-) TimerEvent: {}
+[10.883893] (-) TimerEvent: {}
+[10.984557] (-) TimerEvent: {}
+[11.085252] (-) TimerEvent: {}
+[11.185891] (-) TimerEvent: {}
+[11.286703] (-) TimerEvent: {}
+[11.387404] (-) TimerEvent: {}
+[11.488027] (-) TimerEvent: {}
+[11.588662] (-) TimerEvent: {}
+[11.689293] (-) TimerEvent: {}
+[11.789996] (-) TimerEvent: {}
+[11.890688] (-) TimerEvent: {}
+[11.991388] (-) TimerEvent: {}
+[12.092071] (-) TimerEvent: {}
+[12.192760] (-) TimerEvent: {}
+[12.293572] (-) TimerEvent: {}
+[12.394649] (-) TimerEvent: {}
+[12.495484] (-) TimerEvent: {}
+[12.596180] (-) TimerEvent: {}
+[12.696846] (-) TimerEvent: {}
+[12.797526] (-) TimerEvent: {}
+[12.898209] (-) TimerEvent: {}
+[12.998847] (-) TimerEvent: {}
+[13.099786] (-) TimerEvent: {}
+[13.200557] (-) TimerEvent: {}
+[13.301310] (-) TimerEvent: {}
+[13.401939] (-) TimerEvent: {}
+[13.449311] (ldlidar_stl_ros2) StdoutLine: {'line': b'[ 25%] \x1b[32m\x1b[1mLinking CXX executable ldlidar_stl_ros2_node\x1b[0m\n'}
+[13.502100] (-) TimerEvent: {}
+[13.602778] (-) TimerEvent: {}
+[13.703522] (-) TimerEvent: {}
+[13.804175] (-) TimerEvent: {}
+[13.904807] (-) TimerEvent: {}
+[14.005552] (-) TimerEvent: {}
+[14.106349] (-) TimerEvent: {}
+[14.206996] (-) TimerEvent: {}
+[14.307829] (-) TimerEvent: {}
+[14.408816] (-) TimerEvent: {}
+[14.489902] (ldlidar_stl_ros2) StdoutLine: {'line': b'[100%] Built target ldlidar_stl_ros2_node\n'}
+[14.509041] (-) TimerEvent: {}
+[14.530930] (ldlidar_stl_ros2) CommandEnded: {'returncode': 0}
+[14.609282] (-) TimerEvent: {}
+[14.652736] (ldlidar_stl_ros2) JobProgress: {'identifier': 'ldlidar_stl_ros2', 'progress': 'install'}
+[14.695826] (ldlidar_stl_ros2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/hnt/ldlidar_ros2_ws/build/ldlidar_stl_ros2'], 'cwd': '/home/hnt/ldlidar_ros2_ws/build/ldlidar_stl_ros2', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hnt'), ('LC_TIME', 'vi_VN'), ('SSH_AGENT_PID', '5599'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/hnt'), ('OLDPWD', '/home/hnt'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('MANAGERPID', '5318'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/hnt/ldlidar_ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'hnt'), ('JOURNAL_STREAM', '8:43545'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'hnt'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/hnt/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/hnt-desktop:@/tmp/.ICE-unix/5636,unix/hnt-desktop:/tmp/.ICE-unix/5636'), ('INVOCATION_ID', '024e2f4cafa64a228f81a8f9f4edca5d'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/733daea8_5291_47f5_a882_efe875d0c6c7'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'vi_VN'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.171'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'vi_VN'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hnt/ldlidar_ros2_ws/build/ldlidar_stl_ros2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2:/opt/ros/foxy')]), 'shell': False}
+[14.709471] (-) TimerEvent: {}
+[14.735204] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[14.746407] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Installing: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/lib/ldlidar_stl_ros2/ldlidar_stl_ros2_node\n'}
+[14.752063] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Set runtime path of "/home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/lib/ldlidar_stl_ros2/ldlidar_stl_ros2_node" to ""\n'}
+[14.752935] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch\n'}
+[14.753798] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch/stl27l.launch.py\n'}
+[14.754480] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch/ld19.launch.py\n'}
+[14.754947] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch/viewer_ld19.launch.py\n'}
+[14.755536] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch/viewer_ld06.launch.py\n'}
+[14.755958] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch/ld06.launch.py\n'}
+[14.756422] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch/viewer_stl27l.launch.py\n'}
+[14.756889] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//rviz2\n'}
+[14.757469] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//rviz2/ldlidar.rviz\n'}
+[14.757907] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ament_index/resource_index/package_run_dependencies/ldlidar_stl_ros2\n'}
+[14.758356] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ament_index/resource_index/parent_prefix_path/ldlidar_stl_ros2\n'}
+[14.758771] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/environment/ament_prefix_path.sh\n'}
+[14.759202] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/environment/ament_prefix_path.dsv\n'}
+[14.759645] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/environment/path.sh\n'}
+[14.760037] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/environment/path.dsv\n'}
+[14.760390] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/local_setup.bash\n'}
+[14.760718] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/local_setup.sh\n'}
+[14.761051] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/local_setup.zsh\n'}
+[14.761378] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/local_setup.dsv\n'}
+[14.761781] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Installing: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/package.dsv\n'}
+[14.762103] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ament_index/resource_index/packages/ldlidar_stl_ros2\n'}
+[14.762532] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/cmake/ldlidar_stl_ros2Config.cmake\n'}
+[14.762926] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/cmake/ldlidar_stl_ros2Config-version.cmake\n'}
+[14.763388] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/package.xml\n'}
+[14.768711] (ldlidar_stl_ros2) CommandEnded: {'returncode': 0}
+[14.809623] (-) TimerEvent: {}
+[14.910517] (-) TimerEvent: {}
+[15.016535] (-) TimerEvent: {}
+[15.092271] (ldlidar_stl_ros2) JobEnded: {'identifier': 'ldlidar_stl_ros2', 'rc': 0}
+[15.094512] (-) EventReactorShutdown: {}

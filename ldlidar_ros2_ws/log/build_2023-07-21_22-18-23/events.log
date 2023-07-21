@@ -1,0 +1,134 @@
+[0.000000] (-) TimerEvent: {}
+[0.000508] (ldlidar_stl_ros2) JobQueued: {'identifier': 'ldlidar_stl_ros2', 'dependencies': OrderedDict()}
+[0.000659] (ldlidar_stl_ros2) JobStarted: {'identifier': 'ldlidar_stl_ros2'}
+[0.090050] (ldlidar_stl_ros2) JobProgress: {'identifier': 'ldlidar_stl_ros2', 'progress': 'cmake'}
+[0.093929] (ldlidar_stl_ros2) JobProgress: {'identifier': 'ldlidar_stl_ros2', 'progress': 'build'}
+[0.097415] (ldlidar_stl_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hnt/ldlidar_ros2_ws/build/ldlidar_stl_ros2', '--', '-j4', '-l4'], 'cwd': '/home/hnt/ldlidar_ros2_ws/build/ldlidar_stl_ros2', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hnt'), ('LC_TIME', 'vi_VN'), ('SSH_AGENT_PID', '5599'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/hnt'), ('OLDPWD', '/home/hnt'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('MANAGERPID', '5318'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/hnt/ldlidar_ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'hnt'), ('JOURNAL_STREAM', '8:43545'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'hnt'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/hnt/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/hnt-desktop:@/tmp/.ICE-unix/5636,unix/hnt-desktop:/tmp/.ICE-unix/5636'), ('INVOCATION_ID', '024e2f4cafa64a228f81a8f9f4edca5d'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/733daea8_5291_47f5_a882_efe875d0c6c7'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'vi_VN'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.171'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'vi_VN'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hnt/ldlidar_ros2_ws/build/ldlidar_stl_ros2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2:/opt/ros/foxy')]), 'shell': False}
+[0.101291] (-) TimerEvent: {}
+[0.202094] (-) TimerEvent: {}
+[0.302979] (-) TimerEvent: {}
+[0.403587] (-) TimerEvent: {}
+[0.504291] (-) TimerEvent: {}
+[0.524409] (ldlidar_stl_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ldlidar_stl_ros2_node\x1b[0m\n'}
+[0.604506] (-) TimerEvent: {}
+[0.680553] (ldlidar_stl_ros2) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/ldlidar_stl_ros2_node.dir/src/demo.cpp.o\x1b[0m\n'}
+[0.704752] (-) TimerEvent: {}
+[0.805497] (-) TimerEvent: {}
+[0.907536] (-) TimerEvent: {}
+[1.009841] (-) TimerEvent: {}
+[1.110555] (-) TimerEvent: {}
+[1.211283] (-) TimerEvent: {}
+[1.312293] (-) TimerEvent: {}
+[1.412996] (-) TimerEvent: {}
+[1.513669] (-) TimerEvent: {}
+[1.614303] (-) TimerEvent: {}
+[1.715012] (-) TimerEvent: {}
+[1.815752] (-) TimerEvent: {}
+[1.916678] (-) TimerEvent: {}
+[2.017529] (-) TimerEvent: {}
+[2.119217] (-) TimerEvent: {}
+[2.219926] (-) TimerEvent: {}
+[2.320738] (-) TimerEvent: {}
+[2.421442] (-) TimerEvent: {}
+[2.522078] (-) TimerEvent: {}
+[2.622728] (-) TimerEvent: {}
+[2.723458] (-) TimerEvent: {}
+[2.824219] (-) TimerEvent: {}
+[2.924895] (-) TimerEvent: {}
+[3.025538] (-) TimerEvent: {}
+[3.126181] (-) TimerEvent: {}
+[3.226828] (-) TimerEvent: {}
+[3.327523] (-) TimerEvent: {}
+[3.428293] (-) TimerEvent: {}
+[3.528984] (-) TimerEvent: {}
+[3.629651] (-) TimerEvent: {}
+[3.730328] (-) TimerEvent: {}
+[3.831055] (-) TimerEvent: {}
+[3.931750] (-) TimerEvent: {}
+[4.032561] (-) TimerEvent: {}
+[4.133267] (-) TimerEvent: {}
+[4.233968] (-) TimerEvent: {}
+[4.334629] (-) TimerEvent: {}
+[4.435309] (-) TimerEvent: {}
+[4.536035] (-) TimerEvent: {}
+[4.636770] (-) TimerEvent: {}
+[4.737534] (-) TimerEvent: {}
+[4.838482] (-) TimerEvent: {}
+[4.939123] (-) TimerEvent: {}
+[5.039775] (-) TimerEvent: {}
+[5.140601] (-) TimerEvent: {}
+[5.241398] (-) TimerEvent: {}
+[5.342157] (-) TimerEvent: {}
+[5.442867] (-) TimerEvent: {}
+[5.543506] (-) TimerEvent: {}
+[5.644303] (-) TimerEvent: {}
+[5.745011] (-) TimerEvent: {}
+[5.845714] (-) TimerEvent: {}
+[5.946379] (-) TimerEvent: {}
+[6.047012] (-) TimerEvent: {}
+[6.147717] (-) TimerEvent: {}
+[6.162453] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid ToLaserscanMessagePublish(ldlidar::Points2D&, double, LaserScanSetting&, rclcpp::Node::SharedPtr&, rclcpp::Publisher<sensor_msgs::msg::LaserScan_<std::allocator<void> > >::SharedPtr&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.163133] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:189:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Kelse\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.163563] (ldlidar_stl_ros2) StderrLine: {'line': b'     } \x1b[01;31m\x1b[Kelse\x1b[m\x1b[K {\n'}
+[6.163958] (ldlidar_stl_ros2) StderrLine: {'line': b'       \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[6.164470] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:176:28:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.164935] (ldlidar_stl_ros2) StderrLine: {'line': b'   if (lidar_spin_freq > 0) \x1b[01;36m\x1b[K{\x1b[m\x1b[K\n'}
+[6.165331] (ldlidar_stl_ros2) StderrLine: {'line': b'                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[6.165725] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:190:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Koutput\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.166208] (ldlidar_stl_ros2) StderrLine: {'line': b'       \x1b[01;31m\x1b[Koutput\x1b[m\x1b[K.time_increment = static_cast<float>(scan_time / (double)(beam_size - 1));\n'}
+[6.166682] (ldlidar_stl_ros2) StderrLine: {'line': b'       \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[6.167849] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:190:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Ksuggested alternative: \xe2\x80\x98\x1b[01m\x1b[Koptopt\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.168536] (ldlidar_stl_ros2) StderrLine: {'line': b'       \x1b[01;36m\x1b[Koutput\x1b[m\x1b[K.time_increment = static_cast<float>(scan_time / (double)(beam_size - 1));\n'}
+[6.168929] (ldlidar_stl_ros2) StderrLine: {'line': b'       \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[6.169511] (ldlidar_stl_ros2) StderrLine: {'line': b'       \x1b[32m\x1b[Koptopt\x1b[m\x1b[K\n'}
+[6.169981] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:192:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Koutput\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.170454] (ldlidar_stl_ros2) StderrLine: {'line': b'     \x1b[01;31m\x1b[Koutput\x1b[m\x1b[K.scan_time = scan_time;\n'}
+[6.170878] (ldlidar_stl_ros2) StderrLine: {'line': b'     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[6.173696] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:192:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Ksuggested alternative: \xe2\x80\x98\x1b[01m\x1b[Koptopt\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.174279] (ldlidar_stl_ros2) StderrLine: {'line': b'     \x1b[01;36m\x1b[Koutput\x1b[m\x1b[K.scan_time = scan_time;\n'}
+[6.174774] (ldlidar_stl_ros2) StderrLine: {'line': b'     \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[6.175259] (ldlidar_stl_ros2) StderrLine: {'line': b'     \x1b[32m\x1b[Koptopt\x1b[m\x1b[K\n'}
+[6.181981] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:\x1b[m\x1b[K At global scope:\n'}
+[6.182595] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:251:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected declaration before \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[6.183025] (ldlidar_stl_ros2) StderrLine: {'line': b' \x1b[01;31m\x1b[K}\x1b[m\x1b[K\n'}
+[6.183399] (ldlidar_stl_ros2) StderrLine: {'line': b' \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.247900] (-) TimerEvent: {}
+[6.348620] (-) TimerEvent: {}
+[6.449271] (-) TimerEvent: {}
+[6.549978] (-) TimerEvent: {}
+[6.650625] (-) TimerEvent: {}
+[6.751357] (-) TimerEvent: {}
+[6.852116] (-) TimerEvent: {}
+[6.952909] (-) TimerEvent: {}
+[7.054461] (-) TimerEvent: {}
+[7.155216] (-) TimerEvent: {}
+[7.255902] (-) TimerEvent: {}
+[7.356695] (-) TimerEvent: {}
+[7.457434] (-) TimerEvent: {}
+[7.558101] (-) TimerEvent: {}
+[7.658813] (-) TimerEvent: {}
+[7.759477] (-) TimerEvent: {}
+[7.860248] (-) TimerEvent: {}
+[7.960951] (-) TimerEvent: {}
+[8.061592] (-) TimerEvent: {}
+[8.162295] (-) TimerEvent: {}
+[8.263042] (-) TimerEvent: {}
+[8.363724] (-) TimerEvent: {}
+[8.464528] (-) TimerEvent: {}
+[8.565178] (-) TimerEvent: {}
+[8.665819] (-) TimerEvent: {}
+[8.766515] (-) TimerEvent: {}
+[8.867223] (-) TimerEvent: {}
+[8.967983] (-) TimerEvent: {}
+[9.068744] (-) TimerEvent: {}
+[9.169394] (-) TimerEvent: {}
+[9.251311] (ldlidar_stl_ros2) StderrLine: {'line': b'make[2]: *** [CMakeFiles/ldlidar_stl_ros2_node.dir/build.make:63: CMakeFiles/ldlidar_stl_ros2_node.dir/src/demo.cpp.o] Error 1\n'}
+[9.252131] (ldlidar_stl_ros2) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/ldlidar_stl_ros2_node.dir/all] Error 2\n'}
+[9.252887] (ldlidar_stl_ros2) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[9.259426] (ldlidar_stl_ros2) CommandEnded: {'returncode': 2}
+[9.270298] (-) TimerEvent: {}
+[9.372038] (-) TimerEvent: {}
+[9.475444] (-) TimerEvent: {}
+[9.567204] (ldlidar_stl_ros2) JobEnded: {'identifier': 'ldlidar_stl_ros2', 'rc': 2}
+[9.575638] (-) TimerEvent: {}
+[9.578648] (-) EventReactorShutdown: {}

@@ -1,0 +1,32 @@
+[0.099s] Invoking command in '/home/hnt/ldlidar_ros2_ws/build/ldlidar_stl_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/hnt/ldlidar_ros2_ws/build/ldlidar_stl_ros2 -- -j4 -l4
+[0.524s] [35m[1mScanning dependencies of target ldlidar_stl_ros2_node[0m
+[0.680s] [ 12%] [32mBuilding CXX object CMakeFiles/ldlidar_stl_ros2_node.dir/src/demo.cpp.o[0m
+[6.162s] [01m[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:[m[K In function ‘[01m[Kvoid ToLaserscanMessagePublish(ldlidar::Points2D&, double, LaserScanSetting&, rclcpp::Node::SharedPtr&, rclcpp::Publisher<sensor_msgs::msg::LaserScan_<std::allocator<void> > >::SharedPtr&)[m[K’:
+[6.163s] [01m[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:189:7:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ before ‘[01m[Kelse[m[K’
+[6.163s]      } [01;31m[Kelse[m[K {
+[6.164s]        [01;31m[K^~~~[m[K
+[6.164s] [01m[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:176:28:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[6.165s]    if (lidar_spin_freq > 0) [01;36m[K{[m[K
+[6.165s]                             [01;36m[K^[m[K
+[6.165s] [01m[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:190:7:[m[K [01;31m[Kerror: [m[K‘[01m[Koutput[m[K’ was not declared in this scope
+[6.166s]        [01;31m[Koutput[m[K.time_increment = static_cast<float>(scan_time / (double)(beam_size - 1));
+[6.166s]        [01;31m[K^~~~~~[m[K
+[6.168s] [01m[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:190:7:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Koptopt[m[K’
+[6.168s]        [01;36m[Koutput[m[K.time_increment = static_cast<float>(scan_time / (double)(beam_size - 1));
+[6.168s]        [01;36m[K^~~~~~[m[K
+[6.169s]        [32m[Koptopt[m[K
+[6.170s] [01m[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:192:5:[m[K [01;31m[Kerror: [m[K‘[01m[Koutput[m[K’ was not declared in this scope
+[6.170s]      [01;31m[Koutput[m[K.scan_time = scan_time;
+[6.170s]      [01;31m[K^~~~~~[m[K
+[6.173s] [01m[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:192:5:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Koptopt[m[K’
+[6.174s]      [01;36m[Koutput[m[K.scan_time = scan_time;
+[6.174s]      [01;36m[K^~~~~~[m[K
+[6.175s]      [32m[Koptopt[m[K
+[6.182s] [01m[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:[m[K At global scope:
+[6.182s] [01m[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:251:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+[6.183s]  [01;31m[K}[m[K
+[6.183s]  [01;31m[K^[m[K
+[9.251s] make[2]: *** [CMakeFiles/ldlidar_stl_ros2_node.dir/build.make:63: CMakeFiles/ldlidar_stl_ros2_node.dir/src/demo.cpp.o] Error 1
+[9.252s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/ldlidar_stl_ros2_node.dir/all] Error 2
+[9.252s] make: *** [Makefile:141: all] Error 2
+[9.260s] Invoked command in '/home/hnt/ldlidar_ros2_ws/build/ldlidar_stl_ros2' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/hnt/ldlidar_ros2_ws/build/ldlidar_stl_ros2 -- -j4 -l4

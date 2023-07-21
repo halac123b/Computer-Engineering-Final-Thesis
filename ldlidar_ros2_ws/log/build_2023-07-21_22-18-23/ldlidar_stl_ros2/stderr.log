@@ -1,0 +1,28 @@
+[01m[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:[m[K In function ‘[01m[Kvoid ToLaserscanMessagePublish(ldlidar::Points2D&, double, LaserScanSetting&, rclcpp::Node::SharedPtr&, rclcpp::Publisher<sensor_msgs::msg::LaserScan_<std::allocator<void> > >::SharedPtr&)[m[K’:
+[01m[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:189:7:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ before ‘[01m[Kelse[m[K’
+     } [01;31m[Kelse[m[K {
+       [01;31m[K^~~~[m[K
+[01m[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:176:28:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   if (lidar_spin_freq > 0) [01;36m[K{[m[K
+                            [01;36m[K^[m[K
+[01m[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:190:7:[m[K [01;31m[Kerror: [m[K‘[01m[Koutput[m[K’ was not declared in this scope
+       [01;31m[Koutput[m[K.time_increment = static_cast<float>(scan_time / (double)(beam_size - 1));
+       [01;31m[K^~~~~~[m[K
+[01m[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:190:7:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Koptopt[m[K’
+       [01;36m[Koutput[m[K.time_increment = static_cast<float>(scan_time / (double)(beam_size - 1));
+       [01;36m[K^~~~~~[m[K
+       [32m[Koptopt[m[K
+[01m[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:192:5:[m[K [01;31m[Kerror: [m[K‘[01m[Koutput[m[K’ was not declared in this scope
+     [01;31m[Koutput[m[K.scan_time = scan_time;
+     [01;31m[K^~~~~~[m[K
+[01m[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:192:5:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Koptopt[m[K’
+     [01;36m[Koutput[m[K.scan_time = scan_time;
+     [01;36m[K^~~~~~[m[K
+     [32m[Koptopt[m[K
+[01m[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:[m[K At global scope:
+[01m[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:251:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+ [01;31m[K}[m[K
+ [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/ldlidar_stl_ros2_node.dir/build.make:63: CMakeFiles/ldlidar_stl_ros2_node.dir/src/demo.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/ldlidar_stl_ros2_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

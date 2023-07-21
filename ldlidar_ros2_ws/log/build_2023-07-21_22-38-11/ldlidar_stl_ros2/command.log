@@ -1,0 +1,2 @@
+Invoking command in '/home/hnt/ldlidar_ros2_ws/build/ldlidar_stl_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/hnt/ldlidar_ros2_ws/build/ldlidar_stl_ros2 -- -j4 -l4
+Invoked command in '/home/hnt/ldlidar_ros2_ws/build/ldlidar_stl_ros2' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/hnt/ldlidar_ros2_ws/build/ldlidar_stl_ros2 -- -j4 -l4

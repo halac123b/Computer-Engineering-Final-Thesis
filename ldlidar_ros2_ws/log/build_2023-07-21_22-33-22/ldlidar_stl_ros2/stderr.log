@@ -1,0 +1,11 @@
+[01m[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:124:27:[m[K [01;31m[Kerror: [m[K‘[01m[Klaser_scan_point[m[K’ was not declared in this scope
+         cout << "conga" <<[01;31m[Klaser_scan_point[m[K.x;
+                           [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:124:27:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Klaser_scan_points[m[K’
+         cout << "conga" <<[01;36m[Klaser_scan_point[m[K.x;
+                           [01;36m[K^~~~~~~~~~~~~~~~[m[K
+                           [32m[Klaser_scan_points[m[K
+make[2]: *** [CMakeFiles/ldlidar_stl_ros2_node.dir/build.make:63: CMakeFiles/ldlidar_stl_ros2_node.dir/src/demo.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/ldlidar_stl_ros2_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

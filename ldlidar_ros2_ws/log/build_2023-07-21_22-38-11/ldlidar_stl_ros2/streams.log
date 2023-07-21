@@ -1,0 +1,11 @@
+[0.097s] Invoking command in '/home/hnt/ldlidar_ros2_ws/build/ldlidar_stl_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/hnt/ldlidar_ros2_ws/build/ldlidar_stl_ros2 -- -j4 -l4
+[0.280s] [35m[1mScanning dependencies of target ldlidar_stl_ros2_node[0m
+[0.425s] [ 12%] [32mBuilding CXX object CMakeFiles/ldlidar_stl_ros2_node.dir/src/demo.cpp.o[0m
+[5.068s] [01m[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[5.069s] [01m[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:124:44:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kldlidar::Points2D[m[K’ {aka ‘[01m[Kstd::vector<ldlidar::PointData>[m[K’}
+[5.069s]          cout << "conga" <<laser_scan_points[01;31m[K->[m[Kx;
+[5.069s]                                             [01;31m[K^~[m[K
+[8.235s] make[2]: *** [CMakeFiles/ldlidar_stl_ros2_node.dir/build.make:63: CMakeFiles/ldlidar_stl_ros2_node.dir/src/demo.cpp.o] Error 1
+[8.235s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/ldlidar_stl_ros2_node.dir/all] Error 2
+[8.236s] make: *** [Makefile:141: all] Error 2
+[8.244s] Invoked command in '/home/hnt/ldlidar_ros2_ws/build/ldlidar_stl_ros2' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/hnt/ldlidar_ros2_ws/build/ldlidar_stl_ros2 -- -j4 -l4

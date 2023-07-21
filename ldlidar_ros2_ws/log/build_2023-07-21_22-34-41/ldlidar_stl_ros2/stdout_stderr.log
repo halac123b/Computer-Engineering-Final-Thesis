@@ -1,0 +1,9 @@
+[35m[1mScanning dependencies of target ldlidar_stl_ros2_node[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/ldlidar_stl_ros2_node.dir/src/demo.cpp.o[0m
+[01m[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/src/demo.cpp:124:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kldlidar::Points2D[m[K’ {aka ‘[01m[Kclass std::vector<ldlidar::PointData>[m[K’} has no member named ‘[01m[Kx[m[K’
+         cout << "conga" <<laser_scan_points.[01;31m[Kx[m[K;
+                                             [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/ldlidar_stl_ros2_node.dir/build.make:63: CMakeFiles/ldlidar_stl_ros2_node.dir/src/demo.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/ldlidar_stl_ros2_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

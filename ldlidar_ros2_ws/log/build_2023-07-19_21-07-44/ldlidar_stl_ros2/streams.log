@@ -1,0 +1,94 @@
+[0.112s] Invoking command in '/home/hnt/ldlidar_ros2_ws/build/ldlidar_stl_ros2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2 -DCMAKE_INSTALL_PREFIX=/home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2
+[0.379s] -- The C compiler identification is GNU 8.4.0
+[0.582s] -- The CXX compiler identification is GNU 8.4.0
+[0.599s] -- Check for working C compiler: /usr/bin/cc
+[0.848s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.851s] -- Detecting C compiler ABI info
+[1.115s] -- Detecting C compiler ABI info - done
+[1.164s] -- Detecting C compile features
+[1.165s] -- Detecting C compile features - done
+[1.176s] -- Check for working CXX compiler: /usr/bin/c++
+[1.460s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.464s] -- Detecting CXX compiler ABI info
+[1.780s] -- Detecting CXX compiler ABI info - done
+[1.830s] -- Detecting CXX compile features
+[1.832s] -- Detecting CXX compile features - done
+[1.845s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.953s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.953s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.939s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[3.177s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.215s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[3.576s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[3.692s] -- Found FastRTPS: /opt/ros/foxy/include  
+[4.105s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.522s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[4.530s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.535s] -- Looking for pthread.h
+[4.835s] -- Looking for pthread.h - found
+[4.837s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[5.171s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[5.172s] -- Looking for pthread_create in pthreads
+[5.385s] -- Looking for pthread_create in pthreads - not found
+[5.386s] -- Looking for pthread_create in pthread
+[5.642s] -- Looking for pthread_create in pthread - found
+[5.646s] -- Found Threads: TRUE  
+[6.447s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[7.018s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[7.395s] -- Added test 'copyright' to check source files copyright and LICENSE
+[7.423s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[7.427s] -- Configured cppcheck include dirs: /home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/include;/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/ldlidar_driver/include/core;/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/ldlidar_driver/include/dataprocess;/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/ldlidar_driver/include/filter;/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/ldlidar_driver/include/logger;/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/ldlidar_driver/include/networkcom;/home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2/ldlidar_driver/include/serialcom
+[7.428s] -- Configured cppcheck exclude dirs and/or files: 
+[7.454s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[7.454s] -- Configured cpplint exclude dirs and/or files: 
+[7.461s] -- Added test 'flake8' to check Python code syntax and style conventions
+[7.468s] -- Added test 'lint_cmake' to check CMake code style
+[7.473s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[7.502s] -- Added test 'uncrustify' to check C / C++ code style
+[7.503s] -- Configured uncrustify additional arguments: 
+[7.506s] -- Added test 'xmllint' to check XML markup files
+[7.521s] -- Configuring done
+[7.562s] -- Generating done
+[7.571s] -- Build files have been written to: /home/hnt/ldlidar_ros2_ws/build/ldlidar_stl_ros2
+[7.624s] Invoked command in '/home/hnt/ldlidar_ros2_ws/build/ldlidar_stl_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/hnt/ldlidar_ros2_ws/src/ldlidar_stl_ros2 -DCMAKE_INSTALL_PREFIX=/home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2
+[7.628s] Invoking command in '/home/hnt/ldlidar_ros2_ws/build/ldlidar_stl_ros2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/hnt/ldlidar_ros2_ws/build/ldlidar_stl_ros2 -- -j4 -l4
+[7.822s] [35m[1mScanning dependencies of target ldlidar_stl_ros2_node[0m
+[8.026s] [ 25%] [32mBuilding CXX object CMakeFiles/ldlidar_stl_ros2_node.dir/ldlidar_driver/src/dataprocess/lipkg.cpp.o[0m
+[8.026s] [ 25%] [32mBuilding CXX object CMakeFiles/ldlidar_stl_ros2_node.dir/ldlidar_driver/src/core/ldlidar_driver.cpp.o[0m
+[8.027s] [ 37%] [32mBuilding CXX object CMakeFiles/ldlidar_stl_ros2_node.dir/ldlidar_driver/src/filter/tofbf.cpp.o[0m
+[8.047s] [ 50%] [32mBuilding CXX object CMakeFiles/ldlidar_stl_ros2_node.dir/src/demo.cpp.o[0m
+[10.887s] [ 62%] [32mBuilding CXX object CMakeFiles/ldlidar_stl_ros2_node.dir/ldlidar_driver/src/logger/log_module.cpp.o[0m
+[10.949s] [ 75%] [32mBuilding CXX object CMakeFiles/ldlidar_stl_ros2_node.dir/ldlidar_driver/src/networkcom/network_socket_interface_linux.cpp.o[0m
+[11.277s] [ 87%] [32mBuilding CXX object CMakeFiles/ldlidar_stl_ros2_node.dir/ldlidar_driver/src/serialcom/serial_interface_linux.cpp.o[0m
+[21.286s] [100%] [32m[1mLinking CXX executable ldlidar_stl_ros2_node[0m
+[22.267s] [100%] Built target ldlidar_stl_ros2_node
+[22.326s] Invoked command in '/home/hnt/ldlidar_ros2_ws/build/ldlidar_stl_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/hnt/ldlidar_ros2_ws/build/ldlidar_stl_ros2 -- -j4 -l4
+[22.474s] Invoking command in '/home/hnt/ldlidar_ros2_ws/build/ldlidar_stl_ros2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/hnt/ldlidar_ros2_ws/build/ldlidar_stl_ros2
+[22.509s] -- Install configuration: ""
+[22.509s] -- Installing: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/lib/ldlidar_stl_ros2/ldlidar_stl_ros2_node
+[22.515s] -- Set runtime path of "/home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/lib/ldlidar_stl_ros2/ldlidar_stl_ros2_node" to ""
+[22.515s] -- Installing: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch
+[22.516s] -- Installing: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch/stl27l.launch.py
+[22.518s] -- Installing: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch/ld19.launch.py
+[22.519s] -- Installing: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch/viewer_ld19.launch.py
+[22.519s] -- Installing: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch/viewer_ld06.launch.py
+[22.520s] -- Installing: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch/ld06.launch.py
+[22.521s] -- Installing: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch/viewer_stl27l.launch.py
+[22.522s] -- Installing: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//rviz2
+[22.522s] -- Installing: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//rviz2/ldlidar.rviz
+[22.523s] -- Installing: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ament_index/resource_index/package_run_dependencies/ldlidar_stl_ros2
+[22.524s] -- Installing: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ament_index/resource_index/parent_prefix_path/ldlidar_stl_ros2
+[22.525s] -- Installing: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/environment/ament_prefix_path.sh
+[22.526s] -- Installing: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/environment/ament_prefix_path.dsv
+[22.526s] -- Installing: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/environment/path.sh
+[22.527s] -- Installing: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/environment/path.dsv
+[22.527s] -- Installing: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/local_setup.bash
+[22.528s] -- Installing: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/local_setup.sh
+[22.529s] -- Installing: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/local_setup.zsh
+[22.529s] -- Installing: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/local_setup.dsv
+[22.530s] -- Installing: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/package.dsv
+[22.531s] -- Installing: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ament_index/resource_index/packages/ldlidar_stl_ros2
+[22.531s] -- Installing: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/cmake/ldlidar_stl_ros2Config.cmake
+[22.532s] -- Installing: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/cmake/ldlidar_stl_ros2Config-version.cmake
+[22.532s] -- Installing: /home/hnt/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/package.xml
+[22.541s] Invoked command in '/home/hnt/ldlidar_ros2_ws/build/ldlidar_stl_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/hnt/ldlidar_ros2_ws/build/ldlidar_stl_ros2
