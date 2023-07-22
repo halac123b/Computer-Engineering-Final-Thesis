@@ -21,7 +21,7 @@ from ultralytics.yolo.utils.plotting import Annotator, colors, save_one_box
 count =0
 ser = None
 lastDirection = 0
- 
+
 class BaseTensor(SimpleClass):
     """
     Base tensor class with additional methods for easy manipulation and device handling.
@@ -109,7 +109,7 @@ class Results(SimpleClass):
         self.save_dir = None
         self._keys = ('boxes', 'masks', 'probs', 'keypoints')
         # count frame
-        
+
 
     def __getitem__(self, idx):
         """Return a Results object for the specified index."""
@@ -331,7 +331,7 @@ class Results(SimpleClass):
                    count+=1
                    if count == 3 :
                       count = 0
-                      ser.write(bytes('a\n','utf-8'))                                                                                                           
+                      ser.write(bytes('a\n','utf-8'))
                       print("re trai")
                 elif data_ob[0] <= 320 :
                    if lastDirection != 'right' :
@@ -342,10 +342,10 @@ class Results(SimpleClass):
                       count = 0
                       ser.write(bytes('d\n','utf-8'))
                       print("re phai")
-                   print("in count: ",count)                  
+                   print("in count: ",count)
                 time.sleep(1)
                 break
-             return 
+             return
     def save_crop(self, save_dir, file_name=Path('im.jpg')):
         """
         Save cropped predictions to `save_dir/cls/file_name.jpg`.
@@ -654,10 +654,5 @@ class Probs(BaseTensor):
         """Return the confidences of top 1."""
         return self.data[self.top1]
 
-
-
-
-
-            
 
 

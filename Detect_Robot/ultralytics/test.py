@@ -12,21 +12,19 @@ model = YOLO('yolov8n.pt')
 # points = []
 #with serial.Serial('/dev/ttyUSB0', 9600, timeout=10) as ser:
 results = model.predict(source = "0", show =True ,save_txt = True  )
-	#while True:                
+	#while True:
                         #led_on = input()
 		#if 1 == 1:
                         #ser.write(bytes('w\n','utf-8'))
                         #print(ser)
 
-#ser = serial.Serial('/dev/ttyUSB0', 9600, timeout=2) 
+#ser = serial.Serial('/dev/ttyUSB0', 9600, timeout=2)
 #led_on = input("press ")
 
 #print(ser)
 #ser.readline()
 #ser.write(bytes('w\n','utf-8'))
 #print("bla", ser.readline().encode())
-
-    
 
 
 #model.serial()
