@@ -1,6 +1,7 @@
 import jetson_inference
 import jetson_utils
 import cv2
+import time
 
 class MobileNetSSD():
     def __init__(self, path, threshold):
