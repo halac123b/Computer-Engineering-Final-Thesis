@@ -312,7 +312,7 @@ class Results(SimpleClass):
              global count
              global ser
              if ser == None:
-                 ser = serial.Serial('/dev/ttyUSB0', 9600, timeout=0.01)     
+                 ser = serial.Serial('/dev/ttyUSB0', 9600, timeout=0.01)
                  ser.readline()
              if len(data) == 0 :
                    if lastDirection != 'straight' :
