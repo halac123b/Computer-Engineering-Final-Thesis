@@ -1,0 +1,6 @@
+[0.365s] Invoking command in '/home/jetson/Downloads/ros_ws/build/imu_calib': /usr/bin/cmake /home/jetson/Downloads/ros_ws/imu_calib -DCMAKE_INSTALL_PREFIX=/home/jetson/Downloads/ros_ws/install/imu_calib
+[0.567s] -- Configuring incomplete, errors occurred!
+[0.576s] CMake Error at CMakeLists.txt:77:
+[0.577s]   Parse error.  Expected a command name, got bad character with text "".
+[0.578s] 
+[0.578s] 

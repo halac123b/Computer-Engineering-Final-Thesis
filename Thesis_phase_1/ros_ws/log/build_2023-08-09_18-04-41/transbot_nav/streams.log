@@ -1,0 +1,7 @@
+[0.224s] Invoking command in '/home/jetson/Downloads/ros_ws/build/transbot_nav': /usr/bin/cmake /home/jetson/Downloads/ros_ws/transbot_nav -DCMAKE_INSTALL_PREFIX=/home/jetson/Downloads/ros_ws/install/transbot_nav
+[0.303s] -- Configuring incomplete, errors occurred!
+[0.306s] CMake Error at CMakeLists.txt:217:
+[0.308s]   Parse error.  Expected a command name, got bad character with text "".
+[0.309s] 
+[0.310s] 
+[0.320s] Invoked command in '/home/jetson/Downloads/ros_ws/build/transbot_nav' returned '1': /usr/bin/cmake /home/jetson/Downloads/ros_ws/transbot_nav -DCMAKE_INSTALL_PREFIX=/home/jetson/Downloads/ros_ws/install/transbot_nav

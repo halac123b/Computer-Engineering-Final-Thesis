@@ -1,0 +1,1 @@
+Invoking command in '/home/jetson/Downloads/ros_ws/build/transbot_bringup': /usr/bin/cmake /home/jetson/Downloads/ros_ws/transbot_bringup -DCMAKE_INSTALL_PREFIX=/home/jetson/Downloads/ros_ws/install/transbot_bringup

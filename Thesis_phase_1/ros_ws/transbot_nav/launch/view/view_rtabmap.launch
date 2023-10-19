@@ -1,0 +1,7 @@
+<launch>
+    <node pkg="rviz" type="rviz" name="rviz" required="true"
+          args="-d $(find transbot_nav)/rviz/rtabmapping.rviz"/>
+</laun<launch>
+    <node pkg="rviz" type="rviz" name="rviz" required="true"
+          args="-d $(find transbot_nav)/rviz/rtabmapping.rviz"/>
+</launch>

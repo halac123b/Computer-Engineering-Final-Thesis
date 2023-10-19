@@ -1,0 +1,34 @@
+[0.322s] Invoking command in '/home/jetson/Downloads/ros_ws/build/transbot_bringup': /usr/bin/cmake /home/jetson/Downloads/ros_ws/transbot_bringup -DCMAKE_INSTALL_PREFIX=/home/jetson/Downloads/ros_ws/install/transbot_bringup
+[1.246s] -- The C compiler identification is GNU 8.4.0
+[1.944s] -- The CXX compiler identification is GNU 8.4.0
+[2.030s] -- Check for working C compiler: /usr/bin/cc
+[2.672s] -- Check for working C compiler: /usr/bin/cc -- works
+[2.703s] -- Detecting C compiler ABI info
+[3.483s] -- Detecting C compiler ABI info - done
+[3.660s] -- Detecting C compile features
+[3.669s] -- Detecting C compile features - done
+[3.697s] -- Check for working CXX compiler: /usr/bin/c++
+[4.428s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[4.438s] -- Detecting CXX compiler ABI info
+[5.421s] -- Detecting CXX compiler ABI info - done
+[5.500s] -- Detecting CXX compile features
+[5.504s] -- Detecting CXX compile features - done
+[5.579s] CMake Error at CMakeLists.txt:10 (find_package):
+[5.580s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[5.581s]   asked CMake to find a package configuration file provided by "catkin", but
+[5.582s]   CMake did not find one.
+[5.582s] 
+[5.583s]   Could not find a package configuration file provided by "catkin" with any
+[5.583s]   of the following names:
+[5.584s] 
+[5.584s]     catkinConfig.cmake
+[5.585s]     catkin-config.cmake
+[5.585s] 
+[5.586s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[5.586s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[5.587s]   provides a separate development package or SDK, be sure it has been
+[5.587s]   installed.
+[5.588s] 
+[5.588s] 
+[5.593s] -- Configuring incomplete, errors occurred!
+[5.594s] See also "/home/jetson/Downloads/ros_ws/build/transbot_bringup/CMakeFiles/CMakeOutput.log".

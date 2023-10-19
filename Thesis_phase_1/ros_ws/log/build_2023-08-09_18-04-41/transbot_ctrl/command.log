@@ -1,0 +1,1 @@
+Invoking command in '/home/jetson/Downloads/ros_ws/build/transbot_ctrl': /usr/bin/cmake /home/jetson/Downloads/ros_ws/transbot_ctrl -DCMAKE_INSTALL_PREFIX=/home/jetson/Downloads/ros_ws/install/transbot_ctrl

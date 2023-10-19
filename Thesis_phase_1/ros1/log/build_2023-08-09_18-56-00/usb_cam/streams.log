@@ -1,0 +1,253 @@
+[0.136s] Invoking command in '/home/jetson/Downloads/ros1/build/usb_cam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/Computer-Engineering-Final-Thesis/ldlidar_ros2_ws/install/ldlidar_stl_ros2:/home/jetson/ros2_ws/install/py_srvcli:/home/jetson/ros2_ws/install/py_pubsub:/home/jetson/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/jetson/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/jetson/ros2_ws/install/examples_rclpy_minimal_service:/home/jetson/ros2_ws/install/examples_rclpy_minimal_publisher:/home/jetson/ros2_ws/install/examples_rclpy_minimal_client:/home/jetson/ros2_ws/install/examples_rclpy_minimal_action_server:/home/jetson/ros2_ws/install/examples_rclpy_minimal_action_client:/home/jetson/ros2_ws/install/examples_rclpy_guard_conditions:/home/jetson/ros2_ws/install/examples_rclpy_executors:/opt/ros/galactic /usr/bin/cmake --build /home/jetson/Downloads/ros1/build/usb_cam -- -j4 -l4
+[0.509s] [ 14%] Built target gtest
+[0.513s] [ 21%] [32mBuilding CXX object CMakeFiles/usb_cam.dir/src/usb_cam.cpp.o[0m
+[0.538s] [ 35%] Built target usb_cam_node_exe
+[0.579s] [ 50%] Built target gtest_main
+[0.956s] In file included from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/utils.hpp:43[m[K,
+[0.958s]                  from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:45[m[K,
+[0.958s]                  from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65[m[K:
+[0.958s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:30:[m[K [01;31m[Kerror: [m[Kunterminated #ifndef
+[0.959s]  #ifndef USB_CAM__FORMATS__PIXEL_FORMAT_BASE_HPP_
+[0.959s]  
+[0.960s] In file included from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:45[m[K,
+[0.960s]                  from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65[m[K:
+[0.961s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/utils.hpp:29:[m[K [01;31m[Kerror: [m[Kunterminated #ifndef
+[0.961s]  #ifndef USB_CAM__UTILS_HPP_
+[0.962s]  
+[0.962s] In file included from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:46[m[K,
+[0.963s]                  from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65[m[K:
+[0.963s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:30:[m[K [01;31m[Kerror: [m[Kunterminated #ifndef
+[0.963s]  #ifndef USB_CAM__FORMATS__PIXEL_FORMAT_BASE_HPP_
+[0.964s]  
+[0.965s] In file included from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/mjpeg.hpp:52[m[K,
+[0.966s]                  from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:48[m[K,
+[0.968s]                  from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65[m[K:
+[0.969s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:30:[m[K [01;31m[Kerror: [m[Kunterminated #ifndef
+[0.970s]  #ifndef USB_CAM__USB_CAM_HPP_
+[0.971s]  
+[0.972s] In file included from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/mjpeg.hpp:53[m[K,
+[0.972s]                  from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:48[m[K,
+[0.973s]                  from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65[m[K:
+[0.974s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:30:[m[K [01;31m[Kerror: [m[Kunterminated #ifndef
+[0.974s]  #ifndef USB_CAM__FORMATS__PIXEL_FORMAT_BASE_HPP_
+[0.974s]  
+[0.975s] In file included from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/utils.hpp:33[m[K,
+[0.975s]                  from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/mjpeg.hpp:54[m[K,
+[0.976s]                  from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:48[m[K,
+[0.976s]                  from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65[m[K:
+[0.977s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/utils.hpp:29:[m[K [01;31m[Kerror: [m[Kunterminated #ifndef
+[0.977s]  #ifndef USB_CAM__UTILS_HPP_
+[0.978s]  
+[0.978s] In file included from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/mjpeg.hpp:54[m[K,
+[0.979s]                  from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:48[m[K,
+[0.979s]                  from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65[m[K:
+[0.980s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/utils.hpp:30:[m[K [01;31m[Kerror: [m[Kunterminated #ifndef
+[0.980s]  #ifndef USB_CAM__FORMATS__UTILS_HPP_
+[0.980s]  
+[0.981s] In file included from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:48[m[K,
+[0.981s]                  from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65[m[K:
+[0.982s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/mjpeg.hpp:30:[m[K [01;31m[Kerror: [m[Kunterminated #ifndef
+[0.982s]  #ifndef USB_CAM__FORMATS__MJPEG_HPP_
+[0.982s]  
+[0.983s] In file included from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/mono.hpp:35[m[K,
+[0.983s]                  from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:49[m[K,
+[0.983s]                  from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65[m[K:
+[0.984s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:30:[m[K [01;31m[Kerror: [m[Kunterminated #ifndef
+[0.984s]  #ifndef USB_CAM__FORMATS__PIXEL_FORMAT_BASE_HPP_
+[0.984s]  
+[0.985s] In file included from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/mono.hpp:36[m[K,
+[0.985s]                  from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:49[m[K,
+[0.985s]                  from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65[m[K:
+[0.985s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/utils.hpp:30:[m[K [01;31m[Kerror: [m[Kunterminated #ifndef
+[0.986s]  #ifndef USB_CAM__FORMATS__UTILS_HPP_
+[0.986s]  
+[0.987s] In file included from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:49[m[K,
+[0.987s]                  from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65[m[K:
+[0.988s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/mono.hpp:111:1:[m[K [01;31m[Kerror: [m[Knull character(s) ignored [[01;31m[K-Werror[m[K]
+[0.988s]  [01;31m[K [m[K                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              // Copyright 2023 Evan Flynn
+[0.989s]  [01;31m[K^[m[K
+[0.989s] In file included from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/rgb.hpp:35[m[K,
+[0.990s]                  from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:50[m[K,
+[0.990s]                  from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65[m[K:
+[0.990s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:30:[m[K [01;31m[Kerror: [m[Kunterminated #ifndef
+[0.991s]  #ifndef USB_CAM__FORMATS__PIXEL_FORMAT_BASE_HPP_
+[0.991s]  
+[0.991s] In file included from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/rgb.hpp:36[m[K,
+[0.992s]                  from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:50[m[K,
+[0.992s]                  from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65[m[K:
+[0.992s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/utils.hpp:30:[m[K [01;31m[Kerror: [m[Kunterminated #ifndef
+[0.993s]  #ifndef USB_CAM__FORMATS__UTILS_HPP_
+[0.993s]  
+[0.993s] In file included from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:50[m[K,
+[0.994s]                  from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65[m[K:
+[0.994s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/rgb.hpp:62:1:[m[K [01;31m[Kerror: [m[Knull character(s) ignored [[01;31m[K-Werror[m[K]
+[0.995s]  [01;31m[K [m[K                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   // Copyright 2023 Evan Flynn
+[0.995s]  [01;31m[K^[m[K
+[0.995s] In file included from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/uyvy.hpp:35[m[K,
+[0.996s]                  from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:51[m[K,
+[0.997s]                  from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65[m[K:
+[0.997s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:30:[m[K [01;31m[Kerror: [m[Kunterminated #ifndef
+[0.997s]  #ifndef USB_CAM__FORMATS__PIXEL_FORMAT_BASE_HPP_
+[0.998s]  
+[0.998s] In file included from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/uyvy.hpp:36[m[K,
+[0.999s]                  from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:51[m[K,
+[0.999s]                  from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65[m[K:
+[1.000s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/utils.hpp:30:[m[K [01;31m[Kerror: [m[Kunterminated #ifndef
+[1.000s]  #ifndef USB_CAM__FORMATS__UTILS_HPP_
+[1.001s]  
+[1.001s] In file included from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:51[m[K,
+[1.002s]                  from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65[m[K:
+[1.002s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/uyvy.hpp:112:1:[m[K [01;31m[Kerror: [m[Knull character(s) ignored [[01;31m[K-Werror[m[K]
+[1.003s]  [01;31m[K [m[K                                                                                                                                                                                                                                                                                                                                                                                        // Copyright 2023 Evan Flynn
+[1.003s]  [01;31m[K^[m[K
+[1.004s] In file included from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/yuyv.hpp:35[m[K,
+[1.004s]                  from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:52[m[K,
+[1.005s]                  from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65[m[K:
+[1.005s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:30:[m[K [01;31m[Kerror: [m[Kunterminated #ifndef
+[1.006s]  #ifndef USB_CAM__FORMATS__PIXEL_FORMAT_BASE_HPP_
+[1.006s]  
+[1.007s] In file included from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/yuyv.hpp:36[m[K,
+[1.007s]                  from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:52[m[K,
+[1.008s]                  from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65[m[K:
+[1.008s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/utils.hpp:30:[m[K [01;31m[Kerror: [m[Kunterminated #ifndef
+[1.009s]  #ifndef USB_CAM__FORMATS__UTILS_HPP_
+[1.009s]  
+[1.009s] In file included from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:52[m[K,
+[1.010s]                  from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65[m[K:
+[1.011s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/yuyv.hpp:30:[m[K [01;31m[Kerror: [m[Kunterminated #ifndef
+[1.011s]  #ifndef USB_CAM__FORMATS__YUYV_HPP_
+[1.012s]  
+[1.012s] In file included from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/m420.hpp:37[m[K,
+[1.013s]                  from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:53[m[K,
+[1.013s]                  from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65[m[K:
+[1.014s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:30:[m[K [01;31m[Kerror: [m[Kunterminated #ifndef
+[1.014s]  #ifndef USB_CAM__FORMATS__PIXEL_FORMAT_BASE_HPP_
+[1.014s]  
+[1.015s] In file included from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/m420.hpp:38[m[K,
+[1.016s]                  from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:53[m[K,
+[1.016s]                  from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65[m[K:
+[1.017s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/utils.hpp:30:[m[K [01;31m[Kerror: [m[Kunterminated #ifndef
+[1.017s]  #ifndef USB_CAM__FORMATS__UTILS_HPP_
+[1.018s]  
+[1.018s] In file included from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:53[m[K,
+[1.019s]                  from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65[m[K:
+[1.019s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/m420.hpp:30:[m[K [01;31m[Kerror: [m[Kunterminated #ifndef
+[1.020s]  #ifndef USB_CAM__FORMATS__M420_HPP_
+[1.020s]  
+[1.020s] In file included from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65[m[K:
+[1.021s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:30:[m[K [01;31m[Kerror: [m[Kunterminated #ifndef
+[1.021s]  #ifndef USB_CAM__USB_CAM_HPP_
+[1.021s]  
+[1.022s] In file included from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/conversions.hpp:39[m[K,
+[1.022s]                  from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:66[m[K:
+[1.023s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/utils.hpp:29:[m[K [01;31m[Kerror: [m[Kunterminated #ifndef
+[1.024s]  #ifndef USB_CAM__UTILS_HPP_
+[1.025s]  
+[1.025s] In file included from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:66[m[K:
+[1.026s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/conversions.hpp:66:1:[m[K [01;31m[Kerror: [m[Knull character(s) ignored [[01;31m[K-Werror[m[K]
+[1.026s]  [01;31m[K [m[K                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          // Copyright 2023 Evan Flynn
+[1.027s]  [01;31m[K^[m[K
+[1.027s] In file included from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:67[m[K:
+[1.027s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/utils.hpp:29:[m[K [01;31m[Kerror: [m[Kunterminated #ifndef
+[1.028s]  #ifndef USB_CAM__UTILS_HPP_
+[1.028s]  
+[3.888s] In file included from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:45[m[K,
+[3.890s]                  from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65[m[K:
+[3.891s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/utils.hpp:45:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Knamespace[m[K’
+[3.892s]  [01;31m[Knamespace[m[K usb_cam
+[3.892s]  [01;31m[K^~~~~~~~~[m[K
+[3.893s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:781:1:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[3.894s]  [01;31m[K}[m[K  // namespace usb_cam
+[3.895s]  [01;31m[K^[m[K
+[3.896s] In file included from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/utils.hpp:43[m[K,
+[3.896s]                  from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:45[m[K,
+[3.897s]                  from [01m[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65[m[K:
+[3.897s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:49:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[3.898s]  [01;36m[K{[m[K
+[3.899s]  [01;36m[K^[m[K
+[3.901s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:[m[K In constructor ‘[01m[Kusb_cam::formats::pixel_format_base::pixel_format_base(std::__cxx11::string, uint32_t, std::__cxx11::string, uint8_t, uint8_t, bool)[m[K’:
+[3.903s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:54:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kusb_cam::formats::pixel_format_base[m[K’ does not have any field named ‘[01m[Km_name[m[K’
+[3.906s]    : [01;31m[Km_name[m[K(name),
+[3.906s]      [01;31m[K^~~~~~[m[K
+[3.908s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:55:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kusb_cam::formats::pixel_format_base[m[K’ does not have any field named ‘[01m[Km_v4l2[m[K’
+[3.909s]      [01;31m[Km_v4l2[m[K(v4l2),
+[3.911s]      [01;31m[K^~~~~~[m[K
+[3.911s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:56:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kusb_cam::formats::pixel_format_base[m[K’ does not have any field named ‘[01m[Km_ros[m[K’
+[3.913s]      [01;31m[Km_ros[m[K(ros),
+[3.914s]      [01;31m[K^~~~~[m[K
+[3.914s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:57:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kusb_cam::formats::pixel_format_base[m[K’ does not have any field named ‘[01m[Km_channels[m[K’
+[3.915s]      [01;31m[Km_channels[m[K(channels),
+[3.915s]      [01;31m[K^~~~~~~~~~[m[K
+[3.918s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:58:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kusb_cam::formats::pixel_format_base[m[K’ does not have any field named ‘[01m[Km_bit_depth[m[K’
+[3.919s]      [01;31m[Km_bit_depth[m[K(bit_depth),
+[3.920s]      [01;31m[K^~~~~~~~~~~[m[K
+[3.922s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:59:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kusb_cam::formats::pixel_format_base[m[K’ does not have any field named ‘[01m[Km_requires_conversion[m[K’
+[3.927s]      [01;31m[Km_requires_conversion[m[K(requires_conversion)
+[3.928s]      [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[3.929s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:[m[K In member function ‘[01m[Kstd::__cxx11::string usb_cam::formats::pixel_format_base::name()[m[K’:
+[3.929s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:64:37:[m[K [01;31m[Kerror: [m[K‘[01m[Km_name[m[K’ was not declared in this scope
+[3.930s]    inline std::string name() {return [01;31m[Km_name[m[K;}
+[3.930s]                                      [01;31m[K^~~~~~[m[K
+[3.930s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:64:37:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kname[m[K’
+[3.931s]    inline std::string name() {return [01;36m[Km_name[m[K;}
+[3.931s]                                      [01;36m[K^~~~~~[m[K
+[3.932s]                                      [32m[Kname[m[K
+[3.933s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:[m[K In member function ‘[01m[Kuint32_t usb_cam::formats::pixel_format_base::v4l2()[m[K’:
+[3.934s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:68:34:[m[K [01;31m[Kerror: [m[K‘[01m[Km_v4l2[m[K’ was not declared in this scope
+[3.934s]    inline uint32_t v4l2() {return [01;31m[Km_v4l2[m[K;}
+[3.935s]                                   [01;31m[K^~~~~~[m[K
+[3.935s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:68:34:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kv4l2[m[K’
+[3.936s]    inline uint32_t v4l2() {return [01;36m[Km_v4l2[m[K;}
+[3.936s]                                   [01;36m[K^~~~~~[m[K
+[3.937s]                                   [32m[Kv4l2[m[K
+[3.938s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:[m[K In member function ‘[01m[Kstd::__cxx11::string usb_cam::formats::pixel_format_base::ros()[m[K’:
+[3.938s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:72:36:[m[K [01;31m[Kerror: [m[K‘[01m[Km_ros[m[K’ was not declared in this scope
+[3.941s]    inline std::string ros() {return [01;31m[Km_ros[m[K;}
+[3.942s]                                     [01;31m[K^~~~~[m[K
+[3.942s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:72:36:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kros[m[K’
+[3.943s]    inline std::string ros() {return [01;36m[Km_ros[m[K;}
+[3.944s]                                     [01;36m[K^~~~~[m[K
+[3.944s]                                     [32m[Kros[m[K
+[3.945s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:[m[K In member function ‘[01m[Kuint8_t usb_cam::formats::pixel_format_base::channels()[m[K’:
+[3.945s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:76:37:[m[K [01;31m[Kerror: [m[K‘[01m[Km_channels[m[K’ was not declared in this scope
+[3.946s]    inline uint8_t channels() {return [01;31m[Km_channels[m[K;}
+[3.946s]                                      [01;31m[K^~~~~~~~~~[m[K
+[3.947s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:76:37:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kchannels[m[K’
+[3.947s]    inline uint8_t channels() {return [01;36m[Km_channels[m[K;}
+[3.948s]                                      [01;36m[K^~~~~~~~~~[m[K
+[3.948s]                                      [32m[Kchannels[m[K
+[3.949s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:[m[K In member function ‘[01m[Kuint8_t usb_cam::formats::pixel_format_base::bit_depth()[m[K’:
+[3.949s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:80:38:[m[K [01;31m[Kerror: [m[K‘[01m[Km_bit_depth[m[K’ was not declared in this scope
+[3.950s]    inline uint8_t bit_depth() {return [01;31m[Km_bit_depth[m[K;}
+[3.950s]                                       [01;31m[K^~~~~~~~~~~[m[K
+[3.953s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:80:38:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kbit_depth[m[K’
+[3.953s]    inline uint8_t bit_depth() {return [01;36m[Km_bit_depth[m[K;}
+[3.954s]                                       [01;36m[K^~~~~~~~~~~[m[K
+[3.954s]                                       [32m[Kbit_depth[m[K
+[3.955s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:[m[K In member function ‘[01m[Kbool usb_cam::formats::pixel_format_base::requires_conversion()[m[K’:
+[3.955s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:86:45:[m[K [01;31m[Kerror: [m[K‘[01m[Km_requires_conversion[m[K’ was not declared in this scope
+[3.956s]    inline bool requires_conversion() {return [01;31m[Km_requires_conversion[m[K;}
+[3.956s]                                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[3.967s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:86:45:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Krequires_conversion[m[K’
+[3.979s]    inline bool requires_conversion() {return [01;36m[Km_requires_conversion[m[K;}
+[3.980s]                                              [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[3.981s]                                              [32m[Krequires_conversion[m[K
+[3.981s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:[m[K At global scope:
+[3.981s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:86:67:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+[3.982s]    inline bool requires_conversion() {return m_requires_conversion;[01;31m[K}[m[K
+[3.982s]                                                                    [01;31m[K^[m[K
+[3.983s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:86:67:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[3.983s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:43:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[3.984s]  [01;36m[K{[m[K
+[3.984s]  [01;36m[K^[m[K
+[3.985s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:86:67:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[3.985s]    inline bool requires_conversion() {return m_requires_conversion;[01;31m[K}[m[K
+[3.985s]                                                                    [01;31m[K^[m[K
+[3.986s] [01m[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:41:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[3.986s]  [01;36m[K{[m[K
+[3.987s]  [01;36m[K^[m[K
+[4.338s] cc1plus: all warnings being treated as errors
+[4.368s] make[2]: *** [CMakeFiles/usb_cam.dir/build.make:63: CMakeFiles/usb_cam.dir/src/usb_cam.cpp.o] Error 1
+[4.370s] make[1]: *** [CMakeFiles/Makefile2:161: CMakeFiles/usb_cam.dir/all] Error 2
+[4.371s] make: *** [Makefile:141: all] Error 2
+[4.385s] Invoked command in '/home/jetson/Downloads/ros1/build/usb_cam' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/Computer-Engineering-Final-Thesis/ldlidar_ros2_ws/install/ldlidar_stl_ros2:/home/jetson/ros2_ws/install/py_srvcli:/home/jetson/ros2_ws/install/py_pubsub:/home/jetson/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/jetson/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/jetson/ros2_ws/install/examples_rclpy_minimal_service:/home/jetson/ros2_ws/install/examples_rclpy_minimal_publisher:/home/jetson/ros2_ws/install/examples_rclpy_minimal_client:/home/jetson/ros2_ws/install/examples_rclpy_minimal_action_server:/home/jetson/ros2_ws/install/examples_rclpy_minimal_action_client:/home/jetson/ros2_ws/install/examples_rclpy_guard_conditions:/home/jetson/ros2_ws/install/examples_rclpy_executors:/opt/ros/galactic /usr/bin/cmake --build /home/jetson/Downloads/ros1/build/usb_cam -- -j4 -l4

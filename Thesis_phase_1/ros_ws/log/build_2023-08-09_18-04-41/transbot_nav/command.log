@@ -1,0 +1,2 @@
+Invoking command in '/home/jetson/Downloads/ros_ws/build/transbot_nav': /usr/bin/cmake /home/jetson/Downloads/ros_ws/transbot_nav -DCMAKE_INSTALL_PREFIX=/home/jetson/Downloads/ros_ws/install/transbot_nav
+Invoked command in '/home/jetson/Downloads/ros_ws/build/transbot_nav' returned '1': /usr/bin/cmake /home/jetson/Downloads/ros_ws/transbot_nav -DCMAKE_INSTALL_PREFIX=/home/jetson/Downloads/ros_ws/install/transbot_nav

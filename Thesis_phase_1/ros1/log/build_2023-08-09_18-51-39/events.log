@@ -1,0 +1,849 @@
+[0.000000] (-) TimerEvent: {}
+[0.000658] (usb_cam) JobQueued: {'identifier': 'usb_cam', 'dependencies': OrderedDict()}
+[0.002181] (usb_cam) JobStarted: {'identifier': 'usb_cam'}
+[0.099061] (-) TimerEvent: {}
+[0.112633] (usb_cam) JobProgress: {'identifier': 'usb_cam', 'progress': 'cmake'}
+[0.114462] (usb_cam) Command: {'cmd': ['/usr/bin/cmake', '/home/jetson/Downloads/ros1/src/usb_cam', '-DCMAKE_INSTALL_PREFIX=/home/jetson/Downloads/ros1/install/usb_cam'], 'cwd': '/home/jetson/Downloads/ros1/build/usb_cam', 'env': OrderedDict([('JETSON_BOARD', 'P3449-0000'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('JETSON_TYPE', 'Nano (Developer Kit Version)'), ('USER', 'jetson'), ('LC_TIME', 'nl_NL.UTF-8'), ('JETSON_CUDA', '10.2.300'), ('SSH_AGENT_PID', '7669'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jetson/ros2_ws/install/turtlesim/lib:/home/jetson/ros2_ws/install/examples_rclcpp_minimal_composition/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/jetson'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_TENSORRT', '8.0.1.6'), ('JETSON_L4T', '32.6.1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'nl_NL.UTF-8'), ('MANAGERPID', '7246'), ('JETSON_OPENCV_CUDA', 'YES'), ('JETSON_VISIONWORKS', '1.6.0.501'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=5ce55604200410f399c2f06564ce6d99'), ('COLORTERM', 'truecolor'), ('JETSON_CHIP_ID', '33'), ('_colcon_cd_root', '/opt/ros/galactic/'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/jetson/ldlidar_ros2_ws/install:/home/jetson/Computer-Engineering-Final-Thesis/ldlidar_ros2_ws/install:/home/jetson/ros2_ws/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'jetson'), ('JETSON_MODULE', 'P3448-0000'), ('JETSON_SERIAL_NUMBER', '1424722009121'), ('JETSON_CUDNN', '8.2.1.32'), ('JOURNAL_STREAM', '8:37272'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'porg'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'jetson'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/home/jetson/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/nano:@/tmp/.ICE-unix/7705,unix/nano:/tmp/.ICE-unix/7705'), ('INVOCATION_ID', 'd0ad603d13ab40c7b4a834dc0301a9c7'), ('JETSON_OPENCV', '4.6.0'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nl_NL.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/83b50aec_aa03_4466_89e0_27d2a99ffbf6'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('ZEITGEIST_DATA_PATH', '/home/jetson/.local/share/zeitgeist'), ('DISPLAY', ':0'), ('JETSON_MACHINE', 'NVIDIA Jetson Nano (Developer Kit Version)'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'nl_NL.UTF-8'), ('JETSON_L4T_REVISION', '6.1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra210'), ('GNOME_TERMINAL_SERVICE', ':1.116'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/jetson/ldlidar_ros2_ws/install/ldlidar_stl_ros2:/home/jetson/Computer-Engineering-Final-Thesis/ldlidar_ros2_ws/install/ldlidar_stl_ros2:/home/jetson/ros2_ws/install/turtlesim:/home/jetson/ros2_ws/install/py_srvcli:/home/jetson/ros2_ws/install/py_pubsub:/home/jetson/ros2_ws/install/my_package:/home/jetson/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/jetson/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/jetson/ros2_ws/install/examples_rclpy_minimal_service:/home/jetson/ros2_ws/install/examples_rclpy_minimal_publisher:/home/jetson/ros2_ws/install/examples_rclpy_minimal_client:/home/jetson/ros2_ws/install/examples_rclpy_minimal_action_server:/home/jetson/ros2_ws/install/examples_rclpy_minimal_action_client:/home/jetson/ros2_ws/install/examples_rclpy_guard_conditions:/home/jetson/ros2_ws/install/examples_rclpy_executors:/home/jetson/ros2_ws/install/examples_rclcpp_multithreaded_executor:/home/jetson/ros2_ws/install/examples_rclcpp_minimal_timer:/home/jetson/ros2_ws/install/examples_rclcpp_minimal_subscriber:/home/jetson/ros2_ws/install/examples_rclcpp_minimal_service:/home/jetson/ros2_ws/install/examples_rclcpp_minimal_publisher:/home/jetson/ros2_ws/install/examples_rclcpp_minimal_composition:/home/jetson/ros2_ws/install/examples_rclcpp_minimal_client:/home/jetson/ros2_ws/install/examples_rclcpp_minimal_action_server:/home/jetson/ros2_ws/install/examples_rclcpp_minimal_action_client:/home/jetson/ros2_ws/install/examples_rclcpp_cbg_executor:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nl_NL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_BOARDIDS', '3448'), ('LC_MEASUREMENT', 'nl_NL.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'nl_NL.UTF-8'), ('JETSON_L4T_RELEASE', '32'), ('JETSON_VULKAN_INFO', '1.2.141'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '5.3'), ('PWD', '/home/jetson/Downloads/ros1/build/usb_cam'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=5ce55604200410f399c2f06564ce6d99'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('JETSON_VPI', 'ii libnvvpi1 1.1.15 arm64 NVIDIA Vision Programming Interface library'), ('PYTHONPATH', '/home/jetson/ros2_ws/install/turtlesim/lib/python3.8/site-packages:/home/jetson/ros2_ws/install/py_srvcli/lib/python3.8/site-packages:/home/jetson/ros2_ws/install/py_pubsub/lib/python3.8/site-packages:/home/jetson/ros2_ws/build/examples_rclpy_pointcloud_publisher:/home/jetson/ros2_ws/install/examples_rclpy_pointcloud_publisher/lib/python3.8/site-packages:/home/jetson/ros2_ws/build/examples_rclpy_minimal_subscriber:/home/jetson/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.8/site-packages:/home/jetson/ros2_ws/build/examples_rclpy_minimal_service:/home/jetson/ros2_ws/install/examples_rclpy_minimal_service/lib/python3.8/site-packages:/home/jetson/ros2_ws/build/examples_rclpy_minimal_publisher:/home/jetson/ros2_ws/install/examples_rclpy_minimal_publisher/lib/python3.8/site-packages:/home/jetson/ros2_ws/build/examples_rclpy_minimal_client:/home/jetson/ros2_ws/install/examples_rclpy_minimal_client/lib/python3.8/site-packages:/home/jetson/ros2_ws/build/examples_rclpy_minimal_action_server:/home/jetson/ros2_ws/install/examples_rclpy_minimal_action_server/lib/python3.8/site-packages:/home/jetson/ros2_ws/build/examples_rclpy_minimal_action_client:/home/jetson/ros2_ws/install/examples_rclpy_minimal_action_client/lib/python3.8/site-packages:/home/jetson/ros2_ws/build/examples_rclpy_guard_conditions:/home/jetson/ros2_ws/install/examples_rclpy_guard_conditions/lib/python3.8/site-packages:/home/jetson/ros2_ws/build/examples_rclpy_executors:/home/jetson/ros2_ws/install/examples_rclpy_executors/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('LC_NUMERIC', 'nl_NL.UTF-8'), ('LC_PAPER', 'nl_NL.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('JETSON_JETPACK', '4.6'), ('CMAKE_PREFIX_PATH', '/home/jetson/ldlidar_ros2_ws/install/ldlidar_stl_ros2:/home/jetson/ros2_ws/install/turtlesim:/home/jetson/ros2_ws/install/my_package:/home/jetson/ros2_ws/install/examples_rclcpp_multithreaded_executor:/home/jetson/ros2_ws/install/examples_rclcpp_minimal_timer:/home/jetson/ros2_ws/install/examples_rclcpp_minimal_subscriber:/home/jetson/ros2_ws/install/examples_rclcpp_minimal_service:/home/jetson/ros2_ws/install/examples_rclcpp_minimal_publisher:/home/jetson/ros2_ws/install/examples_rclcpp_minimal_composition:/home/jetson/ros2_ws/install/examples_rclcpp_minimal_client:/home/jetson/ros2_ws/install/examples_rclcpp_minimal_action_server:/home/jetson/ros2_ws/install/examples_rclcpp_minimal_action_client:/home/jetson/ros2_ws/install/examples_rclcpp_cbg_executor:/home/jetson/Computer-Engineering-Final-Thesis/ldlidar_ros2_ws/install/ldlidar_stl_ros2:/home/jetson/ros2_ws/install/py_srvcli:/home/jetson/ros2_ws/install/py_pubsub:/home/jetson/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/jetson/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/jetson/ros2_ws/install/examples_rclpy_minimal_service:/home/jetson/ros2_ws/install/examples_rclpy_minimal_publisher:/home/jetson/ros2_ws/install/examples_rclpy_minimal_client:/home/jetson/ros2_ws/install/examples_rclpy_minimal_action_server:/home/jetson/ros2_ws/install/examples_rclpy_minimal_action_client:/home/jetson/ros2_ws/install/examples_rclpy_guard_conditions:/home/jetson/ros2_ws/install/examples_rclpy_executors:/opt/ros/galactic')]), 'shell': False}
+[0.199271] (-) TimerEvent: {}
+[0.300178] (-) TimerEvent: {}
+[0.400883] (-) TimerEvent: {}
+[0.501564] (-) TimerEvent: {}
+[0.602281] (-) TimerEvent: {}
+[0.703034] (-) TimerEvent: {}
+[0.744797] (usb_cam) StdoutLine: {'line': b'-- The C compiler identification is GNU 8.4.0\n'}
+[0.803207] (-) TimerEvent: {}
+[0.904664] (-) TimerEvent: {}
+[1.005347] (-) TimerEvent: {}
+[1.106436] (-) TimerEvent: {}
+[1.207176] (-) TimerEvent: {}
+[1.307942] (-) TimerEvent: {}
+[1.311572] (usb_cam) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 8.4.0\n'}
+[1.366606] (usb_cam) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[1.408113] (-) TimerEvent: {}
+[1.508820] (-) TimerEvent: {}
+[1.609504] (-) TimerEvent: {}
+[1.710213] (-) TimerEvent: {}
+[1.724909] (usb_cam) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[1.731250] (usb_cam) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.810424] (-) TimerEvent: {}
+[1.911149] (-) TimerEvent: {}
+[2.012189] (-) TimerEvent: {}
+[2.058766] (usb_cam) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.112390] (-) TimerEvent: {}
+[2.144077] (usb_cam) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.146594] (usb_cam) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.161140] (usb_cam) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[2.212551] (-) TimerEvent: {}
+[2.313381] (-) TimerEvent: {}
+[2.416782] (-) TimerEvent: {}
+[2.478942] (usb_cam) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[2.484754] (usb_cam) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.517021] (-) TimerEvent: {}
+[2.617694] (-) TimerEvent: {}
+[2.720034] (-) TimerEvent: {}
+[2.820765] (-) TimerEvent: {}
+[2.836593] (usb_cam) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.897842] (usb_cam) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.900368] (usb_cam) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.920942] (-) TimerEvent: {}
+[2.932169] (usb_cam) StdoutLine: {'line': b'-- Found ament_cmake_auto: 1.1.6 (/opt/ros/galactic/share/ament_cmake_auto/cmake)\n'}
+[3.021123] (-) TimerEvent: {}
+[3.121811] (-) TimerEvent: {}
+[3.215224] (usb_cam) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[3.216005] (usb_cam) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[3.222120] (-) TimerEvent: {}
+[3.322773] (-) TimerEvent: {}
+[3.423616] (-) TimerEvent: {}
+[3.524525] (-) TimerEvent: {}
+[3.625221] (-) TimerEvent: {}
+[3.725878] (-) TimerEvent: {}
+[3.826645] (-) TimerEvent: {}
+[3.927313] (-) TimerEvent: {}
+[4.028010] (-) TimerEvent: {}
+[4.128669] (-) TimerEvent: {}
+[4.229444] (-) TimerEvent: {}
+[4.330185] (-) TimerEvent: {}
+[4.431909] (-) TimerEvent: {}
+[4.443543] (usb_cam) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[4.532072] (-) TimerEvent: {}
+[4.632777] (-) TimerEvent: {}
+[4.733489] (-) TimerEvent: {}
+[4.805283] (usb_cam) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[4.806158] (usb_cam) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[4.833655] (-) TimerEvent: {}
+[4.934308] (-) TimerEvent: {}
+[5.035101] (-) TimerEvent: {}
+[5.133348] (usb_cam) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[5.134606] (usb_cam) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[5.135225] (-) TimerEvent: {}
+[5.236217] (-) TimerEvent: {}
+[5.336884] (-) TimerEvent: {}
+[5.412872] (usb_cam) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[5.414592] (usb_cam) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[5.437134] (-) TimerEvent: {}
+[5.538671] (-) TimerEvent: {}
+[5.640853] (-) TimerEvent: {}
+[5.741739] (-) TimerEvent: {}
+[5.764623] (usb_cam) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[5.773905] (usb_cam) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[5.841907] (-) TimerEvent: {}
+[5.876449] (usb_cam) StdoutLine: {'line': b'-- Found CUDA: /usr/local/cuda (found suitable exact version "10.2") \n'}
+[5.942083] (-) TimerEvent: {}
+[6.044412] (-) TimerEvent: {}
+[6.145111] (-) TimerEvent: {}
+[6.245949] (-) TimerEvent: {}
+[6.306166] (usb_cam) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[6.346126] (-) TimerEvent: {}
+[6.395289] (usb_cam) StdoutLine: {'line': b'-- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)\n'}
+[6.446295] (-) TimerEvent: {}
+[6.547344] (-) TimerEvent: {}
+[6.648054] (-) TimerEvent: {}
+[6.748994] (-) TimerEvent: {}
+[6.849851] (-) TimerEvent: {}
+[6.950822] (-) TimerEvent: {}
+[7.051693] (-) TimerEvent: {}
+[7.068572] (usb_cam) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[7.151912] (-) TimerEvent: {}
+[7.219789] (usb_cam) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/galactic/include  \n'}
+[7.252106] (-) TimerEvent: {}
+[7.352775] (-) TimerEvent: {}
+[7.453613] (-) TimerEvent: {}
+[7.554450] (-) TimerEvent: {}
+[7.655157] (-) TimerEvent: {}
+[7.755897] (-) TimerEvent: {}
+[7.774252] (usb_cam) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[7.856062] (-) TimerEvent: {}
+[7.956907] (-) TimerEvent: {}
+[8.057562] (-) TimerEvent: {}
+[8.158225] (-) TimerEvent: {}
+[8.259098] (-) TimerEvent: {}
+[8.360049] (-) TimerEvent: {}
+[8.462587] (-) TimerEvent: {}
+[8.563554] (-) TimerEvent: {}
+[8.664332] (-) TimerEvent: {}
+[8.765253] (-) TimerEvent: {}
+[8.866092] (-) TimerEvent: {}
+[8.966830] (-) TimerEvent: {}
+[9.067795] (-) TimerEvent: {}
+[9.168695] (-) TimerEvent: {}
+[9.269335] (-) TimerEvent: {}
+[9.370004] (-) TimerEvent: {}
+[9.413195] (usb_cam) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)\n'}
+[9.454405] (usb_cam) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)\n'}
+[9.470168] (-) TimerEvent: {}
+[9.570876] (-) TimerEvent: {}
+[9.600078] (usb_cam) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[9.671076] (-) TimerEvent: {}
+[9.771855] (-) TimerEvent: {}
+[9.872545] (-) TimerEvent: {}
+[9.973239] (-) TimerEvent: {}
+[10.073952] (-) TimerEvent: {}
+[10.176069] (-) TimerEvent: {}
+[10.276964] (-) TimerEvent: {}
+[10.377669] (-) TimerEvent: {}
+[10.478353] (-) TimerEvent: {}
+[10.579145] (-) TimerEvent: {}
+[10.680060] (-) TimerEvent: {}
+[10.780705] (-) TimerEvent: {}
+[10.881364] (-) TimerEvent: {}
+[10.982302] (-) TimerEvent: {}
+[11.082946] (-) TimerEvent: {}
+[11.183583] (-) TimerEvent: {}
+[11.269940] (usb_cam) StdoutLine: {'line': b"-- Setting yaml-cpp_DIR to: '/opt/ros/galactic/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/lib/cmake/yaml-cpp'\n"}
+[11.283783] (-) TimerEvent: {}
+[11.384754] (-) TimerEvent: {}
+[11.485409] (-) TimerEvent: {}
+[11.586352] (-) TimerEvent: {}
+[11.687230] (-) TimerEvent: {}
+[11.787973] (-) TimerEvent: {}
+[11.888682] (-) TimerEvent: {}
+[11.989787] (-) TimerEvent: {}
+[12.090445] (-) TimerEvent: {}
+[12.191223] (-) TimerEvent: {}
+[12.227510] (usb_cam) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.6.0") \n'}
+[12.240317] (usb_cam) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1") \n'}
+[12.245567] (usb_cam) StdoutLine: {'line': b"-- Checking for module 'libavcodec'\n"}
+[12.291328] (-) TimerEvent: {}
+[12.347936] (usb_cam) StdoutLine: {'line': b'--   Found libavcodec, version 58.54.100\n'}
+[12.391502] (-) TimerEvent: {}
+[12.492221] (-) TimerEvent: {}
+[12.570225] (usb_cam) StdoutLine: {'line': b"-- Checking for module 'libavutil'\n"}
+[12.592713] (-) TimerEvent: {}
+[12.676416] (usb_cam) StdoutLine: {'line': b'--   Found libavutil, version 56.31.100\n'}
+[12.692885] (-) TimerEvent: {}
+[12.793863] (-) TimerEvent: {}
+[12.894956] (-) TimerEvent: {}
+[12.911647] (usb_cam) StdoutLine: {'line': b"-- Checking for module 'libswscale'\n"}
+[12.995123] (-) TimerEvent: {}
+[13.015954] (usb_cam) StdoutLine: {'line': b'--   Found libswscale, version 5.5.100\n'}
+[13.095301] (-) TimerEvent: {}
+[13.196113] (-) TimerEvent: {}
+[13.296772] (-) TimerEvent: {}
+[13.397468] (-) TimerEvent: {}
+[13.498131] (-) TimerEvent: {}
+[13.598852] (-) TimerEvent: {}
+[13.699543] (-) TimerEvent: {}
+[13.702179] (usb_cam) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)\n'}
+[13.799714] (-) TimerEvent: {}
+[13.900344] (-) TimerEvent: {}
+[14.001021] (-) TimerEvent: {}
+[14.011785] (usb_cam) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/galactic/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[14.025460] (usb_cam) StdoutLine: {'line': b'-- Check if compiler accepts -pthread\n'}
+[14.101192] (-) TimerEvent: {}
+[14.212005] (-) TimerEvent: {}
+[14.312732] (-) TimerEvent: {}
+[14.356412] (usb_cam) StdoutLine: {'line': b'-- Check if compiler accepts -pthread - yes\n'}
+[14.406192] (usb_cam) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[14.412905] (-) TimerEvent: {}
+[14.422608] (usb_cam) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[14.424623] (usb_cam) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/jetson/Downloads/ros1/src/usb_cam/include\n'}
+[14.425254] (usb_cam) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[14.440346] (usb_cam) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[14.441208] (usb_cam) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[14.448021] (usb_cam) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[14.455277] (usb_cam) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[14.461037] (usb_cam) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[14.475905] (usb_cam) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[14.476771] (usb_cam) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[14.482144] (usb_cam) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[14.513107] (-) TimerEvent: {}
+[14.521334] (usb_cam) StdoutLine: {'line': b'-- Configuring done\n'}
+[14.613296] (-) TimerEvent: {}
+[14.713955] (-) TimerEvent: {}
+[14.820018] (-) TimerEvent: {}
+[14.920688] (-) TimerEvent: {}
+[14.923877] (usb_cam) StdoutLine: {'line': b'-- Generating done\n'}
+[14.938211] (usb_cam) StdoutLine: {'line': b'-- Build files have been written to: /home/jetson/Downloads/ros1/build/usb_cam\n'}
+[15.008502] (usb_cam) CommandEnded: {'returncode': 0}
+[15.015983] (usb_cam) JobProgress: {'identifier': 'usb_cam', 'progress': 'build'}
+[15.016143] (usb_cam) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jetson/Downloads/ros1/build/usb_cam', '--', '-j4', '-l4'], 'cwd': '/home/jetson/Downloads/ros1/build/usb_cam', 'env': OrderedDict([('JETSON_BOARD', 'P3449-0000'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('JETSON_TYPE', 'Nano (Developer Kit Version)'), ('USER', 'jetson'), ('LC_TIME', 'nl_NL.UTF-8'), ('JETSON_CUDA', '10.2.300'), ('SSH_AGENT_PID', '7669'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/jetson/ros2_ws/install/turtlesim/lib:/home/jetson/ros2_ws/install/examples_rclcpp_minimal_composition/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/jetson'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_TENSORRT', '8.0.1.6'), ('JETSON_L4T', '32.6.1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'nl_NL.UTF-8'), ('MANAGERPID', '7246'), ('JETSON_OPENCV_CUDA', 'YES'), ('JETSON_VISIONWORKS', '1.6.0.501'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=5ce55604200410f399c2f06564ce6d99'), ('COLORTERM', 'truecolor'), ('JETSON_CHIP_ID', '33'), ('_colcon_cd_root', '/opt/ros/galactic/'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/jetson/ldlidar_ros2_ws/install:/home/jetson/Computer-Engineering-Final-Thesis/ldlidar_ros2_ws/install:/home/jetson/ros2_ws/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'jetson'), ('JETSON_MODULE', 'P3448-0000'), ('JETSON_SERIAL_NUMBER', '1424722009121'), ('JETSON_CUDNN', '8.2.1.32'), ('JOURNAL_STREAM', '8:37272'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'porg'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'jetson'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/home/jetson/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/nano:@/tmp/.ICE-unix/7705,unix/nano:/tmp/.ICE-unix/7705'), ('INVOCATION_ID', 'd0ad603d13ab40c7b4a834dc0301a9c7'), ('JETSON_OPENCV', '4.6.0'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nl_NL.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/83b50aec_aa03_4466_89e0_27d2a99ffbf6'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('ZEITGEIST_DATA_PATH', '/home/jetson/.local/share/zeitgeist'), ('DISPLAY', ':0'), ('JETSON_MACHINE', 'NVIDIA Jetson Nano (Developer Kit Version)'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'nl_NL.UTF-8'), ('JETSON_L4T_REVISION', '6.1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra210'), ('GNOME_TERMINAL_SERVICE', ':1.116'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/jetson/ldlidar_ros2_ws/install/ldlidar_stl_ros2:/home/jetson/Computer-Engineering-Final-Thesis/ldlidar_ros2_ws/install/ldlidar_stl_ros2:/home/jetson/ros2_ws/install/turtlesim:/home/jetson/ros2_ws/install/py_srvcli:/home/jetson/ros2_ws/install/py_pubsub:/home/jetson/ros2_ws/install/my_package:/home/jetson/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/jetson/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/jetson/ros2_ws/install/examples_rclpy_minimal_service:/home/jetson/ros2_ws/install/examples_rclpy_minimal_publisher:/home/jetson/ros2_ws/install/examples_rclpy_minimal_client:/home/jetson/ros2_ws/install/examples_rclpy_minimal_action_server:/home/jetson/ros2_ws/install/examples_rclpy_minimal_action_client:/home/jetson/ros2_ws/install/examples_rclpy_guard_conditions:/home/jetson/ros2_ws/install/examples_rclpy_executors:/home/jetson/ros2_ws/install/examples_rclcpp_multithreaded_executor:/home/jetson/ros2_ws/install/examples_rclcpp_minimal_timer:/home/jetson/ros2_ws/install/examples_rclcpp_minimal_subscriber:/home/jetson/ros2_ws/install/examples_rclcpp_minimal_service:/home/jetson/ros2_ws/install/examples_rclcpp_minimal_publisher:/home/jetson/ros2_ws/install/examples_rclcpp_minimal_composition:/home/jetson/ros2_ws/install/examples_rclcpp_minimal_client:/home/jetson/ros2_ws/install/examples_rclcpp_minimal_action_server:/home/jetson/ros2_ws/install/examples_rclcpp_minimal_action_client:/home/jetson/ros2_ws/install/examples_rclcpp_cbg_executor:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nl_NL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_BOARDIDS', '3448'), ('LC_MEASUREMENT', 'nl_NL.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'nl_NL.UTF-8'), ('JETSON_L4T_RELEASE', '32'), ('JETSON_VULKAN_INFO', '1.2.141'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '5.3'), ('PWD', '/home/jetson/Downloads/ros1/build/usb_cam'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=5ce55604200410f399c2f06564ce6d99'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('JETSON_VPI', 'ii libnvvpi1 1.1.15 arm64 NVIDIA Vision Programming Interface library'), ('PYTHONPATH', '/home/jetson/ros2_ws/install/turtlesim/lib/python3.8/site-packages:/home/jetson/ros2_ws/install/py_srvcli/lib/python3.8/site-packages:/home/jetson/ros2_ws/install/py_pubsub/lib/python3.8/site-packages:/home/jetson/ros2_ws/build/examples_rclpy_pointcloud_publisher:/home/jetson/ros2_ws/install/examples_rclpy_pointcloud_publisher/lib/python3.8/site-packages:/home/jetson/ros2_ws/build/examples_rclpy_minimal_subscriber:/home/jetson/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.8/site-packages:/home/jetson/ros2_ws/build/examples_rclpy_minimal_service:/home/jetson/ros2_ws/install/examples_rclpy_minimal_service/lib/python3.8/site-packages:/home/jetson/ros2_ws/build/examples_rclpy_minimal_publisher:/home/jetson/ros2_ws/install/examples_rclpy_minimal_publisher/lib/python3.8/site-packages:/home/jetson/ros2_ws/build/examples_rclpy_minimal_client:/home/jetson/ros2_ws/install/examples_rclpy_minimal_client/lib/python3.8/site-packages:/home/jetson/ros2_ws/build/examples_rclpy_minimal_action_server:/home/jetson/ros2_ws/install/examples_rclpy_minimal_action_server/lib/python3.8/site-packages:/home/jetson/ros2_ws/build/examples_rclpy_minimal_action_client:/home/jetson/ros2_ws/install/examples_rclpy_minimal_action_client/lib/python3.8/site-packages:/home/jetson/ros2_ws/build/examples_rclpy_guard_conditions:/home/jetson/ros2_ws/install/examples_rclpy_guard_conditions/lib/python3.8/site-packages:/home/jetson/ros2_ws/build/examples_rclpy_executors:/home/jetson/ros2_ws/install/examples_rclpy_executors/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('LC_NUMERIC', 'nl_NL.UTF-8'), ('LC_PAPER', 'nl_NL.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('JETSON_JETPACK', '4.6'), ('CMAKE_PREFIX_PATH', '/home/jetson/ldlidar_ros2_ws/install/ldlidar_stl_ros2:/home/jetson/ros2_ws/install/turtlesim:/home/jetson/ros2_ws/install/my_package:/home/jetson/ros2_ws/install/examples_rclcpp_multithreaded_executor:/home/jetson/ros2_ws/install/examples_rclcpp_minimal_timer:/home/jetson/ros2_ws/install/examples_rclcpp_minimal_subscriber:/home/jetson/ros2_ws/install/examples_rclcpp_minimal_service:/home/jetson/ros2_ws/install/examples_rclcpp_minimal_publisher:/home/jetson/ros2_ws/install/examples_rclcpp_minimal_composition:/home/jetson/ros2_ws/install/examples_rclcpp_minimal_client:/home/jetson/ros2_ws/install/examples_rclcpp_minimal_action_server:/home/jetson/ros2_ws/install/examples_rclcpp_minimal_action_client:/home/jetson/ros2_ws/install/examples_rclcpp_cbg_executor:/home/jetson/Computer-Engineering-Final-Thesis/ldlidar_ros2_ws/install/ldlidar_stl_ros2:/home/jetson/ros2_ws/install/py_srvcli:/home/jetson/ros2_ws/install/py_pubsub:/home/jetson/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/jetson/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/jetson/ros2_ws/install/examples_rclpy_minimal_service:/home/jetson/ros2_ws/install/examples_rclpy_minimal_publisher:/home/jetson/ros2_ws/install/examples_rclpy_minimal_client:/home/jetson/ros2_ws/install/examples_rclpy_minimal_action_server:/home/jetson/ros2_ws/install/examples_rclpy_minimal_action_client:/home/jetson/ros2_ws/install/examples_rclpy_guard_conditions:/home/jetson/ros2_ws/install/examples_rclpy_executors:/opt/ros/galactic')]), 'shell': False}
+[15.025897] (-) TimerEvent: {}
+[15.127676] (-) TimerEvent: {}
+[15.228599] (-) TimerEvent: {}
+[15.245728] (usb_cam) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target usb_cam_node_exe\x1b[0m\n'}
+[15.328765] (-) TimerEvent: {}
+[15.429736] (-) TimerEvent: {}
+[15.530585] (-) TimerEvent: {}
+[15.631292] (-) TimerEvent: {}
+[15.657175] (usb_cam) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/usb_cam_node_exe.dir/rclcpp_components/node_main_usb_cam_node_exe.cpp.o\x1b[0m\n'}
+[15.731530] (-) TimerEvent: {}
+[15.832306] (-) TimerEvent: {}
+[15.933308] (-) TimerEvent: {}
+[16.034249] (-) TimerEvent: {}
+[16.134891] (-) TimerEvent: {}
+[16.236076] (-) TimerEvent: {}
+[16.336758] (-) TimerEvent: {}
+[16.438352] (-) TimerEvent: {}
+[16.539314] (-) TimerEvent: {}
+[16.640582] (-) TimerEvent: {}
+[16.741302] (-) TimerEvent: {}
+[16.842250] (-) TimerEvent: {}
+[16.942961] (-) TimerEvent: {}
+[17.043692] (-) TimerEvent: {}
+[17.144379] (-) TimerEvent: {}
+[17.245081] (-) TimerEvent: {}
+[17.345771] (-) TimerEvent: {}
+[17.446472] (-) TimerEvent: {}
+[17.547556] (-) TimerEvent: {}
+[17.648589] (-) TimerEvent: {}
+[17.749308] (-) TimerEvent: {}
+[17.850021] (-) TimerEvent: {}
+[17.951551] (-) TimerEvent: {}
+[18.052245] (-) TimerEvent: {}
+[18.153717] (-) TimerEvent: {}
+[18.255534] (-) TimerEvent: {}
+[18.357726] (-) TimerEvent: {}
+[18.458444] (-) TimerEvent: {}
+[18.559183] (-) TimerEvent: {}
+[18.660445] (-) TimerEvent: {}
+[18.761158] (-) TimerEvent: {}
+[18.861853] (-) TimerEvent: {}
+[18.962550] (-) TimerEvent: {}
+[19.063333] (-) TimerEvent: {}
+[19.164089] (-) TimerEvent: {}
+[19.264825] (-) TimerEvent: {}
+[19.365517] (-) TimerEvent: {}
+[19.466239] (-) TimerEvent: {}
+[19.567131] (-) TimerEvent: {}
+[19.668108] (-) TimerEvent: {}
+[19.768804] (-) TimerEvent: {}
+[19.869486] (-) TimerEvent: {}
+[19.970383] (-) TimerEvent: {}
+[20.071092] (-) TimerEvent: {}
+[20.171790] (-) TimerEvent: {}
+[20.273032] (-) TimerEvent: {}
+[20.373689] (-) TimerEvent: {}
+[20.474357] (-) TimerEvent: {}
+[20.575381] (-) TimerEvent: {}
+[20.676371] (-) TimerEvent: {}
+[20.777079] (-) TimerEvent: {}
+[20.877728] (-) TimerEvent: {}
+[20.978378] (-) TimerEvent: {}
+[21.079453] (-) TimerEvent: {}
+[21.180157] (-) TimerEvent: {}
+[21.280849] (-) TimerEvent: {}
+[21.381792] (-) TimerEvent: {}
+[21.483603] (-) TimerEvent: {}
+[21.585283] (-) TimerEvent: {}
+[21.685976] (-) TimerEvent: {}
+[21.786695] (-) TimerEvent: {}
+[21.888189] (-) TimerEvent: {}
+[21.990128] (-) TimerEvent: {}
+[22.090786] (-) TimerEvent: {}
+[22.191606] (-) TimerEvent: {}
+[22.292748] (-) TimerEvent: {}
+[22.393649] (-) TimerEvent: {}
+[22.494296] (-) TimerEvent: {}
+[22.594973] (-) TimerEvent: {}
+[22.695731] (-) TimerEvent: {}
+[22.796786] (-) TimerEvent: {}
+[22.897436] (-) TimerEvent: {}
+[22.998639] (-) TimerEvent: {}
+[23.099444] (-) TimerEvent: {}
+[23.200087] (-) TimerEvent: {}
+[23.300834] (-) TimerEvent: {}
+[23.401704] (-) TimerEvent: {}
+[23.502744] (-) TimerEvent: {}
+[23.606847] (-) TimerEvent: {}
+[23.709141] (-) TimerEvent: {}
+[23.809931] (-) TimerEvent: {}
+[23.910651] (-) TimerEvent: {}
+[24.011720] (-) TimerEvent: {}
+[24.112984] (-) TimerEvent: {}
+[24.215779] (-) TimerEvent: {}
+[24.316926] (-) TimerEvent: {}
+[24.418048] (-) TimerEvent: {}
+[24.518781] (-) TimerEvent: {}
+[24.619952] (-) TimerEvent: {}
+[24.721392] (-) TimerEvent: {}
+[24.822558] (-) TimerEvent: {}
+[24.926995] (-) TimerEvent: {}
+[25.027736] (-) TimerEvent: {}
+[25.128708] (-) TimerEvent: {}
+[25.229508] (-) TimerEvent: {}
+[25.330280] (-) TimerEvent: {}
+[25.431025] (-) TimerEvent: {}
+[25.531713] (-) TimerEvent: {}
+[25.632385] (-) TimerEvent: {}
+[25.733037] (-) TimerEvent: {}
+[25.833793] (-) TimerEvent: {}
+[25.934445] (-) TimerEvent: {}
+[26.035125] (-) TimerEvent: {}
+[26.135996] (-) TimerEvent: {}
+[26.236765] (-) TimerEvent: {}
+[26.339707] (-) TimerEvent: {}
+[26.440662] (-) TimerEvent: {}
+[26.541521] (-) TimerEvent: {}
+[26.642336] (-) TimerEvent: {}
+[26.743044] (-) TimerEvent: {}
+[26.843961] (-) TimerEvent: {}
+[26.945005] (-) TimerEvent: {}
+[27.048010] (-) TimerEvent: {}
+[27.148940] (-) TimerEvent: {}
+[27.249697] (-) TimerEvent: {}
+[27.350522] (-) TimerEvent: {}
+[27.451302] (-) TimerEvent: {}
+[27.552009] (-) TimerEvent: {}
+[27.652723] (-) TimerEvent: {}
+[27.754342] (-) TimerEvent: {}
+[27.855137] (-) TimerEvent: {}
+[27.956180] (-) TimerEvent: {}
+[28.057087] (-) TimerEvent: {}
+[28.157961] (-) TimerEvent: {}
+[28.259247] (-) TimerEvent: {}
+[28.359983] (-) TimerEvent: {}
+[28.461287] (-) TimerEvent: {}
+[28.561951] (-) TimerEvent: {}
+[28.663346] (-) TimerEvent: {}
+[28.764228] (-) TimerEvent: {}
+[28.865172] (-) TimerEvent: {}
+[28.966120] (-) TimerEvent: {}
+[29.067617] (-) TimerEvent: {}
+[29.168576] (-) TimerEvent: {}
+[29.269278] (-) TimerEvent: {}
+[29.370232] (-) TimerEvent: {}
+[29.418694] (usb_cam) StdoutLine: {'line': b'[ 14%] \x1b[32m\x1b[1mLinking CXX executable usb_cam_node_exe\x1b[0m\n'}
+[29.470432] (-) TimerEvent: {}
+[29.571706] (-) TimerEvent: {}
+[29.672829] (-) TimerEvent: {}
+[29.773719] (-) TimerEvent: {}
+[29.874705] (-) TimerEvent: {}
+[29.975543] (-) TimerEvent: {}
+[30.076241] (-) TimerEvent: {}
+[30.176918] (-) TimerEvent: {}
+[30.198511] (usb_cam) StdoutLine: {'line': b'[ 14%] Built target usb_cam_node_exe\n'}
+[30.247018] (usb_cam) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target gtest_main\x1b[0m\n'}
+[30.277147] (-) TimerEvent: {}
+[30.346541] (usb_cam) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[30.377320] (-) TimerEvent: {}
+[30.478485] (-) TimerEvent: {}
+[30.579252] (-) TimerEvent: {}
+[30.680013] (-) TimerEvent: {}
+[30.780662] (-) TimerEvent: {}
+[30.881457] (-) TimerEvent: {}
+[30.982147] (-) TimerEvent: {}
+[31.082827] (-) TimerEvent: {}
+[31.183626] (-) TimerEvent: {}
+[31.284290] (-) TimerEvent: {}
+[31.384918] (-) TimerEvent: {}
+[31.485710] (-) TimerEvent: {}
+[31.586396] (-) TimerEvent: {}
+[31.687235] (-) TimerEvent: {}
+[31.788392] (-) TimerEvent: {}
+[31.889048] (-) TimerEvent: {}
+[31.989770] (-) TimerEvent: {}
+[32.090469] (-) TimerEvent: {}
+[32.191516] (-) TimerEvent: {}
+[32.292196] (-) TimerEvent: {}
+[32.392827] (-) TimerEvent: {}
+[32.493531] (-) TimerEvent: {}
+[32.594267] (-) TimerEvent: {}
+[32.695023] (-) TimerEvent: {}
+[32.795725] (-) TimerEvent: {}
+[32.896614] (-) TimerEvent: {}
+[32.997400] (-) TimerEvent: {}
+[33.098132] (-) TimerEvent: {}
+[33.153889] (usb_cam) StdoutLine: {'line': b'[ 28%] \x1b[32m\x1b[1mLinking CXX static library libgtest_main.a\x1b[0m\n'}
+[33.198302] (-) TimerEvent: {}
+[33.297668] (usb_cam) StdoutLine: {'line': b'[ 28%] Built target gtest_main\n'}
+[33.298334] (-) TimerEvent: {}
+[33.344228] (usb_cam) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target gtest\x1b[0m\n'}
+[33.398518] (-) TimerEvent: {}
+[33.428497] (usb_cam) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[33.498728] (-) TimerEvent: {}
+[33.599529] (-) TimerEvent: {}
+[33.700188] (-) TimerEvent: {}
+[33.800845] (-) TimerEvent: {}
+[33.901512] (-) TimerEvent: {}
+[34.002549] (-) TimerEvent: {}
+[34.103606] (-) TimerEvent: {}
+[34.204407] (-) TimerEvent: {}
+[34.305091] (-) TimerEvent: {}
+[34.405835] (-) TimerEvent: {}
+[34.506814] (-) TimerEvent: {}
+[34.607530] (-) TimerEvent: {}
+[34.708180] (-) TimerEvent: {}
+[34.808876] (-) TimerEvent: {}
+[34.909528] (-) TimerEvent: {}
+[35.010174] (-) TimerEvent: {}
+[35.110912] (-) TimerEvent: {}
+[35.211717] (-) TimerEvent: {}
+[35.312385] (-) TimerEvent: {}
+[35.413168] (-) TimerEvent: {}
+[35.513811] (-) TimerEvent: {}
+[35.614499] (-) TimerEvent: {}
+[35.715149] (-) TimerEvent: {}
+[35.815952] (-) TimerEvent: {}
+[35.916654] (-) TimerEvent: {}
+[36.017386] (-) TimerEvent: {}
+[36.118356] (-) TimerEvent: {}
+[36.219011] (-) TimerEvent: {}
+[36.319768] (-) TimerEvent: {}
+[36.420887] (-) TimerEvent: {}
+[36.521585] (-) TimerEvent: {}
+[36.622727] (-) TimerEvent: {}
+[36.723475] (-) TimerEvent: {}
+[36.824222] (-) TimerEvent: {}
+[36.925235] (-) TimerEvent: {}
+[37.026582] (-) TimerEvent: {}
+[37.127286] (-) TimerEvent: {}
+[37.229686] (-) TimerEvent: {}
+[37.330454] (-) TimerEvent: {}
+[37.431585] (-) TimerEvent: {}
+[37.532274] (-) TimerEvent: {}
+[37.633088] (-) TimerEvent: {}
+[37.733776] (-) TimerEvent: {}
+[37.834556] (-) TimerEvent: {}
+[37.935210] (-) TimerEvent: {}
+[38.036073] (-) TimerEvent: {}
+[38.136853] (-) TimerEvent: {}
+[38.239376] (-) TimerEvent: {}
+[38.340214] (-) TimerEvent: {}
+[38.440973] (-) TimerEvent: {}
+[38.542203] (-) TimerEvent: {}
+[38.644219] (-) TimerEvent: {}
+[38.744950] (-) TimerEvent: {}
+[38.845650] (-) TimerEvent: {}
+[38.946384] (-) TimerEvent: {}
+[39.047103] (-) TimerEvent: {}
+[39.148188] (-) TimerEvent: {}
+[39.249406] (-) TimerEvent: {}
+[39.351428] (-) TimerEvent: {}
+[39.452750] (-) TimerEvent: {}
+[39.553635] (-) TimerEvent: {}
+[39.654325] (-) TimerEvent: {}
+[39.755019] (-) TimerEvent: {}
+[39.855842] (-) TimerEvent: {}
+[39.956519] (-) TimerEvent: {}
+[40.057386] (-) TimerEvent: {}
+[40.158214] (-) TimerEvent: {}
+[40.258885] (-) TimerEvent: {}
+[40.359912] (-) TimerEvent: {}
+[40.460649] (-) TimerEvent: {}
+[40.561538] (-) TimerEvent: {}
+[40.662452] (-) TimerEvent: {}
+[40.763106] (-) TimerEvent: {}
+[40.863884] (-) TimerEvent: {}
+[40.964593] (-) TimerEvent: {}
+[41.065274] (-) TimerEvent: {}
+[41.166026] (-) TimerEvent: {}
+[41.267099] (-) TimerEvent: {}
+[41.367782] (-) TimerEvent: {}
+[41.469104] (-) TimerEvent: {}
+[41.569942] (-) TimerEvent: {}
+[41.670702] (-) TimerEvent: {}
+[41.771384] (-) TimerEvent: {}
+[41.872160] (-) TimerEvent: {}
+[41.972866] (-) TimerEvent: {}
+[42.074417] (-) TimerEvent: {}
+[42.175108] (-) TimerEvent: {}
+[42.275830] (-) TimerEvent: {}
+[42.376518] (-) TimerEvent: {}
+[42.477825] (-) TimerEvent: {}
+[42.578502] (-) TimerEvent: {}
+[42.679193] (-) TimerEvent: {}
+[42.780007] (-) TimerEvent: {}
+[42.880688] (-) TimerEvent: {}
+[42.981475] (-) TimerEvent: {}
+[43.083129] (-) TimerEvent: {}
+[43.183921] (-) TimerEvent: {}
+[43.285167] (-) TimerEvent: {}
+[43.386049] (-) TimerEvent: {}
+[43.487198] (-) TimerEvent: {}
+[43.587938] (-) TimerEvent: {}
+[43.688641] (-) TimerEvent: {}
+[43.789556] (-) TimerEvent: {}
+[43.890517] (-) TimerEvent: {}
+[43.991379] (-) TimerEvent: {}
+[44.092147] (-) TimerEvent: {}
+[44.192821] (-) TimerEvent: {}
+[44.293516] (-) TimerEvent: {}
+[44.394248] (-) TimerEvent: {}
+[44.494956] (-) TimerEvent: {}
+[44.597325] (-) TimerEvent: {}
+[44.698385] (-) TimerEvent: {}
+[44.799255] (-) TimerEvent: {}
+[44.899990] (-) TimerEvent: {}
+[45.000673] (-) TimerEvent: {}
+[45.101803] (-) TimerEvent: {}
+[45.202508] (-) TimerEvent: {}
+[45.303244] (-) TimerEvent: {}
+[45.404586] (-) TimerEvent: {}
+[45.505284] (-) TimerEvent: {}
+[45.605980] (-) TimerEvent: {}
+[45.707182] (-) TimerEvent: {}
+[45.807939] (-) TimerEvent: {}
+[45.908580] (-) TimerEvent: {}
+[46.009276] (-) TimerEvent: {}
+[46.109973] (-) TimerEvent: {}
+[46.210627] (-) TimerEvent: {}
+[46.311493] (-) TimerEvent: {}
+[46.412593] (-) TimerEvent: {}
+[46.513281] (-) TimerEvent: {}
+[46.613944] (-) TimerEvent: {}
+[46.714738] (-) TimerEvent: {}
+[46.815535] (-) TimerEvent: {}
+[46.916227] (-) TimerEvent: {}
+[47.016934] (-) TimerEvent: {}
+[47.118090] (-) TimerEvent: {}
+[47.130606] (usb_cam) StdoutLine: {'line': b'[ 42%] \x1b[32m\x1b[1mLinking CXX static library libgtest.a\x1b[0m\n'}
+[47.218277] (-) TimerEvent: {}
+[47.319104] (-) TimerEvent: {}
+[47.378705] (usb_cam) StdoutLine: {'line': b'[ 42%] Built target gtest\n'}
+[47.419279] (-) TimerEvent: {}
+[47.421161] (usb_cam) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target usb_cam\x1b[0m\n'}
+[47.519523] (-) TimerEvent: {}
+[47.555602] (usb_cam) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/usb_cam.dir/src/usb_cam.cpp.o\x1b[0m\n'}
+[47.619756] (-) TimerEvent: {}
+[47.720435] (-) TimerEvent: {}
+[47.821115] (-) TimerEvent: {}
+[47.921888] (-) TimerEvent: {}
+[48.022625] (-) TimerEvent: {}
+[48.089228] (usb_cam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/utils.hpp:43\x1b[m\x1b[K,\n'}
+[48.090656] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:45\x1b[m\x1b[K,\n'}
+[48.091618] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65\x1b[m\x1b[K:\n'}
+[48.092527] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunterminated #ifndef\n'}
+[48.093119] (usb_cam) StderrLine: {'line': b' #ifndef USB_CAM__FORMATS__PIXEL_FORMAT_BASE_HPP_\n'}
+[48.093678] (usb_cam) StderrLine: {'line': b' \n'}
+[48.094144] (usb_cam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:45\x1b[m\x1b[K,\n'}
+[48.095089] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65\x1b[m\x1b[K:\n'}
+[48.095790] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/utils.hpp:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunterminated #ifndef\n'}
+[48.096358] (usb_cam) StderrLine: {'line': b' #ifndef USB_CAM__UTILS_HPP_\n'}
+[48.097164] (usb_cam) StderrLine: {'line': b' \n'}
+[48.097680] (usb_cam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:46\x1b[m\x1b[K,\n'}
+[48.098166] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65\x1b[m\x1b[K:\n'}
+[48.098596] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunterminated #ifndef\n'}
+[48.099285] (usb_cam) StderrLine: {'line': b' #ifndef USB_CAM__FORMATS__PIXEL_FORMAT_BASE_HPP_\n'}
+[48.099944] (usb_cam) StderrLine: {'line': b' \n'}
+[48.105360] (usb_cam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/mjpeg.hpp:52\x1b[m\x1b[K,\n'}
+[48.106912] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:48\x1b[m\x1b[K,\n'}
+[48.108236] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65\x1b[m\x1b[K:\n'}
+[48.109413] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunterminated #ifndef\n'}
+[48.110700] (usb_cam) StderrLine: {'line': b' #ifndef USB_CAM__USB_CAM_HPP_\n'}
+[48.112683] (usb_cam) StderrLine: {'line': b' \n'}
+[48.113869] (usb_cam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/mjpeg.hpp:53\x1b[m\x1b[K,\n'}
+[48.114302] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:48\x1b[m\x1b[K,\n'}
+[48.114683] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65\x1b[m\x1b[K:\n'}
+[48.115363] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunterminated #ifndef\n'}
+[48.115942] (usb_cam) StderrLine: {'line': b' #ifndef USB_CAM__FORMATS__PIXEL_FORMAT_BASE_HPP_\n'}
+[48.116373] (usb_cam) StderrLine: {'line': b' \n'}
+[48.117051] (usb_cam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/utils.hpp:33\x1b[m\x1b[K,\n'}
+[48.117675] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/mjpeg.hpp:54\x1b[m\x1b[K,\n'}
+[48.120624] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:48\x1b[m\x1b[K,\n'}
+[48.121276] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65\x1b[m\x1b[K:\n'}
+[48.121901] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/utils.hpp:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunterminated #ifndef\n'}
+[48.122751] (-) TimerEvent: {}
+[48.123369] (usb_cam) StderrLine: {'line': b' #ifndef USB_CAM__UTILS_HPP_\n'}
+[48.124102] (usb_cam) StderrLine: {'line': b' \n'}
+[48.125488] (usb_cam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/mjpeg.hpp:54\x1b[m\x1b[K,\n'}
+[48.126081] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:48\x1b[m\x1b[K,\n'}
+[48.128918] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65\x1b[m\x1b[K:\n'}
+[48.129586] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/utils.hpp:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunterminated #ifndef\n'}
+[48.130580] (usb_cam) StderrLine: {'line': b' #ifndef USB_CAM__FORMATS__UTILS_HPP_\n'}
+[48.131266] (usb_cam) StderrLine: {'line': b' \n'}
+[48.131820] (usb_cam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:48\x1b[m\x1b[K,\n'}
+[48.133865] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65\x1b[m\x1b[K:\n'}
+[48.134520] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/mjpeg.hpp:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunterminated #ifndef\n'}
+[48.135725] (usb_cam) StderrLine: {'line': b' #ifndef USB_CAM__FORMATS__MJPEG_HPP_\n'}
+[48.136548] (usb_cam) StderrLine: {'line': b' \n'}
+[48.137159] (usb_cam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/mono.hpp:35\x1b[m\x1b[K,\n'}
+[48.137672] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:49\x1b[m\x1b[K,\n'}
+[48.138183] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65\x1b[m\x1b[K:\n'}
+[48.138699] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunterminated #ifndef\n'}
+[48.139230] (usb_cam) StderrLine: {'line': b' #ifndef USB_CAM__FORMATS__PIXEL_FORMAT_BASE_HPP_\n'}
+[48.142532] (usb_cam) StderrLine: {'line': b' \n'}
+[48.143179] (usb_cam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/mono.hpp:36\x1b[m\x1b[K,\n'}
+[48.143746] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:49\x1b[m\x1b[K,\n'}
+[48.144220] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65\x1b[m\x1b[K:\n'}
+[48.144665] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/utils.hpp:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunterminated #ifndef\n'}
+[48.145115] (usb_cam) StderrLine: {'line': b' #ifndef USB_CAM__FORMATS__UTILS_HPP_\n'}
+[48.145579] (usb_cam) StderrLine: {'line': b' \n'}
+[48.146090] (usb_cam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:49\x1b[m\x1b[K,\n'}
+[48.146640] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65\x1b[m\x1b[K:\n'}
+[48.149042] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/mono.hpp:111:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Knull character(s) ignored [\x1b[01;31m\x1b[K-Werror\x1b[m\x1b[K]\n'}
+[48.149655] (usb_cam) StderrLine: {'line': b' \x1b[01;31m\x1b[K \x1b[m\x1b[K                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              // Copyright 2023 Evan Flynn\n'}
+[48.150421] (usb_cam) StderrLine: {'line': b' \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[48.150975] (usb_cam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/rgb.hpp:35\x1b[m\x1b[K,\n'}
+[48.151749] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:50\x1b[m\x1b[K,\n'}
+[48.152437] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65\x1b[m\x1b[K:\n'}
+[48.153853] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunterminated #ifndef\n'}
+[48.155068] (usb_cam) StderrLine: {'line': b' #ifndef USB_CAM__FORMATS__PIXEL_FORMAT_BASE_HPP_\n'}
+[48.155753] (usb_cam) StderrLine: {'line': b' \n'}
+[48.156306] (usb_cam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/rgb.hpp:36\x1b[m\x1b[K,\n'}
+[48.156817] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:50\x1b[m\x1b[K,\n'}
+[48.157283] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65\x1b[m\x1b[K:\n'}
+[48.157806] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/utils.hpp:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunterminated #ifndef\n'}
+[48.158360] (usb_cam) StderrLine: {'line': b' #ifndef USB_CAM__FORMATS__UTILS_HPP_\n'}
+[48.158831] (usb_cam) StderrLine: {'line': b' \n'}
+[48.159292] (usb_cam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:50\x1b[m\x1b[K,\n'}
+[48.159855] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65\x1b[m\x1b[K:\n'}
+[48.162834] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/rgb.hpp:62:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Knull character(s) ignored [\x1b[01;31m\x1b[K-Werror\x1b[m\x1b[K]\n'}
+[48.163741] (usb_cam) StderrLine: {'line': b' \x1b[01;31m\x1b[K \x1b[m\x1b[K                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   // Copyright 2023 Evan Flynn\n'}
+[48.164765] (usb_cam) StderrLine: {'line': b' \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[48.165443] (usb_cam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/uyvy.hpp:35\x1b[m\x1b[K,\n'}
+[48.166152] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:51\x1b[m\x1b[K,\n'}
+[48.166842] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65\x1b[m\x1b[K:\n'}
+[48.169691] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunterminated #ifndef\n'}
+[48.170912] (usb_cam) StderrLine: {'line': b' #ifndef USB_CAM__FORMATS__PIXEL_FORMAT_BASE_HPP_\n'}
+[48.171745] (usb_cam) StderrLine: {'line': b' \n'}
+[48.172306] (usb_cam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/uyvy.hpp:36\x1b[m\x1b[K,\n'}
+[48.172973] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:51\x1b[m\x1b[K,\n'}
+[48.174701] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65\x1b[m\x1b[K:\n'}
+[48.175479] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/utils.hpp:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunterminated #ifndef\n'}
+[48.176088] (usb_cam) StderrLine: {'line': b' #ifndef USB_CAM__FORMATS__UTILS_HPP_\n'}
+[48.176963] (usb_cam) StderrLine: {'line': b' \n'}
+[48.177618] (usb_cam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:51\x1b[m\x1b[K,\n'}
+[48.178292] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65\x1b[m\x1b[K:\n'}
+[48.178866] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/uyvy.hpp:112:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Knull character(s) ignored [\x1b[01;31m\x1b[K-Werror\x1b[m\x1b[K]\n'}
+[48.179503] (usb_cam) StderrLine: {'line': b' \x1b[01;31m\x1b[K \x1b[m\x1b[K                                                                                                                                                                                                                                                                                                                                                                                        // Copyright 2023 Evan Flynn\n'}
+[48.180058] (usb_cam) StderrLine: {'line': b' \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[48.180536] (usb_cam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/yuyv.hpp:35\x1b[m\x1b[K,\n'}
+[48.182086] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:52\x1b[m\x1b[K,\n'}
+[48.183280] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65\x1b[m\x1b[K:\n'}
+[48.183813] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunterminated #ifndef\n'}
+[48.184258] (usb_cam) StderrLine: {'line': b' #ifndef USB_CAM__FORMATS__PIXEL_FORMAT_BASE_HPP_\n'}
+[48.184885] (usb_cam) StderrLine: {'line': b' \n'}
+[48.185499] (usb_cam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/yuyv.hpp:36\x1b[m\x1b[K,\n'}
+[48.185989] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:52\x1b[m\x1b[K,\n'}
+[48.186464] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65\x1b[m\x1b[K:\n'}
+[48.186942] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/utils.hpp:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunterminated #ifndef\n'}
+[48.188007] (usb_cam) StderrLine: {'line': b' #ifndef USB_CAM__FORMATS__UTILS_HPP_\n'}
+[48.188619] (usb_cam) StderrLine: {'line': b' \n'}
+[48.189305] (usb_cam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:52\x1b[m\x1b[K,\n'}
+[48.191965] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65\x1b[m\x1b[K:\n'}
+[48.192544] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/yuyv.hpp:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunterminated #ifndef\n'}
+[48.193224] (usb_cam) StderrLine: {'line': b' #ifndef USB_CAM__FORMATS__YUYV_HPP_\n'}
+[48.193744] (usb_cam) StderrLine: {'line': b' \n'}
+[48.194169] (usb_cam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/m420.hpp:37\x1b[m\x1b[K,\n'}
+[48.194616] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:53\x1b[m\x1b[K,\n'}
+[48.195693] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65\x1b[m\x1b[K:\n'}
+[48.196288] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunterminated #ifndef\n'}
+[48.197830] (usb_cam) StderrLine: {'line': b' #ifndef USB_CAM__FORMATS__PIXEL_FORMAT_BASE_HPP_\n'}
+[48.198395] (usb_cam) StderrLine: {'line': b' \n'}
+[48.198854] (usb_cam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/m420.hpp:38\x1b[m\x1b[K,\n'}
+[48.199663] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:53\x1b[m\x1b[K,\n'}
+[48.200174] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65\x1b[m\x1b[K:\n'}
+[48.200644] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/utils.hpp:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunterminated #ifndef\n'}
+[48.201416] (usb_cam) StderrLine: {'line': b' #ifndef USB_CAM__FORMATS__UTILS_HPP_\n'}
+[48.202327] (usb_cam) StderrLine: {'line': b' \n'}
+[48.203587] (usb_cam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:53\x1b[m\x1b[K,\n'}
+[48.204244] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65\x1b[m\x1b[K:\n'}
+[48.204783] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/m420.hpp:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunterminated #ifndef\n'}
+[48.205339] (usb_cam) StderrLine: {'line': b' #ifndef USB_CAM__FORMATS__M420_HPP_\n'}
+[48.205980] (usb_cam) StderrLine: {'line': b' \n'}
+[48.206452] (usb_cam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65\x1b[m\x1b[K:\n'}
+[48.206886] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunterminated #ifndef\n'}
+[48.207313] (usb_cam) StderrLine: {'line': b' #ifndef USB_CAM__USB_CAM_HPP_\n'}
+[48.207841] (usb_cam) StderrLine: {'line': b' \n'}
+[48.208310] (usb_cam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/conversions.hpp:39\x1b[m\x1b[K,\n'}
+[48.208728] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:66\x1b[m\x1b[K:\n'}
+[48.209161] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/utils.hpp:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunterminated #ifndef\n'}
+[48.209584] (usb_cam) StderrLine: {'line': b' #ifndef USB_CAM__UTILS_HPP_\n'}
+[48.210108] (usb_cam) StderrLine: {'line': b' \n'}
+[48.210601] (usb_cam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:66\x1b[m\x1b[K:\n'}
+[48.211068] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/conversions.hpp:66:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Knull character(s) ignored [\x1b[01;31m\x1b[K-Werror\x1b[m\x1b[K]\n'}
+[48.211788] (usb_cam) StderrLine: {'line': b' \x1b[01;31m\x1b[K \x1b[m\x1b[K                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          // Copyright 2023 Evan Flynn\n'}
+[48.212486] (usb_cam) StderrLine: {'line': b' \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[48.212955] (usb_cam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:67\x1b[m\x1b[K:\n'}
+[48.213400] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/utils.hpp:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunterminated #ifndef\n'}
+[48.213811] (usb_cam) StderrLine: {'line': b' #ifndef USB_CAM__UTILS_HPP_\n'}
+[48.214235] (usb_cam) StderrLine: {'line': b' \n'}
+[48.222952] (-) TimerEvent: {}
+[48.323879] (-) TimerEvent: {}
+[48.424651] (-) TimerEvent: {}
+[48.525376] (-) TimerEvent: {}
+[48.626572] (-) TimerEvent: {}
+[48.727431] (-) TimerEvent: {}
+[48.828186] (-) TimerEvent: {}
+[48.928855] (-) TimerEvent: {}
+[49.029921] (-) TimerEvent: {}
+[49.130925] (-) TimerEvent: {}
+[49.231667] (-) TimerEvent: {}
+[49.332475] (-) TimerEvent: {}
+[49.433363] (-) TimerEvent: {}
+[49.534073] (-) TimerEvent: {}
+[49.635006] (-) TimerEvent: {}
+[49.735735] (-) TimerEvent: {}
+[49.836513] (-) TimerEvent: {}
+[49.937410] (-) TimerEvent: {}
+[50.038146] (-) TimerEvent: {}
+[50.138829] (-) TimerEvent: {}
+[50.239679] (-) TimerEvent: {}
+[50.340349] (-) TimerEvent: {}
+[50.441500] (-) TimerEvent: {}
+[50.542161] (-) TimerEvent: {}
+[50.642920] (-) TimerEvent: {}
+[50.743623] (-) TimerEvent: {}
+[50.844527] (-) TimerEvent: {}
+[50.945214] (-) TimerEvent: {}
+[51.045934] (-) TimerEvent: {}
+[51.112837] (usb_cam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:45\x1b[m\x1b[K,\n'}
+[51.114429] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65\x1b[m\x1b[K:\n'}
+[51.114937] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/utils.hpp:45:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Knamespace\x1b[m\x1b[K\xe2\x80\x99\n'}
+[51.115376] (usb_cam) StderrLine: {'line': b' \x1b[01;31m\x1b[Knamespace\x1b[m\x1b[K usb_cam\n'}
+[51.115935] (usb_cam) StderrLine: {'line': b' \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[51.116375] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:781:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 at end of input\n'}
+[51.116833] (usb_cam) StderrLine: {'line': b' \x1b[01;31m\x1b[K}\x1b[m\x1b[K  // namespace usb_cam\n'}
+[51.117292] (usb_cam) StderrLine: {'line': b' \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[51.117705] (usb_cam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/utils.hpp:43\x1b[m\x1b[K,\n'}
+[51.118117] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/usb_cam.hpp:45\x1b[m\x1b[K,\n'}
+[51.118559] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/src/usb_cam.cpp:65\x1b[m\x1b[K:\n'}
+[51.119023] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:49:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99\n'}
+[51.119703] (usb_cam) StderrLine: {'line': b' \x1b[01;36m\x1b[K{\x1b[m\x1b[K\n'}
+[51.121691] (usb_cam) StderrLine: {'line': b' \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[51.122216] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Kusb_cam::formats::pixel_format_base::pixel_format_base(std::__cxx11::string, uint32_t, std::__cxx11::string, uint8_t, uint8_t, bool)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[51.122659] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:54:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kclass \xe2\x80\x98\x1b[01m\x1b[Kusb_cam::formats::pixel_format_base\x1b[m\x1b[K\xe2\x80\x99 does not have any field named \xe2\x80\x98\x1b[01m\x1b[Km_name\x1b[m\x1b[K\xe2\x80\x99\n'}
+[51.123111] (usb_cam) StderrLine: {'line': b'   : \x1b[01;31m\x1b[Km_name\x1b[m\x1b[K(name),\n'}
+[51.123884] (usb_cam) StderrLine: {'line': b'     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[51.125012] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:55:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kclass \xe2\x80\x98\x1b[01m\x1b[Kusb_cam::formats::pixel_format_base\x1b[m\x1b[K\xe2\x80\x99 does not have any field named \xe2\x80\x98\x1b[01m\x1b[Km_v4l2\x1b[m\x1b[K\xe2\x80\x99\n'}
+[51.126722] (usb_cam) StderrLine: {'line': b'     \x1b[01;31m\x1b[Km_v4l2\x1b[m\x1b[K(v4l2),\n'}
+[51.127250] (usb_cam) StderrLine: {'line': b'     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[51.127793] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:56:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kclass \xe2\x80\x98\x1b[01m\x1b[Kusb_cam::formats::pixel_format_base\x1b[m\x1b[K\xe2\x80\x99 does not have any field named \xe2\x80\x98\x1b[01m\x1b[Km_ros\x1b[m\x1b[K\xe2\x80\x99\n'}
+[51.128252] (usb_cam) StderrLine: {'line': b'     \x1b[01;31m\x1b[Km_ros\x1b[m\x1b[K(ros),\n'}
+[51.128643] (usb_cam) StderrLine: {'line': b'     \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[51.129070] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:57:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kclass \xe2\x80\x98\x1b[01m\x1b[Kusb_cam::formats::pixel_format_base\x1b[m\x1b[K\xe2\x80\x99 does not have any field named \xe2\x80\x98\x1b[01m\x1b[Km_channels\x1b[m\x1b[K\xe2\x80\x99\n'}
+[51.129556] (usb_cam) StderrLine: {'line': b'     \x1b[01;31m\x1b[Km_channels\x1b[m\x1b[K(channels),\n'}
+[51.129993] (usb_cam) StderrLine: {'line': b'     \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[51.130518] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:58:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kclass \xe2\x80\x98\x1b[01m\x1b[Kusb_cam::formats::pixel_format_base\x1b[m\x1b[K\xe2\x80\x99 does not have any field named \xe2\x80\x98\x1b[01m\x1b[Km_bit_depth\x1b[m\x1b[K\xe2\x80\x99\n'}
+[51.131013] (usb_cam) StderrLine: {'line': b'     \x1b[01;31m\x1b[Km_bit_depth\x1b[m\x1b[K(bit_depth),\n'}
+[51.138454] (usb_cam) StderrLine: {'line': b'     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[51.139938] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:59:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kclass \xe2\x80\x98\x1b[01m\x1b[Kusb_cam::formats::pixel_format_base\x1b[m\x1b[K\xe2\x80\x99 does not have any field named \xe2\x80\x98\x1b[01m\x1b[Km_requires_conversion\x1b[m\x1b[K\xe2\x80\x99\n'}
+[51.141628] (usb_cam) StderrLine: {'line': b'     \x1b[01;31m\x1b[Km_requires_conversion\x1b[m\x1b[K(requires_conversion)\n'}
+[51.142166] (usb_cam) StderrLine: {'line': b'     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[51.142597] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kstd::__cxx11::string usb_cam::formats::pixel_format_base::name()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[51.143040] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:64:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Km_name\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[51.143583] (usb_cam) StderrLine: {'line': b'   inline std::string name() {return \x1b[01;31m\x1b[Km_name\x1b[m\x1b[K;}\n'}
+[51.144074] (usb_cam) StderrLine: {'line': b'                                     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[51.144492] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:64:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Ksuggested alternative: \xe2\x80\x98\x1b[01m\x1b[Kname\x1b[m\x1b[K\xe2\x80\x99\n'}
+[51.144942] (usb_cam) StderrLine: {'line': b'   inline std::string name() {return \x1b[01;36m\x1b[Km_name\x1b[m\x1b[K;}\n'}
+[51.149483] (-) TimerEvent: {}
+[51.150100] (usb_cam) StderrLine: {'line': b'                                     \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[51.150837] (usb_cam) StderrLine: {'line': b'                                     \x1b[32m\x1b[Kname\x1b[m\x1b[K\n'}
+[51.151802] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kuint32_t usb_cam::formats::pixel_format_base::v4l2()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[51.152637] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:68:34:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Km_v4l2\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[51.153678] (usb_cam) StderrLine: {'line': b'   inline uint32_t v4l2() {return \x1b[01;31m\x1b[Km_v4l2\x1b[m\x1b[K;}\n'}
+[51.154297] (usb_cam) StderrLine: {'line': b'                                  \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[51.154911] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:68:34:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Ksuggested alternative: \xe2\x80\x98\x1b[01m\x1b[Kv4l2\x1b[m\x1b[K\xe2\x80\x99\n'}
+[51.155917] (usb_cam) StderrLine: {'line': b'   inline uint32_t v4l2() {return \x1b[01;36m\x1b[Km_v4l2\x1b[m\x1b[K;}\n'}
+[51.156558] (usb_cam) StderrLine: {'line': b'                                  \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[51.157178] (usb_cam) StderrLine: {'line': b'                                  \x1b[32m\x1b[Kv4l2\x1b[m\x1b[K\n'}
+[51.158169] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kstd::__cxx11::string usb_cam::formats::pixel_format_base::ros()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[51.158807] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:72:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Km_ros\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[51.159733] (usb_cam) StderrLine: {'line': b'   inline std::string ros() {return \x1b[01;31m\x1b[Km_ros\x1b[m\x1b[K;}\n'}
+[51.160572] (usb_cam) StderrLine: {'line': b'                                    \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[51.162090] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:72:36:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Ksuggested alternative: \xe2\x80\x98\x1b[01m\x1b[Kros\x1b[m\x1b[K\xe2\x80\x99\n'}
+[51.162643] (usb_cam) StderrLine: {'line': b'   inline std::string ros() {return \x1b[01;36m\x1b[Km_ros\x1b[m\x1b[K;}\n'}
+[51.163210] (usb_cam) StderrLine: {'line': b'                                    \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[51.164182] (usb_cam) StderrLine: {'line': b'                                    \x1b[32m\x1b[Kros\x1b[m\x1b[K\n'}
+[51.164873] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kuint8_t usb_cam::formats::pixel_format_base::channels()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[51.165450] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:76:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Km_channels\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[51.166333] (usb_cam) StderrLine: {'line': b'   inline uint8_t channels() {return \x1b[01;31m\x1b[Km_channels\x1b[m\x1b[K;}\n'}
+[51.166879] (usb_cam) StderrLine: {'line': b'                                     \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[51.167326] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:76:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Ksuggested alternative: \xe2\x80\x98\x1b[01m\x1b[Kchannels\x1b[m\x1b[K\xe2\x80\x99\n'}
+[51.169230] (usb_cam) StderrLine: {'line': b'   inline uint8_t channels() {return \x1b[01;36m\x1b[Km_channels\x1b[m\x1b[K;}\n'}
+[51.170091] (usb_cam) StderrLine: {'line': b'                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[51.170664] (usb_cam) StderrLine: {'line': b'                                     \x1b[32m\x1b[Kchannels\x1b[m\x1b[K\n'}
+[51.171207] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kuint8_t usb_cam::formats::pixel_format_base::bit_depth()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[51.172059] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:80:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Km_bit_depth\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[51.172553] (usb_cam) StderrLine: {'line': b'   inline uint8_t bit_depth() {return \x1b[01;31m\x1b[Km_bit_depth\x1b[m\x1b[K;}\n'}
+[51.173005] (usb_cam) StderrLine: {'line': b'                                      \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[51.174538] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:80:38:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Ksuggested alternative: \xe2\x80\x98\x1b[01m\x1b[Kbit_depth\x1b[m\x1b[K\xe2\x80\x99\n'}
+[51.175302] (usb_cam) StderrLine: {'line': b'   inline uint8_t bit_depth() {return \x1b[01;36m\x1b[Km_bit_depth\x1b[m\x1b[K;}\n'}
+[51.176561] (usb_cam) StderrLine: {'line': b'                                      \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[51.177120] (usb_cam) StderrLine: {'line': b'                                      \x1b[32m\x1b[Kbit_depth\x1b[m\x1b[K\n'}
+[51.177778] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool usb_cam::formats::pixel_format_base::requires_conversion()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[51.178247] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:86:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Km_requires_conversion\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[51.179318] (usb_cam) StderrLine: {'line': b'   inline bool requires_conversion() {return \x1b[01;31m\x1b[Km_requires_conversion\x1b[m\x1b[K;}\n'}
+[51.182004] (usb_cam) StderrLine: {'line': b'                                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[51.189456] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:86:45:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Ksuggested alternative: \xe2\x80\x98\x1b[01m\x1b[Krequires_conversion\x1b[m\x1b[K\xe2\x80\x99\n'}
+[51.190540] (usb_cam) StderrLine: {'line': b'   inline bool requires_conversion() {return \x1b[01;36m\x1b[Km_requires_conversion\x1b[m\x1b[K;}\n'}
+[51.191020] (usb_cam) StderrLine: {'line': b'                                             \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[51.191548] (usb_cam) StderrLine: {'line': b'                                             \x1b[32m\x1b[Krequires_conversion\x1b[m\x1b[K\n'}
+[51.191977] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:\x1b[m\x1b[K At global scope:\n'}
+[51.192361] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:86:67:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id at end of input\n'}
+[51.192724] (usb_cam) StderrLine: {'line': b'   inline bool requires_conversion() {return m_requires_conversion;\x1b[01;31m\x1b[K}\x1b[m\x1b[K\n'}
+[51.193104] (usb_cam) StderrLine: {'line': b'                                                                   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[51.193462] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:86:67:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 at end of input\n'}
+[51.193810] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:43:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99\n'}
+[51.194209] (usb_cam) StderrLine: {'line': b' \x1b[01;36m\x1b[K{\x1b[m\x1b[K\n'}
+[51.194550] (usb_cam) StderrLine: {'line': b' \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[51.194885] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:86:67:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 at end of input\n'}
+[51.195249] (usb_cam) StderrLine: {'line': b'   inline bool requires_conversion() {return m_requires_conversion;\x1b[01;31m\x1b[K}\x1b[m\x1b[K\n'}
+[51.197413] (usb_cam) StderrLine: {'line': b'                                                                   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[51.197964] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetson/Downloads/ros1/src/usb_cam/include/usb_cam/formats/pixel_format_base.hpp:41:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99\n'}
+[51.198372] (usb_cam) StderrLine: {'line': b' \x1b[01;36m\x1b[K{\x1b[m\x1b[K\n'}
+[51.198734] (usb_cam) StderrLine: {'line': b' \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[51.249658] (-) TimerEvent: {}
+[51.350321] (-) TimerEvent: {}
+[51.451116] (-) TimerEvent: {}
+[51.523147] (usb_cam) StderrLine: {'line': b'cc1plus: all warnings being treated as errors\n'}
+[51.550967] (usb_cam) StderrLine: {'line': b'make[2]: *** [CMakeFiles/usb_cam.dir/build.make:63: CMakeFiles/usb_cam.dir/src/usb_cam.cpp.o] Error 1\n'}
+[51.551712] (-) TimerEvent: {}
+[51.552502] (usb_cam) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:161: CMakeFiles/usb_cam.dir/all] Error 2\n'}
+[51.553278] (usb_cam) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[51.560253] (usb_cam) CommandEnded: {'returncode': 2}
+[51.652059] (-) TimerEvent: {}
+[51.757854] (-) TimerEvent: {}
+[51.848756] (usb_cam) JobEnded: {'identifier': 'usb_cam', 'rc': 2}
+[51.869345] (-) TimerEvent: {}
+[51.869772] (-) EventReactorShutdown: {}
