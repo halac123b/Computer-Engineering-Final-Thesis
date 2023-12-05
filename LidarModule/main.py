@@ -3,17 +3,8 @@ from CalcLidarData import CalcLidarData
 import matplotlib.pyplot as plt
 import math
 
-import playsound
-import threading
 import TimerThread
-
-''' Function to play audio '''
-def play_sound(audio_file):
-    playsound.playsound(audio_file)
-
-
-# Create a thread to play the sound
-sound_thread = threading.Thread(target=play_sound, args=("front.mp3", ))
+import SoundThread
 
 class LidarDetection:
     def __init__(self, com_port):
@@ -36,6 +27,8 @@ class LidarDetection:
         # Control to alert at least each 5s
         self.timer_flag = False
         self.timer_thread = TimerThread.TimerThread(self)
+
+        self.sound_thread = SoundThread.SoundThread()
 
 
     def init_pyplot(self):
@@ -65,6 +58,9 @@ class LidarDetection:
         sound_check = False
 
         self.timer_thread.start_thread()
+        # Dictionary to find nearest avoidance
+        avoid_dict = {}
+        min_distance = 5
 
         try:
             while True:
@@ -75,18 +71,21 @@ class LidarDetection:
                     if ('line' in locals()):
                         line.remove()
 
-                    print(self.timer_flag)
+                    #print(self.timer_flag)
                     if (front > FRONT_THRESHOLD and self.timer_flag):
                         # Start the thread
                         if (sound_check):
-                            print("Lock")
-                            sound_thread.join()
-                            sound_check = False
-                        sound_thread = threading.Thread(target=play_sound, args=("front.mp3", ))
-                        sound_thread.start()
+                            self.sound_thread.cancel_thread()
+
+                        if (min_distance == 0):
+                            min_distance = 0.5
+
+                        self.sound_thread.start_thread(int(min_distance * 2))
                         sound_check = True
                         self.timer_flag = False
 
+                    avoid_dict.clear()
+                    min_distance = 5
                     front = 0
 
                     # Vẽ biểu đồ scatter (biểu đồ dạng điểm)
@@ -138,8 +137,18 @@ class LidarDetection:
                                 for index in range(len(lidarData.Degree_angle)):
                                     if (330 <= lidarData.Degree_angle[index] <=360 or 0 <= lidarData.Degree_angle[index] <=30):
                                         check = True
-                                        if (lidarData.Distance_i[index] < 1):
+                                        # Khoảng cách để xác nhận vật cản là 5m
+                                        if (lidarData.Distance_i[index] < 5):
                                             front += 1
+
+                                            round_number = round(lidarData.Distance_i[index] * 2) / 2
+                                            if (round_number < min_distance):
+                                                if (round_number in avoid_dict):
+                                                    avoid_dict[round_number] += 1
+                                                    if (avoid_dict[round_number] >= 15):
+                                                        min_distance = round_number
+                                                else:
+                                                    avoid_dict[round_number] = 1
                                     elif check:
                                         break
 
