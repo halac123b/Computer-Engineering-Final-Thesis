@@ -33,6 +33,9 @@ class LidarDetection:
                     bytesize=8,
                     parity='N',
                     stopbits=1)
+        # Control to alert at least each 5s
+        self.timer_flag = False
+        self.timer_thread = TimerThread.TimerThread(self)
 
 
     def init_pyplot(self):
@@ -46,6 +49,8 @@ class LidarDetection:
 
     # Main function to run system object
     def run_system(self):
+        self.init_pyplot()
+
         tmpString = ""
         lines = list()
         angles = list()
@@ -56,10 +61,10 @@ class LidarDetection:
 
         i = 0
         front = 0
-        # Control to alert at least each 5s
-        timer_flag = False
         # Check that sound thread has been called before
         sound_check = False
+
+        self.timer_thread.start_thread()
 
         try:
             while True:
@@ -70,8 +75,8 @@ class LidarDetection:
                     if ('line' in locals()):
                         line.remove()
 
-                    #print(front)
-                    if (front > FRONT_THRESHOLD and timer_flag):
+                    print(self.timer_flag)
+                    if (front > FRONT_THRESHOLD and self.timer_flag):
                         # Start the thread
                         if (sound_check):
                             print("Lock")
@@ -80,17 +85,17 @@ class LidarDetection:
                         sound_thread = threading.Thread(target=play_sound, args=("front.mp3", ))
                         sound_thread.start()
                         sound_check = True
-                        timer_flag = False
+                        self.timer_flag = False
 
                     front = 0
 
                     # Vẽ biểu đồ scatter (biểu đồ dạng điểm)
                         # Thường biểu diễn tương quan giữa 2 giá trị, ở đây là góc + khoảng cách
                         # c: color, s: size of points
-                    line = ax.scatter(angles, distances, c="blue", s=5)
+                    line = self.ax.scatter(angles, distances, c="blue", s=5)
                     # Set offset cho vị trí của góc 0 độ trong hệ tọa độ polar
                         # Với hệ tọa độ của Lidar, góc 0 độ ứng với trục 0y nên cần set offset pi / 2
-                    ax.set_theta_offset(math.pi / 2)
+                    self.ax.set_theta_offset(math.pi / 2)
                     # Update Figure, hoặc delay 1 khoảng thời gian
                     plt.pause(0.01)
                     # Clear tập giá trị
@@ -127,7 +132,7 @@ class LidarDetection:
                         # Sau khi đọc full 1 gói data Lidar sẽ có kích thước = 90, lấy string và đưa vào hàm CalcLidarData()
                         lidarData = CalcLidarData(tmpString[0:-5])
 
-                        if (timer_flag):
+                        if (self.timer_flag):
                             if (330 <= lidarData.Degree_angle[0] <=360 or 0 <= lidarData.Degree_angle[0] <= 30):
                                 check = False
                                 for index in range(len(lidarData.Degree_angle)):
@@ -156,5 +161,12 @@ class LidarDetection:
             # Stop the timer thread before exiting
             self.ser.close()
             plt.close()
-
+            self.timer_thread.cancel_thread()
             print("Program terminated.")
+
+def main():
+    lidar_system = LidarDetection("COM5")
+    lidar_system.run_system()
+
+if __name__ == "__main__":
+    main()
