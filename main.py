@@ -30,43 +30,33 @@ class Assistant:
     def run_assistant(self):
         print("Start, you can say")
         while (True):
-            try:
-                # Use Microphone resource to listen
-                with speech_recognition.Microphone() as mic:
-                    # Tự điều chỉnh độ ồn của mic
-                    self.recognizer.adjust_for_ambient_noise(mic, duration=0.2)
-                    # Lắng nghe tiếng nói
+            # Use Microphone resource to listen
+            with speech_recognition.Microphone() as mic:
+                # Tự điều chỉnh độ ồn của mic
+                self.recognizer.adjust_for_ambient_noise(mic, duration=0.2)
+                # Lắng nghe tiếng nói
+                text = self.get_text_from_speech(mic)
+
+                # Cmd khởi động
+                if WAKE_WORD in text:
+                    self.speaker_say(RESPONSE_WELCOME)
+
                     text = self.get_text_from_speech(mic)
 
-                    # Cmd khởi động
-                    if WAKE_WORD in text:
-                        self.speaker.say(RESPONSE_WELCOME)
-                        self.speaker.runAndWait()
-
-                        text = self.get_text_from_speech(mic)
-                        print(text)
-
+                    if text is not None:
                         if "khởi động" in text:
-                            self.speaker.say("Khởi động hệ thống")
-                            self.speaker.runAndWait()
+                            self.speaker_say("Khởi động hệ thống, hãy ra lệnh ít nhất 2 từ")
 
                             self.main_operation(mic)
                             # self.speaker.stop()
                             # self.root.destroy()
                             # sys.exit(0)
                         else:
-                            if text is not None:
-                                response = self.query_response(text)
-                                if response is not None:
-                                    self.speaker.say(response)
-                                    self.speaker.runAndWait()
-                                else:
-                                    self.speaker.say(NOT_UNDERSTAND)
-                                    self.speaker.runAndWait()
-
-            except speech_recognition.UnknownValueError:
-                print("UnknownValueError")
-                continue
+                            response = self.query_response(text)
+                            if response is not None:
+                                self.speaker_say(response)
+                            else:
+                                self.speaker_say(NOT_UNDERSTAND)
 
     def load_json(self, path):
         with open(path, encoding="utf-8") as file:
@@ -81,40 +71,68 @@ class Assistant:
         return None
 
     def get_text_from_speech(self, mic):
-        audio = self.recognizer.listen(mic, timeout=6, phrase_time_limit=5)
-        text = self.recognizer.recognize_google(audio, language="vi-VN", show_all=False)
-        text = text.lower()
-        return text
+        print("Listening...")
+        try:
+            audio = self.recognizer.listen(mic, timeout=6, phrase_time_limit=5)
+            text = self.recognizer.recognize_google(audio, language="vi-VN", show_all=False)
+            text = text.lower()
+            print(text)
+            return text
+        except (speech_recognition.UnknownValueError, speech_recognition.WaitTimeoutError) as e:
+            print("UnknownValueError")
+            return None
 
     def main_operation(self, mic):
         while (True):
-            try:
-                text = self.get_text_from_speech(mic)
-                print(text)
-                if text is not None:
-                    if "kết thúc" in text:
-                        print("Back to waiting mode")
-                        self.speaker.say("Dừng hệ thống")
-                        self.speaker.runAndWait()
-                        break
-                    else:
-                        intent = self.query_response(text)
+            text = self.get_text_from_speech(mic)
+            if text is not None:
+                if "kết thúc" in text:
+                    print("Back to waiting mode")
+                    self.speaker_say("Dừng hệ thống")
+                    break
+                else:
+                    intent = self.query_response(text)
+                    if intent is not None:
                         if intent["response"] != "":
-                            self.speaker.say(intent["response"])
-                            self.speaker.runAndWait()
+                            self.speaker_say(intent["response"])
                         if intent["action"] != "":
-                            getattr(self, intent["action"])()
+                            getattr(self, intent["action"])(mic=mic)
+                    else:
+                        self.speaker_say(NOT_UNDERSTAND)
 
-            except speech_recognition.UnknownValueError:
-                continue
+    def run_lidar(self, **kwargs):
+        '''Run lidar system'''
+        # Hỏi xem có bật hai bên trái phải không
+        self.speaker_say("có bật hai bên trái phải không?")
 
-    def test(self):
-        self.speaker.say("xin cảm ơn")
+        text = self.get_text_from_speech(kwargs['mic'])
+
+        if text is not None and "không" in text:
+            print("Không bật")
+            self.speaker_say("xác nhận không")
+            self.lidar_system.check_side = False
+        else:
+            print("Có bật")
+            self.speaker_say("xác nhận có")
+            self.lidar_system.check_side = True
+
+        # Hỏi xem có nhận diện vật thể không
+        self.speaker_say("có bật nhận diện vật thể không?")
+        text = self.get_text_from_speech(kwargs['mic'])
+
+        self.lidar_system.system_thread()
+        while True:
+            text = self.get_text_from_speech(kwargs['mic'])
+
+            if text is not None and "dừng" in text:
+                self.speaker_say("tắt phát hiện vật cản")
+                self.lidar_system.system_cancel()
+                break
+
+    def speaker_say(self, text):
+        '''Speak text'''
+        self.speaker.say(text)
         self.speaker.runAndWait()
-
-    def run_lidar(self):
-        self.lidar_system.run_system()
-
 
 def main():
     assistant = Assistant()

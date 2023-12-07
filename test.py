@@ -1,21 +1,37 @@
-def func_one():
-    print("Function One")
+# import speech_recognition
+# recognizer = speech_recognition.Recognizer()
 
-def func_two():
-    print("Function Two")
+# try:
+#   with speech_recognition.Microphone() as mic:
+#     recognizer.adjust_for_ambient_noise(mic, duration=0.2)
+#     audio = recognizer.listen(mic, timeout=6, phrase_time_limit=5)
+#     text = recognizer.recognize_google(audio, language="vi-VN", show_all=False)
+#     text = text.lower()
+#     print(text)
+# except (speech_recognition.UnknownValueError, speech_recognition.WaitTimeoutError) as e:
+#   print("UnknownValueError")
 
-def func_three():
-    print("Function Three")
+import threading
+import time
 
-def run_function_by_name(function_name):
-    # Check if the function exists in the global namespace
-    if function_name in globals() and callable(globals()[function_name]):
-        # Get the function by name and call it
-        function_to_run = globals()[function_name]
-        function_to_run()
-    else:
-        print(f"Function '{function_name}' not found or not callable.")
+def my_function():
+    print("Timer function executed.")
 
-# Example usage
-input_function_name = input("Enter the function name: ")
-run_function_by_name(input_function_name)
+# Create a timer that will run my_function after 5 seconds
+my_timer = threading.Timer(5, my_function)
+
+# Start the timer
+my_timer.start()
+
+# Simulate some other work
+time.sleep(2)
+
+# Cancel the timer before it executes the function
+my_timer.cancel()
+
+my_timer.join()
+# Confirm whether the timer was canceled
+if my_timer.is_alive():
+    print("Timer was not canceled.")
+else:
+    print("Timer was canceled.")

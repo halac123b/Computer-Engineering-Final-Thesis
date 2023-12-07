@@ -3,14 +3,14 @@
     {
       "tag": "greeting",
       "patterns": ["chào", "xin chào"],
-      "response": "chào bạn, tôi có thể giúp gì cho bạn?",
-      "action": "test"
+      "response": "chào anh, mời anh nói câu lệnh",
+      "action": ""
     },
     {
       "tag": "lidar",
       "patterns": ["dẫn đường", "phát hiện", "vật cản"],
-      "response": "Khởi động phát hiện vật cản, bạn có muốn bật nhận diện vật thể không?",
-      "action": ""
+      "response": "Khởi động phát hiện vật cản",
+      "action": "run_lidar"
     },
     {
       "tag": "name",
