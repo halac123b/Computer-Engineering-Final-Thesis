@@ -1,12 +1,5 @@
-cycler
-kiwisolver
-matplotlib
-numpy
-Pillow
-pyparsing
 pyserial
-python-dateutil
-six
 SpeechRecognition
 pyttsx3
 PyAudio
+playsound==1.2.2

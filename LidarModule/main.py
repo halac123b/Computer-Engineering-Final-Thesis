@@ -2,8 +2,8 @@ import sys
 import serial
 
 from LidarModule.CalcLidarData import CalcLidarData
-import matplotlib.pyplot as plt
-import math
+#import matplotlib.pyplot as plt
+#import math
 
 import LidarModule.TimerThread as TimerThread
 import LidarModule.SoundThread as SoundThread
@@ -47,7 +47,7 @@ class LidarDetection:
             # 'key_press_event': event nhấn 1 key
             # 1 hàm đc trigger cùng event
             # Press E to exit
-        plt.connect('key_press_event', lambda event: exit(1) if event.key == 'e' else None)
+        #plt.connect('key_press_event', lambda event: exit(1) if event.key == 'e' else None)
 
     # Main function to run system object
     def run_system(self):
