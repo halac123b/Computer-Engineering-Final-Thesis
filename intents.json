@@ -1,0 +1,28 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["chào", "xin chào"],
+      "response": "chào bạn, tôi có thể giúp gì cho bạn?",
+      "action": "test"
+    },
+    {
+      "tag": "lidar",
+      "patterns": ["dẫn đường", "phát hiện", "vật cản"],
+      "response": "Khởi động phát hiện vật cản, bạn có muốn bật nhận diện vật thể không?",
+      "action": ""
+    },
+    {
+      "tag": "name",
+      "patterns": ["What is your name?", "What should I call you?"],
+      "response": "My name is River",
+      "action": ""
+    },
+    {
+      "tag": "file",
+      "patterns": ["Create a new file"],
+      "response": "Tôi đã làm",
+      "action": ""
+    }
+  ]
+}

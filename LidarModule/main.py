@@ -30,6 +30,9 @@ class LidarDetection:
 
         self.sound_thread = SoundThread.SoundThread()
 
+        # Check whether check left and right direction or not
+        self.check_side = True
+
 
     def init_pyplot(self):
         # Title cho biểu đồ
@@ -50,17 +53,28 @@ class LidarDetection:
         distances = list()
 
         # Ngưỡng để xác nhận có vật cản trước mặt trên tổng số khoảng 78 tia
-        FRONT_THRESHOLD = 70
+        FRONT_THRESHOLD = 50
+        # Ngưỡng 2 phía left, right trên 39 tia
+        SIDE_THRESHOLD = 33
 
         i = 0
+        # 3 variable to detect avoidance at front, left, right
         front = 0
+        left = 0
+        right = 0
         # Check that sound thread has been called before
         sound_check = False
+
+        
 
         self.timer_thread.start_thread()
         # Dictionary to find nearest avoidance
         avoid_dict = {}
+        avoid_left = {}
+        avoid_right = {}
         min_distance = 5
+        min_distance_left = 3
+        min_distance_right = 3
 
         try:
             while True:
@@ -72,21 +86,45 @@ class LidarDetection:
                         line.remove()
 
                     #print(self.timer_flag)
-                    if (front > FRONT_THRESHOLD and self.timer_flag):
+                    if (self.timer_flag):
+                        if (front > FRONT_THRESHOLD):
+                            if (min_distance == 0):
+                                min_distance = 0.5
+
+                        else:
+                            min_distance = -1
+
+                        if (self.check_side):
+                            if (left > SIDE_THRESHOLD):
+                                if (min_distance_left == 0):
+                                    min_distance_left = 0.5
+                            else:
+                                min_distance_left = -1
+                            if (right > SIDE_THRESHOLD):
+                                if (min_distance_right == 0):
+                                    min_distance_right = 0.5
+                            else:
+                                min_distance_right = -1
+                        else:
+                            min_distance_left = -1
+                            min_distance_right = -1
+
                         # Start the thread
                         if (sound_check):
                             self.sound_thread.cancel_thread()
 
-                        if (min_distance == 0):
-                            min_distance = 0.5
-
-                        self.sound_thread.start_thread(int(min_distance * 2))
+                        self.sound_thread.start_thread(int(min_distance * 2), int(min_distance_left * 2), int(min_distance_right * 2))
                         sound_check = True
                         self.timer_flag = False
 
                     avoid_dict.clear()
-                    min_distance = 5
+                    avoid_left.clear()
+                    avoid_right.clear()
                     front = 0
+                    left = 0
+                    right = 0
+                    min_distance = 5
+                    min_distance_left = min_distance_right = 3
 
                     # Vẽ biểu đồ scatter (biểu đồ dạng điểm)
                         # Thường biểu diễn tương quan giữa 2 giá trị, ở đây là góc + khoảng cách
@@ -132,13 +170,14 @@ class LidarDetection:
                         lidarData = CalcLidarData(tmpString[0:-5])
 
                         if (self.timer_flag):
-                            if (330 <= lidarData.Degree_angle[0] <=360 or 0 <= lidarData.Degree_angle[0] <= 30):
+                            if (320 <= lidarData.Degree_angle[0] <= 360 or 0 <= lidarData.Degree_angle[0] <= 30):
                                 check = False
                                 for index in range(len(lidarData.Degree_angle)):
                                     if (330 <= lidarData.Degree_angle[index] <=360 or 0 <= lidarData.Degree_angle[index] <=30):
                                         check = True
                                         # Khoảng cách để xác nhận vật cản là 5m
                                         if (lidarData.Distance_i[index] < 5):
+                                            print(lidarData.Distance_i[index])
                                             front += 1
 
                                             round_number = round(lidarData.Distance_i[index] * 2) / 2
@@ -151,6 +190,41 @@ class LidarDetection:
                                                     avoid_dict[round_number] = 1
                                     elif check:
                                         break
+                            elif (self.check_side):
+                                if (260 <= lidarData.Degree_angle[0] <= 300):
+                                    check = False
+                                    for index in range(len(lidarData.Degree_angle)):
+                                        if (270 <= lidarData.Degree_angle[0] <= 300):
+                                            check = True
+                                            if (lidarData.Distance_i[index] < 3):
+                                                right += 1
+
+                                            round_number = round(lidarData.Distance_i[index] * 2) / 2
+                                            if (round_number < min_distance_right):
+                                                if (round_number in avoid_right):
+                                                    avoid_right[round_number] += 1
+                                                    if (avoid_right[round_number] >= 8):
+                                                        min_distance_right = round_number
+                                                else:
+                                                    avoid_right[round_number] = 1
+
+                                elif (50 <= lidarData.Degree_angle[0] <= 90):
+                                    check = False
+                                    for index in range(len(lidarData.Degree_angle)):
+                                        if (60 <= lidarData.Degree_angle[0] <= 90):
+                                            check = True
+                                            if (lidarData.Distance_i[index] < 3):
+                                                left += 1
+
+                                            round_number = round(lidarData.Distance_i[index] * 2) / 2
+                                            if (round_number < min_distance_left):
+                                                if (round_number in avoid_left):
+                                                    avoid_left[round_number] += 1
+                                                    if (avoid_left[round_number] >= 8):
+                                                        min_distance_left = round_number
+                                                else:
+                                                    avoid_left[round_number] = 1
+
 
                         # Get giá trị của góc và distance
                         angles.extend(lidarData.Angle_i)
