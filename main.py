@@ -3,12 +3,17 @@ import threading
 
 # Speech to text package
 import speech_recognition
+
 # Text to speech
 import pyttsx3
+
 # Json utils
 import json
 from constant import *
 import LidarModule.main as LidarModule
+
+from zalo_tts import ZaloTTS
+
 
 class Assistant:
     def __init__(self):
@@ -25,11 +30,15 @@ class Assistant:
 
         self.lidar_system = LidarModule.LidarDetection("COM5")
 
+        # Engine text-to-speech by Zalo API
+        self.ZALO_API_KEY = "ooGxzbgmfnuqLQLAPdkE2B3tGOMvM168"
+        self.tts = ZaloTTS(speaker=ZaloTTS.NORTHERN_MEN, api_key=self.ZALO_API_KEY)
+
         self.run_assistant()
 
     def run_assistant(self):
         print("Start, you can say")
-        while (True):
+        while True:
             # Use Microphone resource to listen
             with speech_recognition.Microphone() as mic:
                 # Tự điều chỉnh độ ồn của mic
@@ -45,7 +54,9 @@ class Assistant:
 
                     if text is not None:
                         if "khởi động" in text:
-                            self.speaker_say("Khởi động hệ thống, hãy ra lệnh ít nhất 2 từ")
+                            self.speaker_say(
+                                "Khởi động hệ thống, hãy ra lệnh ít nhất 2 từ"
+                            )
 
                             self.main_operation(mic)
                             # self.speaker.stop()
@@ -74,16 +85,21 @@ class Assistant:
         print("Listening...")
         try:
             audio = self.recognizer.listen(mic, timeout=6, phrase_time_limit=5)
-            text = self.recognizer.recognize_google(audio, language="vi-VN", show_all=False)
+            text = self.recognizer.recognize_google(
+                audio, language="vi-VN", show_all=False
+            )
             text = text.lower()
             print(text)
             return text
-        except (speech_recognition.UnknownValueError, speech_recognition.WaitTimeoutError) as e:
+        except (
+            speech_recognition.UnknownValueError,
+            speech_recognition.WaitTimeoutError,
+        ) as e:
             print("UnknownValueError")
             return None
 
     def main_operation(self, mic):
-        while (True):
+        while True:
             text = self.get_text_from_speech(mic)
             if text is not None:
                 if "kết thúc" in text:
@@ -101,11 +117,11 @@ class Assistant:
                         self.speaker_say(NOT_UNDERSTAND)
 
     def run_lidar(self, **kwargs):
-        '''Run lidar system'''
+        """Run lidar system"""
         # Hỏi xem có bật hai bên trái phải không
         self.speaker_say("có bật hai bên trái phải không?")
 
-        text = self.get_text_from_speech(kwargs['mic'])
+        text = self.get_text_from_speech(kwargs["mic"])
 
         if text is not None and "không" in text:
             print("Không bật")
@@ -118,11 +134,11 @@ class Assistant:
 
         # Hỏi xem có nhận diện vật thể không
         self.speaker_say("có bật nhận diện vật thể không?")
-        text = self.get_text_from_speech(kwargs['mic'])
+        text = self.get_text_from_speech(kwargs["mic"])
 
         self.lidar_system.system_thread()
         while True:
-            text = self.get_text_from_speech(kwargs['mic'])
+            text = self.get_text_from_speech(kwargs["mic"])
 
             if text is not None and "dừng" in text:
                 self.speaker_say("tắt phát hiện vật cản")
@@ -130,12 +146,18 @@ class Assistant:
                 break
 
     def speaker_say(self, text):
-        '''Speak text'''
+        """Speak text"""
+        # Use pyttsx3
         self.speaker.say(text)
         self.speaker.runAndWait()
 
+        # Use Zalo API
+        self.tts.text_to_speech(text)
+
+
 def main():
     assistant = Assistant()
+
 
 if __name__ == "__main__":
     main()
