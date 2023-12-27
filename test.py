@@ -1,16 +1,16 @@
-# import speech_recognition
+import speech_recognition
 
-# recognizer = speech_recognition.Recognizer()
+recognizer = speech_recognition.Recognizer()
 
-# try:
-#     with speech_recognition.Microphone() as mic:
-#         recognizer.adjust_for_ambient_noise(mic, duration=0.2)
-#         audio = recognizer.listen(mic, timeout=6, phrase_time_limit=5)
-#         text = recognizer.recognize_google(audio, language="vi-VN", show_all=False)
-#         text = text.lower()
-#         print(text)
-# except (speech_recognition.UnknownValueError, speech_recognition.WaitTimeoutError) as e:
-#     print("UnknownValueError")
+try:
+    with speech_recognition.Microphone() as mic:
+        recognizer.adjust_for_ambient_noise(mic, duration=0.2)
+        audio = recognizer.listen(mic, timeout=6, phrase_time_limit=5)
+        text = recognizer.recognize_google(audio, language="vi-VN", show_all=False)
+        text = text.lower()
+        print(text)
+except (speech_recognition.UnknownValueError, speech_recognition.WaitTimeoutError) as e:
+    print("UnknownValueError")
 
 # import threading
 # import time
@@ -37,9 +37,9 @@
 # else:
 #     print("Timer was canceled.")
 
-ZALO_API_KEY = "ooGxzbgmfnuqLQLAPdkE2B3tGOMvM168"
+#ZALO_API_KEY = "ooGxzbgmfnuqLQLAPdkE2B3tGOMvM168"
 
-from zalo_tts import ZaloTTS
+#from zalo_tts import ZaloTTS
 
-tts = ZaloTTS(speaker=ZaloTTS.NORTHERN_MEN, api_key=ZALO_API_KEY)
-tts.text_to_speech("Dạ em nghe.")
+#tts = ZaloTTS(speaker=ZaloTTS.NORTHERN_MEN, api_key=ZALO_API_KEY)
+#tts.text_to_speech("Dạ em nghe.")

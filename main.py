@@ -14,21 +14,20 @@ import LidarModule.main as LidarModule
 
 from zalo_tts import ZaloTTS
 
-
 class Assistant:
     def __init__(self):
         # Speech recognizer
         self.recognizer = speech_recognition.Recognizer()
         # Voice response instant
-        self.speaker = pyttsx3.init()
+        #self.speaker = pyttsx3.init()
         # Set tốc đô nói (words per minute)
-        self.speaker.setProperty("rate", 120)
+        #self.speaker.setProperty("rate", 120)
         # Set giọng nói
-        voices = self.speaker.getProperty("voices")
-        self.speaker.setProperty("voice", voices[1].id)
+        #voices = self.speaker.getProperty("voices")
+        #self.speaker.setProperty("voice", voices[1].id)
         self.intent_data = self.load_json(INTENT_LOCATION)["intents"]
 
-        self.lidar_system = LidarModule.LidarDetection("COM5")
+        self.lidar_system = LidarModule.LidarDetection(LIDAR_PORT_JET)
 
         # Engine text-to-speech by Zalo API
         self.ZALO_API_KEY = "ooGxzbgmfnuqLQLAPdkE2B3tGOMvM168"
@@ -47,7 +46,7 @@ class Assistant:
                 text = self.get_text_from_speech(mic)
 
                 # Cmd khởi động
-                if WAKE_WORD in text:
+                if text is not None and WAKE_WORD in text:
                     self.speaker_say(RESPONSE_WELCOME)
 
                     text = self.get_text_from_speech(mic)
@@ -148,8 +147,8 @@ class Assistant:
     def speaker_say(self, text):
         """Speak text"""
         # Use pyttsx3
-        self.speaker.say(text)
-        self.speaker.runAndWait()
+        #self.speaker.say(text)
+        #self.speaker.runAndWait()
 
         # Use Zalo API
         self.tts.text_to_speech(text)
