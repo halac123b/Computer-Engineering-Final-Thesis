@@ -15,37 +15,54 @@ class DectectionModule:
         # load the object detection network
         self.net = None
         self.near_label = {}
+        self.current_select = []
 
     def StartEngine(self):
         self.net = detectNet(DEFAULT_MODEL, sys.argv, DETECT_THRESHOLD)
 
     def RunEngine(self):
-        self.StartEngine()
+        # capture the next image
+        img = input.Capture()
 
-        while True:
-            # capture the next image
-            img = input.Capture()
+        if img is None:  # timeout
+            return
 
-            if img is None:  # timeout
-                continue
+        # detect objects in the image (with overlay is label of object and confidence)
+        detections = self.net.Detect(img, overlay="labels,conf")
 
-            # detect objects in the image (with overlay is label of object and confidence)
-            detections = self.net.Detect(img, overlay="labels,conf")
+        # print the detections
+        print("detected {:d} objects in image".format(len(detections)))
 
-            # print the detections
-            print("detected {:d} objects in image".format(len(detections)))
+        for detection in detections:
+            for key in self.near_label:
+                self.near_label[key] -= 1
+                if self.near_label[key] == 0:
+                    del self.near_label[key]
 
-            for detection in detections:
-                print(detection)
+            # print(detection)
+            label = self.net.GetClassDesc(detection.ClassID)
+            if label in self.near_label:
+                self.near_label[label] += 1
+            else:
+                self.near_label[label] = 1
 
-            # # update the title bar
-            # output.SetStatus(
-            #     "{:s} | Network {:.0f} FPS".format(args.network, net.GetNetworkFPS())
-            # )
+            self.current_select.clear()
+            self.current_select.append(label)
 
-            # print out performance info
-            self.net.PrintProfilerTimes()
+        # # update the title bar
+        # output.SetStatus(
+        #     "{:s} | Network {:.0f} FPS".format(args.network, net.GetNetworkFPS())
+        # )
 
-            # exit on input/output EOS
-            if not input.IsStreaming():
-                break
+        # print out performance info
+        self.net.PrintProfilerTimes()
+
+        # exit on input/output EOS
+        if not input.IsStreaming():
+            return
+
+    def GetChosenLabel(self):
+        for label in self.current_select:
+            if self.near_label[label] <= 2:
+                self.current_select.remove(label)
+        return self.current_select

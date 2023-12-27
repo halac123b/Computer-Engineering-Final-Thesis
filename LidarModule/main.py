@@ -9,6 +9,8 @@ from LidarModule.CalcLidarData import CalcLidarData
 import LidarModule.TimerThread as TimerThread
 import LidarModule.SoundThread as SoundThread
 
+from DectectionModule.main import DectectionModule
+
 import playsound
 import threading
 
@@ -40,8 +42,12 @@ class LidarDetection:
 
         # Check whether check left and right direction or not
         self.check_side = True
+        # Check if turning on detection or not
+        self.is_detecting = False
 
         self.stop = False
+        # Object detection module
+        self.detection = DectectionModule()
 
     def init_pyplot(self):
         # Title cho biểu đồ
@@ -56,6 +62,9 @@ class LidarDetection:
     def run_system(self):
         playsound.playsound("./LidarModule/step/lidar_start.mp3")
         # self.init_pyplot()
+
+        if self.is_detecting:
+            self.detection.StartEngine()
 
         tmpString = ""
         # lines = list()
@@ -153,6 +162,8 @@ class LidarDetection:
                 distances.clear()
 
                 i = 0
+                if self.is_detecting:
+                    self.detection.RunEngine()
 
             while loopFlag:
                 # Đọc data từ Serial
